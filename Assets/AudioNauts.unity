@@ -86,6 +86,7 @@ GameObject:
   - 114: {fileID: 62095787}
   - 135: {fileID: 62095786}
   - 114: {fileID: 62095785}
+  - 114: {fileID: 62095789}
   m_Layer: 0
   m_Name: Circle5
   m_TagString: Untagged
@@ -100,8 +101,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62095783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: .166666672, y: .166666672, z: .166666672}
+  m_LocalPosition: {x: .857142925, y: 0, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 3
@@ -118,9 +119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1484930204}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &62095786
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -169,6 +171,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 0, g: 1, b: 1, a: 1}
+--- !u!114 &62095789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62095783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &103403931
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +323,7 @@ GameObject:
   - 114: {fileID: 352467288}
   - 135: {fileID: 352467287}
   - 114: {fileID: 352467286}
+  - 114: {fileID: 352467290}
   m_Layer: 0
   m_Name: Circle6
   m_TagString: Untagged
@@ -323,8 +338,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 352467284}
   m_LocalRotation: {x: 0, y: 0, z: -.382683486, w: .923879564}
-  m_LocalPosition: {x: -.707000017, y: .707000017, z: 0}
-  m_LocalScale: {x: .166666657, y: .166666657, z: .166666672}
+  m_LocalPosition: {x: -.606000125, y: .606000125, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 4
@@ -341,9 +356,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1684703946}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &352467287
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -392,6 +408,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &352467290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 352467284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &410828523
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +432,7 @@ GameObject:
   - 114: {fileID: 410828524}
   - 135: {fileID: 410828528}
   - 114: {fileID: 410828527}
+  - 114: {fileID: 410828529}
   m_Layer: 0
   m_Name: Circle2
   m_TagString: Untagged
@@ -454,8 +483,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 410828523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: .166666672, y: .166666672, z: .166666672}
+  m_LocalPosition: {x: 0, y: -.857142925, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 0
@@ -472,9 +501,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 526898797}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &410828528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -487,6 +517,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.27999997
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &410828529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410828523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &438411591
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +812,7 @@ Transform:
   m_GameObject: {fileID: 596833778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 410828526}
   - {fileID: 1816552386}
@@ -922,6 +964,7 @@ GameObject:
   - 114: {fileID: 818712877}
   - 135: {fileID: 818712876}
   - 114: {fileID: 818712875}
+  - 114: {fileID: 818712879}
   m_Layer: 0
   m_Name: Circle8
   m_TagString: Untagged
@@ -936,8 +979,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 818712873}
   m_LocalRotation: {x: 0, y: 0, z: -.382683486, w: .923879564}
-  m_LocalPosition: {x: .707000017, y: .707000017, z: 0}
-  m_LocalScale: {x: .166666657, y: .166666657, z: .166666672}
+  m_LocalPosition: {x: .606000125, y: .606000125, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 6
@@ -954,9 +997,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1380716179}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &818712876
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1005,6 +1049,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 0, g: 0, b: 1, a: 1}
+--- !u!114 &818712879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818712873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &899881844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1073,7 @@ GameObject:
   - 114: {fileID: 899881847}
   - 135: {fileID: 899881846}
   - 114: {fileID: 899881845}
+  - 114: {fileID: 899881850}
   m_Layer: 0
   m_Name: Circle7
   m_TagString: Untagged
@@ -1037,9 +1094,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 103403933}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &899881846
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1095,11 +1153,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899881844}
   m_LocalRotation: {x: 0, y: 0, z: -.382683486, w: .923879564}
-  m_LocalPosition: {x: .707000017, y: -.707000017, z: 0}
-  m_LocalScale: {x: .166666657, y: .166666657, z: .166666672}
+  m_LocalPosition: {x: .606000125, y: -.606000125, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 5
+--- !u!114 &899881850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899881844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &977697578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,6 +1245,7 @@ GameObject:
   - 114: {fileID: 1091812746}
   - 135: {fileID: 1091812745}
   - 114: {fileID: 1091812744}
+  - 114: {fileID: 1091812748}
   m_Layer: 0
   m_Name: Circle9
   m_TagString: Untagged
@@ -1189,8 +1260,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1091812742}
   m_LocalRotation: {x: 0, y: 0, z: -.382683486, w: .923879564}
-  m_LocalPosition: {x: -.707106948, y: -.707106769, z: 0}
-  m_LocalScale: {x: .166666657, y: .166666657, z: .166666672}
+  m_LocalPosition: {x: -.606091738, y: -.606091499, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 7
@@ -1207,9 +1278,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 668772284}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &1091812745
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1258,6 +1330,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 1, g: 1, b: 0, a: 1}
+--- !u!114 &1091812748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091812742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &1110806424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,7 +1525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateLeft: 97
   rotateRight: 100
-  rotateSpeed: 5
+  rotateSpeed: 1
 --- !u!1 &1343576241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1537,7 @@ GameObject:
   - 33: {fileID: 1343576245}
   - 23: {fileID: 1343576243}
   - 135: {fileID: 1343576244}
+  - 114: {fileID: 1343576242}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1460,6 +1545,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1343576242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343576241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: .5
 --- !u!23 &1343576243
 Renderer:
   m_ObjectHideFlags: 0
@@ -1780,6 +1877,7 @@ GameObject:
   - 114: {fileID: 1573486050}
   - 135: {fileID: 1573486049}
   - 114: {fileID: 1573486048}
+  - 114: {fileID: 1573486052}
   m_Layer: 0
   m_Name: Circle4
   m_TagString: Untagged
@@ -1794,8 +1892,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1573486046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
-  m_LocalScale: {x: .166666672, y: .166666672, z: .166666672}
+  m_LocalPosition: {x: -.857142925, y: 0, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 2
@@ -1812,9 +1910,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1754187659}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &1573486049
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1863,6 +1962,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &1573486052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573486046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &1684703944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,6 +2242,7 @@ GameObject:
   - 114: {fileID: 1816552389}
   - 135: {fileID: 1816552388}
   - 114: {fileID: 1816552387}
+  - 114: {fileID: 1816552391}
   m_Layer: 0
   m_Name: Circle3
   m_TagString: Untagged
@@ -2145,8 +2257,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1816552385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: .166666672, y: .166666672, z: .166666672}
+  m_LocalPosition: {x: 0, y: .857142925, z: 0}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 596833781}
   m_RootOrder: 1
@@ -2163,9 +2275,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1110806426}
   targetTransform: {fileID: 1343576246}
-  targetCollider: {fileID: 1343576244}
+  targetRadius: {fileID: 1343576242}
   lastDistance: 0
   playingParent: {fileID: 1948317527}
+  dist: 0
 --- !u!135 &1816552388
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2214,6 +2327,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &1816552391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1816552385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80b1f772f2b5c64ba54abafca1bed9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 2
 --- !u!1 &1948317526
 GameObject:
   m_ObjectHideFlags: 0

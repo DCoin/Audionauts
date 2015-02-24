@@ -1,17 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-[RequireComponent (typeof (SphereCollider))]
+[RequireComponent (typeof (Radius))]
 public class CustomSphereDetector : MonoBehaviour {
-
 
     public AudioSource audioSource;
 
-
     public Transform targetTransform;
-    public SphereCollider targetCollider;
+    public Radius targetRadius;
 
-    private SphereCollider myCollider;
+    private Radius radius;
 
     public float lastDistance;
 
@@ -24,7 +22,7 @@ public class CustomSphereDetector : MonoBehaviour {
 
         lastDistance = CalcDistance();
 
-        myCollider = GetComponent<SphereCollider>();
+        radius = GetComponent<Radius>();
 
 	}
 
@@ -58,27 +56,29 @@ public class CustomSphereDetector : MonoBehaviour {
 
 	}
 
+    public float dist;
+
     private void ResolveCollision()
     {
         Vector2 a = transform.position;
         Vector2 b = targetTransform.position;
 
-        float dist = (a - b).magnitude;
+        dist = (a - b).magnitude;
 
-        float ra = myCollider.radius;
-        float rb = targetCollider.radius;
+        float ra = radius.value;
+        float rb = targetRadius.value;
 
         if (dist > ra + rb)
         {
             OnMiss();
         }
-        else if (dist > Mathf.Abs(ra - rb))
+        else if (dist <= Mathf.Abs(rb - ra))
         {
-            OnOverlap();
+            OnHit();
         }
         else
         {
-            OnHit();
+            OnOverlap();
         }
     }
 
