@@ -10,8 +10,6 @@ public class Fader : MonoBehaviour {
 
     public float power;
 
-    public bool enableJump;
-
 	// Use this for initialization
 	void Start () {
 
@@ -29,13 +27,6 @@ public class Fader : MonoBehaviour {
         Color col = sr.color;
         col.a = power / Mathf.Abs(dz);
         sr.color = col;
-
-        if (enableJump && dz <= -10f)
-        {
-            Vector3 v = this.transform.position;
-            v.z += 20f;
-            this.transform.position = v;
-        }
 	
 	}
 }
