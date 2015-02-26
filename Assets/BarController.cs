@@ -2,7 +2,6 @@
 using System.Collections;
 
 [RequireComponent (typeof(RectTransform))]
-[ExecuteInEditMode]
 public class BarController : MonoBehaviour {
 
     private RectTransform rectTransform;
