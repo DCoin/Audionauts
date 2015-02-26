@@ -7,11 +7,6 @@ public class Rotater : MonoBehaviour {
     public KeyCode rotateRight;
 
     public float rotateSpeed;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
 	
 	// Update is called once per frame
 	void Update () {
