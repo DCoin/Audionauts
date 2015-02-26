@@ -4842,7 +4842,7 @@ GameObject:
   - 82: {fileID: 1551055203}
   - 114: {fileID: 1551055202}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MusicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
