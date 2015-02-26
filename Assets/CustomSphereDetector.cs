@@ -6,8 +6,7 @@ public class CustomSphereDetector : MonoBehaviour {
 
     public AudioSource audioSource;
 
-    public Transform targetTransform;
-    public Radius targetRadius;
+    public Transform targets;
 
     private Radius radius;
 
@@ -28,7 +27,7 @@ public class CustomSphereDetector : MonoBehaviour {
 
     private float CalcDistance()
     {
-        return transform.position.z - targetTransform.position.z;
+        return transform.position.z - targets.position.z;
     }
 	
 	// Update is called once per frame
@@ -60,26 +59,33 @@ public class CustomSphereDetector : MonoBehaviour {
 
     private void ResolveCollision()
     {
-        Vector2 a = transform.position;
-        Vector2 b = targetTransform.position;
 
-        dist = (a - b).magnitude;
+        foreach (Radius targetRadius in targets.GetComponentsInChildren<Radius>())
+        {
+            Transform targetTransform = targetRadius.transform;
 
-        float ra = radius.value;
-        float rb = targetRadius.value;
+            Vector2 a = transform.position;
+            Vector2 b = targetTransform.position;
 
-        if (dist > ra + rb)
-        {
-            OnMiss();
+            dist = (a - b).magnitude;
+
+            float ra = radius.value;
+            float rb = targetRadius.value;
+
+            if (dist > ra + rb)
+            {
+                OnMiss();
+            }
+            else if (dist <= Mathf.Abs(rb - ra))
+            {
+                OnHit();
+            }
+            else
+            {
+                OnOverlap();
+            }
         }
-        else if (dist <= Mathf.Abs(rb - ra))
-        {
-            OnHit();
-        }
-        else
-        {
-            OnOverlap();
-        }
+
     }
 
     private void OnMiss()
