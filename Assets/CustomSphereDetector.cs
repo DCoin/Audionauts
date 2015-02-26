@@ -16,6 +16,10 @@ public class CustomSphereDetector : MonoBehaviour {
 
     private List<AudioSource> playing = new List<AudioSource>();
 
+    public BarController grooveBar;
+
+    public int points;
+
 	// Use this for initialization
 	void Start () {
 
@@ -100,7 +104,13 @@ public class CustomSphereDetector : MonoBehaviour {
 
     private void OnHit()
     {
-        PlaySource(audioSource);
+        if (audioSource != null)
+        {
+            PlaySource(audioSource);
+        }
+
+        grooveBar.CurrentValue += points;
+
         //Debug.Log("Inside.");
     }
 
