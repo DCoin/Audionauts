@@ -1,23 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Diver : MonoBehaviour {
+public class Diver : MonoBehaviour
+{
 
-    public float speed;
+	public float speed;
+	public bool FollowMusic = false;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+		Vector3 pos = transform.position;
 
-        Vector3 pos = transform.position;
-
-        pos.z += speed * Time.deltaTime;
-
-        transform.position = pos;
-	
+		if (!FollowMusic) {
+			pos.z += speed * Time.deltaTime;
+		} else {
+			pos.z = 10 + MusicManager.Instance.BeatsPlayed / 4 * 20;
+		}
+		
+		transform.position = pos;
 	}
 }
