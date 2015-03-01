@@ -73,7 +73,25 @@ public class MusicManager : MonoBehaviour {
 			}
 			break;
 		}
+
+		if (Input.GetKeyDown(KeyCode.K)) {
+			x += 1000;
+			Debug.Log ("k = " + x);
+		}
+		if (Input.GetKeyDown(KeyCode.L)) {
+			var sample1 = audio.timeSamples;
+			int k = 0;
+			for (int i = 0; i < x; i++) {
+				for (int j = 0; j < x; j++) {
+					k++;
+				}
+			}
+			var sample2 = audio.timeSamples;
+			Debug.Log("k = " + k + "diff = " + (sample2 - sample1));
+		}
 	}
+
+	int x = 1000;
 
 	private int samplesToNextBeat () {
 		return samplesPerBeat - (audio.timeSamples % samplesPerBeat);
