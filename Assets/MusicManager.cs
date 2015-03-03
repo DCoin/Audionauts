@@ -80,6 +80,7 @@ public class MusicManager : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.L)) {
 			var sample1 = audio.timeSamples;
+			var tSample1 = audio.time;
 			int k = 0;
 			for (int i = 0; i < x; i++) {
 				for (int j = 0; j < x; j++) {
@@ -87,7 +88,9 @@ public class MusicManager : MonoBehaviour {
 				}
 			}
 			var sample2 = audio.timeSamples;
+			var tSample2 = audio.time;
 			Debug.Log("k = " + k + "diff = " + (sample2 - sample1));
+			Debug.Log ("tdiff = " + (tSample2-tSample1));
 		}
 	}
 
