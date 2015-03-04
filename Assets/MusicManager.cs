@@ -13,7 +13,7 @@ public class MusicManager : MonoBehaviour
 	public static MusicManager Instance { get; private set; }
 
 	public float Position {
-		get { return (float)audio.timeSamples / audio.clip.samples;}
+		get { return (float)GetComponent<AudioSource>().timeSamples / GetComponent<AudioSource>().clip.samples;}
 	}
 
 	public float TimesPlayed {
@@ -35,12 +35,12 @@ public class MusicManager : MonoBehaviour
 	
 	void Update ()
 	{
-		if (audio.isPlaying) {
-			if (audio.timeSamples < LastSamples) {
+		if (GetComponent<AudioSource>().isPlaying) {
+			if (GetComponent<AudioSource>().timeSamples < LastSamples) {
 				_timesPlayed++;
 			}
 
-			LastSamples = audio.timeSamples;
+			LastSamples = GetComponent<AudioSource>().timeSamples;
 		}
 	}
 }
