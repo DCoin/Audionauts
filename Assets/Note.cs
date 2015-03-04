@@ -20,12 +20,12 @@ public class Note : MonoBehaviour {
 
 	public void Hit () {
 		wasHit = true;
-		renderer.material = GreenMat;
+		GetComponent<Renderer>().material = GreenMat;
 	}
 
 	public void Missed ()
 	{
-		renderer.material = RedMat;
+		GetComponent<Renderer>().material = RedMat;
 	}
 
 	public void Reset () {

@@ -15,10 +15,10 @@ public class AudioTest : MonoBehaviour {
 		GameObject child;
 		child = new GameObject("Player1");
 		child.transform.parent = gameObject.transform;
-		audio1 = child.AddComponent("AudioSource") as AudioSource;
+		audio1 = child.AddComponent<AudioSource>() as AudioSource;
 		child = new GameObject("Player2");
 		child.transform.parent = gameObject.transform;
-		audio2 = child.AddComponent("AudioSource") as AudioSource;
+		audio2 = child.AddComponent<AudioSource>() as AudioSource;
 		int overlapSamples;
 		if (sourceClip != null) {
 			len1 = sourceClip.samples / 2;

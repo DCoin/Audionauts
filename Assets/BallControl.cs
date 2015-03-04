@@ -8,7 +8,7 @@ public class BallControl : MonoBehaviour {
 
 	void FixedUpdate() {
 		var inputDevice = InputManager.ActiveDevice;
-		rigidbody.AddForce (new Vector3(inputDevice.LeftStick.X, 0, inputDevice.LeftStick.Y) * acc);
+		GetComponent<Rigidbody>().AddForce (new Vector3(inputDevice.LeftStick.X, 0, inputDevice.LeftStick.Y) * acc);
 	}
 	
 	void OnCollisionEnter (Collision col) {

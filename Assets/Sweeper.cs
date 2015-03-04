@@ -13,7 +13,7 @@ public class Sweeper : MonoBehaviour {
 
 	void Start () {
 		initialPosition = transform.position;
-		rigidbody.velocity = Vector3.left * -3;
+		GetComponent<Rigidbody>().velocity = Vector3.left * -3;
 	}
 
 	void FixedUpdate () {

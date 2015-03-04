@@ -22,7 +22,7 @@ public class MusicManager : MonoBehaviour {
 	private int samplesPerBeat;
 
 	void Start() {
-		samplesPerBeat = audio.clip.samples / 32;
+		samplesPerBeat = GetComponent<AudioSource>().clip.samples / 32;
 	}
 
 	void FixedUpdate () {
@@ -79,16 +79,16 @@ public class MusicManager : MonoBehaviour {
 			Debug.Log ("k = " + x);
 		}
 		if (Input.GetKeyDown(KeyCode.L)) {
-			var sample1 = audio.timeSamples;
-			var tSample1 = audio.time;
+			var sample1 = GetComponent<AudioSource>().timeSamples;
+			var tSample1 = GetComponent<AudioSource>().time;
 			int k = 0;
 			for (int i = 0; i < x; i++) {
 				for (int j = 0; j < x; j++) {
 					k++;
 				}
 			}
-			var sample2 = audio.timeSamples;
-			var tSample2 = audio.time;
+			var sample2 = GetComponent<AudioSource>().timeSamples;
+			var tSample2 = GetComponent<AudioSource>().time;
 			Debug.Log("k = " + k + "diff = " + (sample2 - sample1));
 			Debug.Log ("tdiff = " + (tSample2-tSample1));
 		}
@@ -97,12 +97,12 @@ public class MusicManager : MonoBehaviour {
 	int x = 1000;
 
 	private int samplesToNextBeat () {
-		return samplesPerBeat - (audio.timeSamples % samplesPerBeat);
+		return samplesPerBeat - (GetComponent<AudioSource>().timeSamples % samplesPerBeat);
 	}
 	
 	private void Play (AudioSource source) {
 		source.Play ();
-		source.timeSamples = audio.timeSamples;
+		source.timeSamples = GetComponent<AudioSource>().timeSamples;
 		Debug.Log ("PLAY");
 	}
 
