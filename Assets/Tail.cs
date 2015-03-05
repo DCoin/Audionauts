@@ -29,6 +29,11 @@ public class Tail : MonoBehaviour {
 
             GameObject g = (GameObject) Instantiate(tailPrefab, this.transform.position, this.transform.rotation);
             g.transform.parent = tailsParent;
+
+			Renderer ra = this.gameObject.GetComponent<Renderer>();
+			Renderer rb = g.GetComponent<Renderer>();
+
+			rb.material.color = ra.material.color;
         }
 	
 	}
