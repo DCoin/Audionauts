@@ -6,6 +6,7 @@ public class Diver : MonoBehaviour
 
 	public float speed;
 	public bool FollowMusic = false;
+	public float BeatsSeperation = 12.5f; // The distance between beats
 
 	// Use this for initialization
 	void Start ()
@@ -21,7 +22,7 @@ public class Diver : MonoBehaviour
 		if (!FollowMusic) {
 			pos.z += speed * Time.deltaTime;
 		} else {
-			pos.z = 10 + MusicManager.Instance.BeatsPlayed / 4 * 20;
+			pos.z = MusicManager.Instance.BeatsPlayed * BeatsSeperation;
 		}
 		
 		transform.position = pos;
