@@ -11,9 +11,9 @@ GameObject:
   - 33: {fileID: 3386522}
   - 23: {fileID: 2386522}
   - 111: {fileID: 11186522}
-  - 114: {fileID: 11486522}
+  - 114: {fileID: 11452830}
   m_Layer: 0
-  m_Name: Ball
+  m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &11486522
+--- !u!114 &11452830
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 186522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c081e28e8ca74547b0a0f9781b1be97, type: 3}
+  m_Script: {fileID: 11500000, guid: 7844c5a22df7ee5468af2d49d787e983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &100100000
