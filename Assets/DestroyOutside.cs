@@ -4,22 +4,22 @@ using System.Collections;
 public class DestroyOutside : MonoBehaviour {
 	
 
-	private Renderer renderer;
+	private Renderer r;
 
 	private bool seen = false;
 
 	void Start() {
 
-		renderer = GetComponent<Renderer> ();
+		r = GetComponent<Renderer> ();
 
 	}
 
 	void Update() {
 
-		if (renderer.isVisible)
+		if (r.isVisible)
 			seen = true;
 		
-		if (seen && !renderer.isVisible)
+		if (seen && !r.isVisible)
 			Destroy(gameObject);
 	}
 }

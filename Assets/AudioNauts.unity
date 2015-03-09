@@ -270,7 +270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &15063784
 Transform:
   m_ObjectHideFlags: 0
@@ -305,6 +305,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!21 &30902056
 Material:
   serializedVersion: 5
@@ -374,7 +376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &40004055
 Transform:
   m_ObjectHideFlags: 0
@@ -409,6 +411,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &40627356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,6 +2532,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 373036646}
   - 114: {fileID: 373036647}
+  - 114: {fileID: 373036648}
+  - 114: {fileID: 373036649}
   m_Layer: 0
   m_Name: Rotater1
   m_TagString: Untagged
@@ -2554,16 +2560,43 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373036645}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ba819460eb688045b0f9c2738b9b0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotateLeft: 97
   rotateRight: 100
-  rotateAxis: 0
   rotateAcceleration: .5
   rotateMaxSpeed: 5
+--- !u!114 &373036648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373036645}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e716c2cbf15b046ab3427ca3c3b7e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateAxis: 0
+  deadZoneSize: .100000001
+--- !u!114 &373036649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373036645}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6bd9dfd410ca945b3610a622643de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisSource: 0
+  deadZoneSize: 0
+  rotateMaxSpeed: 10
+  easingLevel: 2
 --- !u!1 &374090319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,6 +3477,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!21 &560042921
 Material:
   serializedVersion: 5
@@ -3987,7 +4022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &620166467
 Transform:
   m_ObjectHideFlags: 0
@@ -4022,6 +4057,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &662960042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,6 +4361,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &722034608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5645,7 +5684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &901675469
 Transform:
   m_ObjectHideFlags: 0
@@ -5680,6 +5719,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &902228452
 GameObject:
   m_ObjectHideFlags: 0
@@ -5779,7 +5820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &914323391
 Transform:
   m_ObjectHideFlags: 0
@@ -5814,6 +5855,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &933621887
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,6 +6763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 16
   FollowMusic: 1
+  BeatsSeperation: 12.5
 --- !u!1 &1162438425
 GameObject:
   m_ObjectHideFlags: 0
@@ -6903,7 +6947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1198113076
 Transform:
   m_ObjectHideFlags: 0
@@ -6938,6 +6982,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1209263535
 GameObject:
   m_ObjectHideFlags: 0
@@ -7259,7 +7305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1239330949
 Transform:
   m_ObjectHideFlags: 0
@@ -7294,6 +7340,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1249768827
 GameObject:
   m_ObjectHideFlags: 0
@@ -7645,7 +7693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1310141505
 Transform:
   m_ObjectHideFlags: 0
@@ -7680,6 +7728,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1313402487
 GameObject:
   m_ObjectHideFlags: 0
@@ -8059,6 +8109,8 @@ GameObject:
   - 114: {fileID: 1343576249}
   - 111: {fileID: 1343576248}
   - 114: {fileID: 1343576250}
+  - 114: {fileID: 1343576251}
+  - 114: {fileID: 1343576252}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -8128,7 +8180,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343576241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalPosition: {x: -6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 323131084}
@@ -8154,7 +8206,7 @@ Animation:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343576241}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 02ff6024a299cbc47a387a097ff9b9ff, type: 2}
   m_Animations:
@@ -8188,6 +8240,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerId: 1
+--- !u!114 &1343576251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343576241}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815a20ad08ad1934abf49c79b2981716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisSource: 1
+  radius: 6
+--- !u!114 &1343576252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343576241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421b2384a6367094f90ffb5d78bf824c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisSource: 1
+  radius: 6
+  speed: 1
 --- !u!1 &1357154942
 GameObject:
   m_ObjectHideFlags: 0
@@ -8371,7 +8450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1376108414
 Transform:
   m_ObjectHideFlags: 0
@@ -8406,6 +8485,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1414419831
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,7 +8799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1473014076
 Transform:
   m_ObjectHideFlags: 0
@@ -8753,6 +8834,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1476545136
 GameObject:
   m_ObjectHideFlags: 0
@@ -9481,6 +9564,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1540602675
 GameObject:
   m_ObjectHideFlags: 0
@@ -9942,7 +10027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1591249537
 Transform:
   m_ObjectHideFlags: 0
@@ -9977,6 +10062,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1604188529
 GameObject:
   m_ObjectHideFlags: 0
@@ -10341,6 +10428,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1700923655
 GameObject:
   m_ObjectHideFlags: 0
@@ -10602,6 +10691,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1748816833}
   - 114: {fileID: 1748816834}
+  - 114: {fileID: 1748816836}
+  - 114: {fileID: 1748816835}
   m_Layer: 0
   m_Name: Rotater2
   m_TagString: Untagged
@@ -10628,16 +10719,43 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1748816832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ba819460eb688045b0f9c2738b9b0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotateLeft: 106
   rotateRight: 108
-  rotateAxis: 1
   rotateAcceleration: .5
   rotateMaxSpeed: 5
+--- !u!114 &1748816835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748816832}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b6bd9dfd410ca945b3610a622643de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisSource: 0
+  deadZoneSize: 0
+  rotateMaxSpeed: 10
+  easingLevel: 2
+--- !u!114 &1748816836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748816832}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e716c2cbf15b046ab3427ca3c3b7e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateAxis: 0
+  deadZoneSize: .100000001
 --- !u!1 &1753037272
 GameObject:
   m_ObjectHideFlags: 0
@@ -11369,6 +11487,8 @@ GameObject:
   - 114: {fileID: 1836374834}
   - 111: {fileID: 1836374833}
   - 114: {fileID: 1836374835}
+  - 114: {fileID: 1836374836}
+  - 114: {fileID: 1836374837}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -11383,7 +11503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1836374826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2050012358}
@@ -11464,7 +11584,7 @@ Animation:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1836374826}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 02ff6024a299cbc47a387a097ff9b9ff, type: 2}
   m_Animations:
@@ -11497,6 +11617,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerId: 2
+--- !u!114 &1836374836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836374826}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815a20ad08ad1934abf49c79b2981716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisSource: 2
+  radius: 6
+--- !u!114 &1836374837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836374826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421b2384a6367094f90ffb5d78bf824c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisSource: 2
+  radius: 6
+  speed: 1
 --- !u!1 &1854605059
 GameObject:
   m_ObjectHideFlags: 0
@@ -13053,7 +13200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2116931314
 Transform:
   m_ObjectHideFlags: 0
@@ -13088,6 +13235,8 @@ MonoBehaviour:
   players: {fileID: 1135398316}
   player1: {fileID: 1343576246}
   player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
 --- !u!1 &2128525284
 GameObject:
   m_ObjectHideFlags: 0
@@ -13187,6 +13336,7 @@ GameObject:
   - 114: {fileID: 2136743647}
   - 45: {fileID: 2136743648}
   - 114: {fileID: 2136743649}
+  - 114: {fileID: 2136743650}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13272,7 +13422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateLeft: 276
   rotateRight: 275
-  rotateAxis: 2
   rotateAcceleration: 0
   rotateMaxSpeed: 3
 --- !u!45 &2136743648
@@ -13295,3 +13444,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1135398316}
+--- !u!114 &2136743650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136743641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dccc95707b9e6d34686611abf74f7fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  local: 1
