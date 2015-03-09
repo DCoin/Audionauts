@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Health))]
 public class Tail : MonoBehaviour {
 
     public float interval;
 
     private float timeSinceLastDrop;
 
-    public GameObject tailPrefab;
+    public Shrinker tailPrefab;
 
     public Transform tailsParent; 
 
@@ -27,8 +28,10 @@ public class Tail : MonoBehaviour {
         {
             timeSinceLastDrop += interval;
 
-            GameObject g = (GameObject) Instantiate(tailPrefab, this.transform.position, this.transform.rotation);
+            Shrinker g = (Shrinker) Instantiate(tailPrefab, this.transform.position, this.transform.rotation);
             g.transform.parent = tailsParent;
+			g.head = this.GetComponent<Health>();
+			g.enabled = true;
 
 			Renderer ra = this.gameObject.GetComponent<Renderer>();
 			Renderer rb = g.GetComponent<Renderer>();

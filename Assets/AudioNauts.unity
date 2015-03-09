@@ -8111,6 +8111,7 @@ GameObject:
   - 114: {fileID: 1343576250}
   - 114: {fileID: 1343576251}
   - 114: {fileID: 1343576252}
+  - 114: {fileID: 1343576253}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -8198,7 +8199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
-  tailPrefab: {fileID: 186522, guid: 5638160ae38852b4e8358917e98e169a, type: 2}
+  tailPrefab: {fileID: 11411714, guid: 5638160ae38852b4e8358917e98e169a, type: 2}
   tailsParent: {fileID: 1313402488}
 --- !u!111 &1343576248
 Animation:
@@ -8267,6 +8268,19 @@ MonoBehaviour:
   axisSource: 1
   radius: 6
   speed: 1
+--- !u!114 &1343576253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343576241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd01d21246f3f914a8094c49b292a062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 50
 --- !u!1 &1357154942
 GameObject:
   m_ObjectHideFlags: 0
@@ -11489,6 +11503,7 @@ GameObject:
   - 114: {fileID: 1836374835}
   - 114: {fileID: 1836374836}
   - 114: {fileID: 1836374837}
+  - 114: {fileID: 1836374838}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -11576,7 +11591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 1
-  tailPrefab: {fileID: 186522, guid: 5638160ae38852b4e8358917e98e169a, type: 2}
+  tailPrefab: {fileID: 11411714, guid: 5638160ae38852b4e8358917e98e169a, type: 2}
   tailsParent: {fileID: 1313402488}
 --- !u!111 &1836374833
 Animation:
@@ -11644,6 +11659,19 @@ MonoBehaviour:
   axisSource: 2
   radius: 6
   speed: 1
+--- !u!114 &1836374838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836374826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd01d21246f3f914a8094c49b292a062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 50
 --- !u!1 &1854605059
 GameObject:
   m_ObjectHideFlags: 0
