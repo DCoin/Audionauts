@@ -2559,11 +2559,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ba819460eb688045b0f9c2738b9b0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateLeft: 97
-  rotateRight: 100
+  g: 1000
+  Mass: 10
+  Drag: .99000001
   rotateAxis: 0
-  rotateAcceleration: .5
-  rotateMaxSpeed: 5
+  rotateAcceleration: 2000
+  maxVelocity: 1000
+  friction: .00999999978
+  wheel: {fileID: 1673561875}
 --- !u!1 &374090319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8439,7 +8442,8 @@ MonoBehaviour:
   enableXInput: 0
   useFixedUpdate: 0
   dontDestroyOnLoad: 0
-  customProfiles: []
+  customProfiles:
+  - TestProfile
 --- !u!4 &1414419833
 Transform:
   m_ObjectHideFlags: 0
@@ -10219,14 +10223,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1673561871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51c99d0f4753d44d29f371c0e099cb31, type: 3}
+  m_Script: {fileID: 11500000, guid: 3baa02304e806447c967d9be00173f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1: {fileID: 373036646}
-  Player2: {fileID: 1748816833}
-  PMass: 10
+  g: 1000
   Mass: 1
-  Drag: .999000013
+  Drag: .99000001
 --- !u!1 &1687469506
 GameObject:
   m_ObjectHideFlags: 0
@@ -10653,11 +10655,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ba819460eb688045b0f9c2738b9b0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateLeft: 106
-  rotateRight: 108
+  g: 1000
+  Mass: 10
+  Drag: .99000001
   rotateAxis: 1
-  rotateAcceleration: .5
-  rotateMaxSpeed: 5
+  rotateAcceleration: 2000
+  maxVelocity: 1000
+  friction: .00999999978
+  wheel: {fileID: 1673561875}
 --- !u!1 &1753037272
 GameObject:
   m_ObjectHideFlags: 0
@@ -13290,11 +13295,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ba819460eb688045b0f9c2738b9b0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateLeft: 276
-  rotateRight: 275
+  g: 1000
+  Mass: 1
+  Drag: .899999976
   rotateAxis: 2
   rotateAcceleration: 0
-  rotateMaxSpeed: 3
+  maxVelocity: 0
+  friction: .5
+  wheel: {fileID: 0}
 --- !u!45 &2136743648
 Skybox:
   m_ObjectHideFlags: 0
