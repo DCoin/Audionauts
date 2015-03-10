@@ -6,11 +6,15 @@ public class Diver : MonoBehaviour
 
 	public float speed;
 	public bool FollowMusic = false;
-	public float BeatsSeperation = 12.5f; // The distance between beats
+	private float BeatsSeperation; // The distance between beats
+
+	public Transform stage;
 
 	// Use this for initialization
 	void Start ()
 	{
+
+		BeatsSeperation = stage.localScale.z;
 	
 	}
 	

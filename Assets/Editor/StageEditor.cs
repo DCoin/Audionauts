@@ -32,7 +32,7 @@ public class StageEditor : Editor {
 			int i = GetNumberSuffix(stage.barPrefix, bar.gameObject.name);
 			
 			Vector3 pos = bar.localPosition;
-			pos.z = (float) i;
+			pos.z = (float) (i - 1) * 4;
 			bar.localPosition = pos;
 			
 		}
@@ -58,7 +58,7 @@ public class StageEditor : Editor {
 				int i = GetNumberSuffix(stage.beatPrefix, name);
 
 				Vector3 pos = child.localPosition;
-				pos.z = ((float) (i - 1)) / 4f;
+				pos.z = ((float) (i - 1));
 				child.localPosition = pos;
 
 			}
