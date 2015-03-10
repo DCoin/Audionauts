@@ -13,8 +13,11 @@ public class Diver : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
-		BeatsSeperation = stage.localScale.z;
+		if (FollowMusic) {
+			BeatsSeperation = stage.localScale.z;
+		} else {
+			BeatsSeperation = speed;
+		}
 	
 	}
 	

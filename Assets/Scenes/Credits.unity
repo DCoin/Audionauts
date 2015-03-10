@@ -399,8 +399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 16
-  FollowMusic: 1
-  BeatsSeperation: 12.5
+  FollowMusic: 0
+  stage: {fileID: 0}
 --- !u!21 &1210701272
 Material:
   serializedVersion: 5
@@ -842,7 +842,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: aec41aa45672348fcb2b192722eedbaa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 49925519cdcde43f2a169455d45c1299, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
