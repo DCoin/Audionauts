@@ -33,6 +33,12 @@ public class Tail : MonoBehaviour {
 			g.head = this.GetComponent<Health>();
 			g.enabled = true;
 
+			UniformScaler ush = this.GetComponent<UniformScaler>();
+			UniformScaler usb = g.GetComponent<UniformScaler>();
+			if(usb != null) {
+				usb.scale = ush.scale;
+			}
+
 			Renderer ra = this.gameObject.GetComponent<Renderer>();
 			Renderer rb = g.GetComponent<Renderer>();
 

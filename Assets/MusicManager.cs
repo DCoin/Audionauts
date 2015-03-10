@@ -16,6 +16,15 @@ public class MusicManager : MonoBehaviour
 		get { return (float)GetComponent<AudioSource>().timeSamples / GetComponent<AudioSource>().clip.samples;}
 	}
 
+	public float BPS {
+
+		get { 
+			AudioSource audio = GetComponent<AudioSource>();
+			return BeatsPerLoop / audio.clip.length;
+		}
+
+	}
+
 	public float TimesPlayed {
 		get { return Position + _timesPlayed;}
 	}
