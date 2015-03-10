@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 0}
-  maxLength: 50
+  maxLength: 100
 --- !u!114 &11452830
 MonoBehaviour:
   m_ObjectHideFlags: 1
