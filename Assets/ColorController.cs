@@ -21,8 +21,11 @@ public class ColorController : MonoBehaviour {
 	void UpdateColor() {
 
 		Renderer r = this.GetComponent<Renderer> ();
-		
-		r.sharedMaterial.color = this.color;
 
+		if (r != null && r.sharedMaterial != null) {
+		
+			r.sharedMaterial.color = this.color;
+
+		}
 	}
 }
