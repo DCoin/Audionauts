@@ -64,6 +64,14 @@ public class Slice : MonoBehaviour {
 
 	public void OnHit(HitType hit) {
 
+		Animation a = this.GetComponent<Animation> ();
+
+		if (a != null) {
+
+			a.Play();
+
+		}
+
 		if (sliceType == SliceType.First && hit == HitType.First
 			|| sliceType == SliceType.Second && hit == HitType.Second
 			|| sliceType == SliceType.Both && hit == HitType.Both
