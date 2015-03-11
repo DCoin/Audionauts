@@ -67622,6 +67622,7 @@ GameObject:
   - 114: {fileID: 1898615622}
   - 114: {fileID: 1898615623}
   - 114: {fileID: 1898615624}
+  - 114: {fileID: 1898615625}
   m_Layer: 0
   m_Name: BeatSizer1
   m_TagString: Untagged
@@ -67690,6 +67691,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3931f4a9c04f87a43bdb48e1f3ee7bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1898615625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1898615619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e1558447f1c3d42a6577de300135ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1898635490
