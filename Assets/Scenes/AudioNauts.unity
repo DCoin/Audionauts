@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8205268, guid: a9d5061996091fd4ab332fe6ea1f122f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -1712,7 +1712,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &46337848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,7 +1851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8273674, guid: c3641f5f51e60234484291a31ae9150f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -1880,7 +1880,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &51904035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6551,7 +6551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8205268, guid: a9d5061996091fd4ab332fe6ea1f122f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -6580,7 +6580,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &186482383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7489,7 +7489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 1
+  sliceType: 0
   angle: 45
   audioSource: {fileID: 8251116, guid: ae4bc9cafaf865944bd35b689ddbb59a, type: 2}
   playingParent: {fileID: 1948317527}
@@ -7518,7 +7518,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &214832831
 GameObject:
   m_ObjectHideFlags: 0
@@ -7877,7 +7877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8254048, guid: b6299e20f46ccfe479aae7d78722f29f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -7906,7 +7906,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &223339670
 GameObject:
   m_ObjectHideFlags: 0
@@ -9675,7 +9675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8268992, guid: 40e73b80cc76c9b499432794366246de, type: 2}
   playingParent: {fileID: 1948317527}
@@ -9704,7 +9704,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &262399022
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,7 +10011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 1
+  sliceType: 0
   angle: 45
   audioSource: {fileID: 8292684, guid: 9fe05a9a41940b64d8d79e31c3851b35, type: 2}
   playingParent: {fileID: 1948317527}
@@ -10040,7 +10040,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &276265291
 GameObject:
   m_ObjectHideFlags: 0
@@ -11103,7 +11103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 1
+  sliceType: 0
   angle: 45
   audioSource: {fileID: 8251116, guid: ae4bc9cafaf865944bd35b689ddbb59a, type: 2}
   playingParent: {fileID: 1948317527}
@@ -11132,7 +11132,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &305292248
 GameObject:
   m_ObjectHideFlags: 0
@@ -17186,7 +17186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 1
+  sliceType: 0
   angle: 45
   audioSource: {fileID: 8247202, guid: 8c0df67dd95422640b0dc062cc87f83c, type: 2}
   playingParent: {fileID: 1948317527}
@@ -17215,7 +17215,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &465881563
 GameObject:
   m_ObjectHideFlags: 0
@@ -20160,7 +20160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8254048, guid: b6299e20f46ccfe479aae7d78722f29f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -20189,7 +20189,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &544374051
 GameObject:
   m_ObjectHideFlags: 0
@@ -21236,7 +21236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8273674, guid: c3641f5f51e60234484291a31ae9150f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -21265,7 +21265,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &574866381
 GameObject:
   m_ObjectHideFlags: 0
@@ -27444,7 +27444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8205268, guid: a9d5061996091fd4ab332fe6ea1f122f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -27473,7 +27473,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &674680464
 GameObject:
   m_ObjectHideFlags: 0
@@ -34584,7 +34584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8254048, guid: b6299e20f46ccfe479aae7d78722f29f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -34613,7 +34613,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &868178794
 GameObject:
   m_ObjectHideFlags: 0
@@ -47716,7 +47716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8254048, guid: b6299e20f46ccfe479aae7d78722f29f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -47745,7 +47745,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &1294037748
 GameObject:
   m_ObjectHideFlags: 0
@@ -54037,7 +54037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8205268, guid: a9d5061996091fd4ab332fe6ea1f122f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -54066,7 +54066,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &1473440338
 GameObject:
   m_ObjectHideFlags: 0
@@ -62143,7 +62143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8273674, guid: c3641f5f51e60234484291a31ae9150f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -62172,7 +62172,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &1738863149
 GameObject:
   m_ObjectHideFlags: 0
@@ -62857,7 +62857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 1
+  sliceType: 0
   angle: 45
   audioSource: {fileID: 8292684, guid: 9fe05a9a41940b64d8d79e31c3851b35, type: 2}
   playingParent: {fileID: 1948317527}
@@ -62886,7 +62886,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &1757358108
 GameObject:
   m_ObjectHideFlags: 0
@@ -65732,7 +65732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 0
+  sliceType: 1
   angle: 45
   audioSource: {fileID: 8273674, guid: c3641f5f51e60234484291a31ae9150f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -65761,7 +65761,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &1844167766
 GameObject:
   m_ObjectHideFlags: 0
