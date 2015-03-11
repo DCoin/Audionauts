@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
+using System;
 
 [CustomEditor(typeof(Stage))]
 public class StageEditor : Editor {
@@ -54,12 +55,14 @@ public class StageEditor : Editor {
 				
 				if(!name.StartsWith(stage.beatPrefix))
 					continue;
-
-				int i = GetNumberSuffix(stage.beatPrefix, name);
-
-				Vector3 pos = child.localPosition;
-				pos.z = ((float) (i - 1));
-				child.localPosition = pos;
+				try {
+					int i = GetNumberSuffix(stage.beatPrefix, name);
+					Vector3 pos = child.localPosition;
+					pos.z = ((float) (i - 1));
+					child.localPosition = pos;
+				} catch (Exception e) {
+					//TODO
+				}
 
 			}
 			
