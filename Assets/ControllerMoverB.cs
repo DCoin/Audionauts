@@ -9,10 +9,12 @@ public class ControllerMoverB : MonoBehaviour {
 	public float radius;
 
 	public float speed;
+
+	public int controller;
 	
 	void Update () {
 		
-		InputDevice device = InputManager.ActiveDevice;
+		InputDevice device = ControllerManager.Controllers[controller];
 		TwoAxisInputControl axis = device.GetAxis (axisSource);
 
 
