@@ -34,7 +34,7 @@ public class ControllerMoverB : MonoBehaviour {
 
 		transform.Translate (axis.Vector * speed
 //		                     * Time.deltaTime
-		                     );
+		                     , Space.World);
 
 		transform.localPosition = Vector2.ClampMagnitude (transform.localPosition, radius);
 
