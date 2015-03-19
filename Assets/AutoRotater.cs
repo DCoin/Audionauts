@@ -10,6 +10,7 @@ public class AutoRotater : MonoBehaviour {
 	public float rotateMaxSpeed = 3;
 	
 	private float rotateSpeed = 0;
+	public Space relativeTo;
 	
 	// Update is called once per frame
 	void Update ()
@@ -33,9 +34,8 @@ public class AutoRotater : MonoBehaviour {
 		}
 
 		Vector3 rot = rotateSpeed * Vector3.forward;
-		
-		
-		transform.Rotate(rot);
+
+		transform.Rotate(rot, relativeTo);
 
 	}
 
