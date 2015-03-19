@@ -60,9 +60,7 @@ public class StageEditor : Editor {
 					Vector3 pos = child.localPosition;
 					pos.z = ((float) (i - 1));
 					child.localPosition = pos;
-				} catch (Exception e) {
-					//TODO
-				}
+				} catch (Exception) {}
 
 			}
 			
