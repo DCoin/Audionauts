@@ -4,6 +4,10 @@ using System.Collections.Generic;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Slice : MonoBehaviour {
 
+	public delegate void HitEventHandler(object sender);
+
+	public event HitEventHandler Hit;
+
 	public ColorTable colorTable;
 
 	public enum SliceType { First, Second, Both, Any, None };
@@ -85,6 +89,16 @@ public class Slice : MonoBehaviour {
 	}
 
 	private void AcceptHit() {
+
+		if(Hit != null) {
+			Hit(this);
+		}
+
+		PlaySound();
+
+	}
+
+	public void PlaySound() {
 
 		if (audioSource != null)
 		{

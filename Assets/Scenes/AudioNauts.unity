@@ -915,6 +915,7 @@ Transform:
   - {fileID: 1551055204}
   - {fileID: 1392618962}
   - {fileID: 1414419833}
+  - {fileID: 2077826553}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!21 &30902056
@@ -950,6 +951,13 @@ Material:
           name: _DetailNormalMap
         second:
           m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ToonShade
+        second:
+          m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -1003,13 +1011,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ToonShade
-        second:
-          m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _SpecGlossMap
         second:
           m_Texture: {fileID: 0}
@@ -1048,6 +1049,10 @@ Material:
         first:
           name: _DstBlend
         second: 0
+      data:
+        first:
+          name: _Outline
+        second: .00659701508
       data:
         first:
           name: _Parallax
@@ -1092,10 +1097,6 @@ Material:
         first:
           name: _InvFade
         second: 1
-      data:
-        first:
-          name: _Outline
-        second: .00659701508
     m_Colors:
       data:
         first:
@@ -1119,16 +1120,16 @@ Material:
         second: {r: .368999988, g: .349000007, b: .340999991, a: 1}
       data:
         first:
-          name: _EmissionColorUI
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _OutlineColor
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _Emission
         second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _TintColor
@@ -3126,11 +3127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &78012815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,11 +4174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &104460329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5030,11 +5021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &143258482
 GameObject:
   m_ObjectHideFlags: 0
@@ -5382,11 +5368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &149665540
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,11 +6915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &207213157
 GameObject:
   m_ObjectHideFlags: 0
@@ -9377,11 +9353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &281575500
 GameObject:
   m_ObjectHideFlags: 0
@@ -10729,11 +10700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &322242126
 GameObject:
   m_ObjectHideFlags: 0
@@ -11655,11 +11621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &342235667
 GameObject:
   m_ObjectHideFlags: 0
@@ -12007,11 +11968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &351933506
 GameObject:
   m_ObjectHideFlags: 0
@@ -12412,6 +12368,53 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 0}
+--- !u!1 &362233152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 362233153}
+  - 114: {fileID: 362233154}
+  m_Layer: 0
+  m_Name: Sequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362233153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362233152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1802340901}
+  m_RootOrder: 0
+--- !u!114 &362233154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362233152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f590f1c0b42eb4a91b8db3474c5db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slices:
+  - {fileID: 1282642602}
+  - {fileID: 2024996680}
+  - {fileID: 395805204}
+  - {fileID: 1054242458}
+  barCount: 2
+  barLength: 2
+  repeats: 4
 --- !u!1 &368369481
 GameObject:
   m_ObjectHideFlags: 0
@@ -13454,11 +13457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &395805200
 GameObject:
   m_ObjectHideFlags: 0
@@ -13477,7 +13475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &395805201
 Transform:
   m_ObjectHideFlags: 0
@@ -13529,7 +13527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 4
+  sliceType: 3
   angle: 45
   audioSource: {fileID: 8251116, guid: ae4bc9cafaf865944bd35b689ddbb59a, type: 2}
   playingParent: {fileID: 1948317527}
@@ -13558,7 +13556,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
 --- !u!1 &397169320
 GameObject:
   m_ObjectHideFlags: 0
@@ -14952,11 +14950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &441685280
 GameObject:
   m_ObjectHideFlags: 0
@@ -15104,11 +15097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &443177884
 GameObject:
   m_ObjectHideFlags: 0
@@ -17474,11 +17462,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &476885684
 GameObject:
   m_ObjectHideFlags: 0
@@ -18026,11 +18009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &501278671
 GameObject:
   m_ObjectHideFlags: 0
@@ -18278,11 +18256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &507610326
 GameObject:
   m_ObjectHideFlags: 0
@@ -18530,11 +18503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &511243053
 GameObject:
   m_ObjectHideFlags: 0
@@ -19174,11 +19142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &538409675
 GameObject:
   m_ObjectHideFlags: 0
@@ -20416,6 +20379,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _ToonShade
+        second:
+          m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
@@ -20465,13 +20435,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ToonShade
-        second:
-          m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _SpecGlossMap
         second:
           m_Texture: {fileID: 0}
@@ -20494,6 +20457,10 @@ Material:
         first:
           name: _DstBlend
         second: 0
+      data:
+        first:
+          name: _Outline
+        second: .00659701508
       data:
         first:
           name: _Parallax
@@ -20534,10 +20501,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _Outline
-        second: .00659701508
     m_Colors:
       data:
         first:
@@ -20553,16 +20516,16 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _EmissionColorUI
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _OutlineColor
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _Emission
         second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &562663010
 GameObject:
   m_ObjectHideFlags: 0
@@ -21609,11 +21572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &585379351
 GameObject:
   m_ObjectHideFlags: 0
@@ -24233,11 +24191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &643380191
 GameObject:
   m_ObjectHideFlags: 0
@@ -24285,11 +24238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &644014853
 GameObject:
   m_ObjectHideFlags: 0
@@ -25855,11 +25803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &649338795
 GameObject:
   m_ObjectHideFlags: 0
@@ -25907,11 +25850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &655515042
 GameObject:
   m_ObjectHideFlags: 0
@@ -26505,11 +26443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &674825618
 GameObject:
   m_ObjectHideFlags: 0
@@ -26557,11 +26490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &675545402
 GameObject:
   m_ObjectHideFlags: 0
@@ -28959,11 +28887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &737720805
 GameObject:
   m_ObjectHideFlags: 0
@@ -29011,11 +28934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &739654670
 GameObject:
   m_ObjectHideFlags: 0
@@ -29263,11 +29181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &742693707
 GameObject:
   m_ObjectHideFlags: 0
@@ -29815,11 +29728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &763014557
 GameObject:
   m_ObjectHideFlags: 0
@@ -29867,11 +29775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &763500310
 GameObject:
   m_ObjectHideFlags: 0
@@ -32761,11 +32664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &858968656
 GameObject:
   m_ObjectHideFlags: 0
@@ -33013,11 +32911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &863437850
 GameObject:
   m_ObjectHideFlags: 0
@@ -33511,11 +33404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &881632831
 GameObject:
   m_ObjectHideFlags: 0
@@ -34609,11 +34497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &916831900
 GameObject:
   m_ObjectHideFlags: 0
@@ -35161,11 +35044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &928534882
 GameObject:
   m_ObjectHideFlags: 0
@@ -35513,11 +35391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &936825745
 GameObject:
   m_ObjectHideFlags: 0
@@ -35765,11 +35638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &937721381
 GameObject:
   m_ObjectHideFlags: 0
@@ -36817,11 +36685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &965090277
 GameObject:
   m_ObjectHideFlags: 0
@@ -38333,11 +38196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1007760100
 GameObject:
   m_ObjectHideFlags: 0
@@ -38931,11 +38789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1017570283
 GameObject:
   m_ObjectHideFlags: 0
@@ -39083,11 +38936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1024875003
 GameObject:
   m_ObjectHideFlags: 0
@@ -39435,11 +39283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1031811589
 GameObject:
   m_ObjectHideFlags: 0
@@ -40133,11 +39976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1053587043
 GameObject:
   m_ObjectHideFlags: 0
@@ -40185,11 +40023,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1054242454
 GameObject:
   m_ObjectHideFlags: 0
@@ -40208,7 +40041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1054242455
 Transform:
   m_ObjectHideFlags: 0
@@ -40260,7 +40093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 4
+  sliceType: 3
   angle: 45
   audioSource: {fileID: 8254048, guid: b6299e20f46ccfe479aae7d78722f29f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -40289,7 +40122,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
 --- !u!1 &1055155595
 GameObject:
   m_ObjectHideFlags: 0
@@ -41137,11 +40970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1078946986
 GameObject:
   m_ObjectHideFlags: 0
@@ -42771,11 +42599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1120465585
 GameObject:
   m_ObjectHideFlags: 0
@@ -43671,11 +43494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1144657613
 GameObject:
   m_ObjectHideFlags: 0
@@ -44323,11 +44141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1155848943
 GameObject:
   m_ObjectHideFlags: 0
@@ -44375,11 +44188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1157923036
 GameObject:
   m_ObjectHideFlags: 0
@@ -45727,11 +45535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1184280800
 GameObject:
   m_ObjectHideFlags: 0
@@ -46079,11 +45882,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1197952908
 GameObject:
   m_ObjectHideFlags: 0
@@ -46621,6 +46419,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _ToonShade
+        second:
+          m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
@@ -46661,13 +46466,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _ToonShade
-        second:
-          m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -46685,6 +46483,10 @@ Material:
         first:
           name: _DstBlend
         second: 0
+      data:
+        first:
+          name: _Outline
+        second: .00659701508
       data:
         first:
           name: _Parallax
@@ -46725,10 +46527,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _Outline
-        second: .00659701508
     m_Colors:
       data:
         first:
@@ -46744,16 +46542,16 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _EmissionColorUI
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _OutlineColor
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _Emission
         second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1214928943
 GameObject:
   m_ObjectHideFlags: 0
@@ -46901,11 +46699,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1216912663
 GameObject:
   m_ObjectHideFlags: 0
@@ -48353,11 +48146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1279006099
 GameObject:
   m_ObjectHideFlags: 0
@@ -48676,7 +48464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1282642599
 Transform:
   m_ObjectHideFlags: 0
@@ -48728,7 +48516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 4
+  sliceType: 3
   angle: 45
   audioSource: {fileID: 8251116, guid: ae4bc9cafaf865944bd35b689ddbb59a, type: 2}
   playingParent: {fileID: 1948317527}
@@ -48757,7 +48545,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
 --- !u!1 &1284173918
 GameObject:
   m_ObjectHideFlags: 0
@@ -50132,11 +49920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1318805145
 GameObject:
   m_ObjectHideFlags: 0
@@ -50184,11 +49967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1319990850
 GameObject:
   m_ObjectHideFlags: 0
@@ -51541,11 +51319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1358782121
 GameObject:
   m_ObjectHideFlags: 0
@@ -52193,11 +51966,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1379702021
 GameObject:
   m_ObjectHideFlags: 0
@@ -52688,11 +52456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1398421715
 GameObject:
   m_ObjectHideFlags: 0
@@ -54186,11 +53949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1444748726
 GameObject:
   m_ObjectHideFlags: 0
@@ -54538,11 +54296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1448047582
 GameObject:
   m_ObjectHideFlags: 0
@@ -54690,11 +54443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1452702975
 GameObject:
   m_ObjectHideFlags: 0
@@ -55242,11 +54990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1477232037
 GameObject:
   m_ObjectHideFlags: 0
@@ -55798,11 +55541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1494908237
 GameObject:
   m_ObjectHideFlags: 0
@@ -55950,11 +55688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1500881456
 GameObject:
   m_ObjectHideFlags: 0
@@ -56302,11 +56035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1522070677
 GameObject:
   m_ObjectHideFlags: 0
@@ -59531,11 +59259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1613860349
 GameObject:
   m_ObjectHideFlags: 0
@@ -60029,11 +59752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1637076651
 GameObject:
   m_ObjectHideFlags: 0
@@ -60281,11 +59999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1646186213
 GameObject:
   m_ObjectHideFlags: 0
@@ -60733,11 +60446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1655894088
 GameObject:
   m_ObjectHideFlags: 0
@@ -61587,6 +61295,7 @@ Transform:
   - {fileID: 1938620912}
   - {fileID: 1576853754}
   - {fileID: 1951100099}
+  - {fileID: 1802340901}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &1673561873
@@ -61979,11 +61688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1684364247
 GameObject:
   m_ObjectHideFlags: 0
@@ -62530,11 +62234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1702493561
 GameObject:
   m_ObjectHideFlags: 0
@@ -62582,11 +62281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1707174084
 GameObject:
   m_ObjectHideFlags: 0
@@ -63080,11 +62774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1734524230
 GameObject:
   m_ObjectHideFlags: 0
@@ -64217,11 +63906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1777720648
 GameObject:
   m_ObjectHideFlags: 0
@@ -64269,11 +63953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1001 &1790684187
 Prefab:
   m_ObjectHideFlags: 0
@@ -64720,6 +64399,34 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 0}
+--- !u!1 &1802340900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1802340901}
+  m_Layer: 0
+  m_Name: Sequences
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1802340901
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802340900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 362233153}
+  m_Father: {fileID: 1673561872}
+  m_RootOrder: 21
 --- !u!1 &1808527196
 GameObject:
   m_ObjectHideFlags: 0
@@ -65096,11 +64803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1828286237
 GameObject:
   m_ObjectHideFlags: 0
@@ -69864,11 +69566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &1983255835
 GameObject:
   m_ObjectHideFlags: 0
@@ -71187,7 +70884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2024996677
 Transform:
   m_ObjectHideFlags: 0
@@ -71239,7 +70936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTable: {fileID: 1673561874}
-  sliceType: 4
+  sliceType: 3
   angle: 45
   audioSource: {fileID: 8254048, guid: b6299e20f46ccfe479aae7d78722f29f, type: 2}
   playingParent: {fileID: 1948317527}
@@ -71268,7 +70965,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
 --- !u!1 &2038229351
 GameObject:
   m_ObjectHideFlags: 0
@@ -72015,11 +71712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &2056081163
 GameObject:
   m_ObjectHideFlags: 0
@@ -72167,11 +71859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &2057069030
 GameObject:
   m_ObjectHideFlags: 0
@@ -73272,6 +72959,50 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
+--- !u!1 &2077826551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2077826553}
+  - 114: {fileID: 2077826552}
+  m_Layer: 0
+  m_Name: HitManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2077826552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077826551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facb88e6886dade448ed04481c0872e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: {fileID: 1135398316}
+  player1: {fileID: 1343576246}
+  player2: {fileID: 1836374827}
+  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
+  shakeTarget: {fileID: 2136743650}
+--- !u!4 &2077826553
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077826551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 23018374}
+  m_RootOrder: 3
 --- !u!1 &2082223067
 GameObject:
   m_ObjectHideFlags: 0
@@ -74119,11 +73850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
 --- !u!1 &2122816264
 GameObject:
   m_ObjectHideFlags: 0
@@ -75452,8 +75178,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d61ea314693c5f4aae85ad2ad438831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: {fileID: 1135398316}
-  player1: {fileID: 1343576246}
-  player2: {fileID: 1836374827}
-  shaker: {fileID: 11434294, guid: ee66b2bd8faa26e41ada374b3d4fc6d2, type: 2}
-  shakeTarget: {fileID: 2136743650}
