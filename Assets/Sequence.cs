@@ -4,6 +4,8 @@ public class Sequence : MonoBehaviour {
 
 	public Slice[] slices;
 
+	private Color[] colors;
+
 	private float[] times;
 
 	private int next;
@@ -16,22 +18,42 @@ public class Sequence : MonoBehaviour {
 
 	private bool replay;
 
+	public Color color;
+
 	void Start () {
 
-		times = new float[slices.Length];
+		int l = slices.Length;
 
+		times = new float[l];
 
-		foreach(Slice slice in slices) {
+		colors = new Color[l];
 
-			slice.Hit += new Slice.HitEventHandler(OnHit);
+		for(int i = 0; i < l; ++i) {
+
+			Slice s = slices[i];
+
+			s.Hit += new Slice.HitEventHandler(OnHit);
+			
+			Renderer r = s.GetComponent<Renderer>();
+
+			colors[i] = r.material.color;
 
 		}
-
 		next = 0; 
 	
 	}
 	
 	void Update () {
+
+		for(int i = 0; i < slices.Length; ++i) {
+
+			Slice s = slices[i];
+
+			Renderer r = s.GetComponent<Renderer>();
+
+			r.material.color = Color.Lerp(colors[i], color, Mathf.Sin(Time.time * Mathf.PI * Mathf.PI));
+
+		}
 
 		if(!replay) return;
 

@@ -12414,7 +12414,8 @@ MonoBehaviour:
   - {fileID: 1054242458}
   barCount: 2
   barLength: 2
-  repeats: 4
+  repeats: 3
+  color: {r: .948529422, g: .670896947, b: .174362019, a: 1}
 --- !u!1 &368369481
 GameObject:
   m_ObjectHideFlags: 0
