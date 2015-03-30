@@ -55830,7 +55830,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 2989b42ba6241394b8c0ac2f4933e4e2, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &1509915240
@@ -74312,7 +74312,6 @@ GameObject:
   - 114: {fileID: 2136743649}
   - 114: {fileID: 2136743650}
   - 111: {fileID: 2136743652}
-  - 114: {fileID: 2136743651}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -74432,18 +74431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   local: 1
---- !u!114 &2136743651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2136743641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e4b9645a83544b448b56ccbd405ad95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starterKey: 8
 --- !u!111 &2136743652
 Animation:
   m_ObjectHideFlags: 0
