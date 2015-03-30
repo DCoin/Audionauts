@@ -955,6 +955,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _Ramp
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ToonShade
         second:
           m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
@@ -998,13 +1005,6 @@ Material:
       data:
         first:
           name: _MetallicGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -1055,6 +1055,10 @@ Material:
         second: .00659701508
       data:
         first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
           name: _Parallax
         second: .0199999996
       data:
@@ -1093,10 +1097,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _InvFade
-        second: 1
     m_Colors:
       data:
         first:
@@ -1128,12 +1128,12 @@ Material:
         second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
-          name: _EmissionColorUI
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _TintColor
         second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &34649074
 GameObject:
   m_ObjectHideFlags: 0
@@ -20380,6 +20380,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _Ramp
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ToonShade
         second:
           m_Texture: {fileID: 8900000, guid: b995d4bd9d11078d11005b9844295342, type: 3}
@@ -20423,13 +20430,6 @@ Material:
       data:
         first:
           name: _MetallicGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -43132,6 +43132,7 @@ Transform:
   - {fileID: 644186031}
   - {fileID: 589267337}
   - {fileID: 462123047}
+  - {fileID: 1501402083}
   m_Father: {fileID: 1673561872}
   m_RootOrder: 0
 --- !u!114 &1135398317
@@ -55789,6 +55790,49 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
+--- !u!1 &1501402082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1501402083}
+  - 111: {fileID: 1501402084}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1501402083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501402082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1135398316}
+  m_RootOrder: 6
+--- !u!111 &1501402084
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501402082}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2989b42ba6241394b8c0ac2f4933e4e2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2989b42ba6241394b8c0ac2f4933e4e2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1509915240
 GameObject:
   m_ObjectHideFlags: 0
@@ -74267,6 +74311,8 @@ GameObject:
   - 45: {fileID: 2136743648}
   - 114: {fileID: 2136743649}
   - 114: {fileID: 2136743650}
+  - 111: {fileID: 2136743652}
+  - 114: {fileID: 2136743651}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -74373,7 +74419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda6d32df70ab6a48a718fb052422a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1135398316}
+  target: {fileID: 1501402083}
 --- !u!114 &2136743650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74386,6 +74432,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   local: 1
+--- !u!114 &2136743651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136743641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4b9645a83544b448b56ccbd405ad95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starterKey: 8
+--- !u!111 &2136743652
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136743641}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: db7c1a3b5e7d7ab4ebd78a0f15427ed1, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: db7c1a3b5e7d7ab4ebd78a0f15427ed1, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2137059368
 GameObject:
   m_ObjectHideFlags: 0
