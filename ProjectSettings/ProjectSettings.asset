@@ -7,12 +7,12 @@ PlayerSettings:
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
-  targetGlesGraphics: 1
+  targetGlesGraphics: -1
   targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Audionauts2
+  productName: Audionauts
   cloudProjectId: 
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -80,7 +80,7 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
-  productGUID: c77664805660f402eb273849182d9f2e
+  productGUID: edf666057dab8804fbfcad46b1956cfa
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -131,11 +131,7 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: 
-    m_Icons:
-    - m_Icon: {fileID: 0}
-      m_Size: 128
+  m_BuildTargetIcons: []
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
@@ -221,7 +217,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: 
+  psp2PackagePassword: F69AzBlax3CF3EDNhm3soLBPh71Yexui
   psp2KeystoneFile: 
   psp2DRMType: 0
   psp2StorageType: 0
@@ -252,7 +248,7 @@ PlayerSettings:
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
   scriptingDefineSymbols: {}
-  metroPackageName: Audionauts2
+  metroPackageName: Audionauts
   metroPackageLogo: 
   metroPackageLogo140: 
   metroPackageLogo180: 
@@ -263,7 +259,7 @@ PlayerSettings:
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Audionauts2
+  metroApplicationDescription: Audionauts
   metroStoreTileLogo80: 
   metroStoreTileLogo: 
   metroStoreTileLogo140: 
@@ -384,7 +380,9 @@ PlayerSettings:
   iOS::ScriptingBackend: 0
   boolPropertyNames:
   - WebGL::dataCaching
+  - XboxOne::enus
   WebGL::dataCaching: 0
+  XboxOne::enus: 1
   stringPropertyNames:
   - WebGL::emscriptenArgs
   - WebGL::template
