@@ -9236,6 +9236,37 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b60f7b4de399133408fa87c25a1cfe9f, type: 3}
   m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
+--- !u!1 &269725932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 269725933}
+  m_Layer: 0
+  m_Name: Mirrors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &269725933
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269725932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 775283874}
+  - {fileID: 386769157}
+  - {fileID: 1921711210}
+  - {fileID: 1878790050}
+  m_Father: {fileID: 1090393596}
+  m_RootOrder: 1
 --- !u!1 &271628634
 GameObject:
   m_ObjectHideFlags: 0
@@ -13701,12 +13732,12 @@ GameObject:
   - 114: {fileID: 386769159}
   - 114: {fileID: 386769158}
   m_Layer: 0
-  m_Name: Mirror 1
+  m_Name: Mirror 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &386769157
 Transform:
   m_ObjectHideFlags: 0
@@ -13715,12 +13746,12 @@ Transform:
   m_GameObject: {fileID: 386769156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.90864229, y: 4.89440441, z: 0}
-  m_LocalScale: {x: .49999997, y: .49999997, z: .5}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 1930296464}
   - {fileID: 219783639}
-  m_Father: {fileID: 1090393596}
-  m_RootOrder: 2
+  m_Father: {fileID: 269725933}
+  m_RootOrder: 1
 --- !u!114 &386769158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31185,12 +31216,12 @@ GameObject:
   - 114: {fileID: 775283875}
   - 114: {fileID: 775283877}
   m_Layer: 0
-  m_Name: Mirror
+  m_Name: Mirror 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &775283874
 Transform:
   m_ObjectHideFlags: 0
@@ -31203,8 +31234,8 @@ Transform:
   m_Children:
   - {fileID: 1762522021}
   - {fileID: 948203624}
-  m_Father: {fileID: 1090393596}
-  m_RootOrder: 1
+  m_Father: {fileID: 269725933}
+  m_RootOrder: 0
 --- !u!114 &775283875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43207,10 +43238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1836374827}
-  - {fileID: 775283874}
-  - {fileID: 386769157}
-  - {fileID: 1921711210}
-  - {fileID: 1878790050}
+  - {fileID: 269725933}
   m_Father: {fileID: 1748816833}
   m_RootOrder: 0
 --- !u!111 &1090393597
@@ -44758,7 +44786,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 16
   FollowMusic: 1
-  stage: {fileID: 1673561872}
 --- !u!1 &1138168034
 GameObject:
   m_ObjectHideFlags: 0
@@ -69194,12 +69221,12 @@ GameObject:
   - 114: {fileID: 1878790052}
   - 114: {fileID: 1878790051}
   m_Layer: 0
-  m_Name: Mirror 3
+  m_Name: Mirror 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1878790050
 Transform:
   m_ObjectHideFlags: 0
@@ -69208,12 +69235,12 @@ Transform:
   m_GameObject: {fileID: 1878790049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.523716927, y: -5.66931343, z: 0}
-  m_LocalScale: {x: .499999911, y: .499999911, z: .5}
+  m_LocalScale: {x: .49999994, y: .49999994, z: .5}
   m_Children:
   - {fileID: 1381755834}
   - {fileID: 2105828736}
-  m_Father: {fileID: 1090393596}
-  m_RootOrder: 4
+  m_Father: {fileID: 269725933}
+  m_RootOrder: 3
 --- !u!114 &1878790051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70908,12 +70935,12 @@ GameObject:
   - 114: {fileID: 1921711212}
   - 114: {fileID: 1921711211}
   m_Layer: 0
-  m_Name: Mirror 2
+  m_Name: Mirror 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1921711210
 Transform:
   m_ObjectHideFlags: 0
@@ -70922,12 +70949,12 @@ Transform:
   m_GameObject: {fileID: 1921711209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.55367422, y: -1.25383043, z: 0}
-  m_LocalScale: {x: .49999994, y: .49999994, z: .5}
+  m_LocalScale: {x: .49999997, y: .49999997, z: .5}
   m_Children:
   - {fileID: 124173918}
   - {fileID: 1327677073}
-  m_Father: {fileID: 1090393596}
-  m_RootOrder: 3
+  m_Father: {fileID: 269725933}
+  m_RootOrder: 2
 --- !u!114 &1921711211
 MonoBehaviour:
   m_ObjectHideFlags: 0
