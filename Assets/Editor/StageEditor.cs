@@ -58,7 +58,7 @@ public class StageEditor : Editor {
 				try {
 					int i = GetNumberSuffix(stage.beatPrefix, name);
 					Vector3 pos = child.localPosition;
-					pos.z = ((float) (i - 1));
+					pos.z = ((float) (i - 1)) * stage.beatsMultiplier;
 					child.localPosition = pos;
 				} catch (Exception) {}
 

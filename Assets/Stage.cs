@@ -6,6 +6,7 @@ public class Stage : MonoBehaviour {
 
 	public string barPrefix;
 	public string beatPrefix;
+	public float beatsMultiplier = 1;
 
 	public IEnumerable<Transform> GetBars() {
 		
