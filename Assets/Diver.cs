@@ -6,20 +6,6 @@ public class Diver : MonoBehaviour
 
 	public float speed;
 	public bool FollowMusic = false;
-	private float BeatsSeperation; // The distance between beats
-
-	public Transform stage;
-
-	// Use this for initialization
-	void Start ()
-	{
-		if (FollowMusic) {
-			BeatsSeperation = stage.localScale.z;
-		} else {
-			BeatsSeperation = speed;
-		}
-	
-	}
 	
 	// Update is called once per frame
 	void Update ()
@@ -29,9 +15,9 @@ public class Diver : MonoBehaviour
 		if (!FollowMusic) {
 			pos.z += speed * Time.deltaTime;
 		} else {
-			pos.z = MusicManager.Instance.BeatsPlayed * BeatsSeperation;
+			pos.z = MusicManager.Instance.BeatsPlayed;
 		}
 		
-		transform.position = pos;
+		transform.localPosition = pos;
 	}
 }
