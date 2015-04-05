@@ -1,327 +1,342 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts;
+using Assets.Scripts.Enums;
 using UnityEditor;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Audionauts.Enums;
+using UnityEngine;
 
-public class Beatmap : EditorWindow {
+namespace Assets.Editor
+{
+    public class Beatmap : EditorWindow {
 
-	private Section target = null;
+        private Section _target;
 
-	private static int start = 0;
+        private static int _start;
+
+        private const int BarsShown = 3;
+
+        private static int _currentBar;
+
+        private readonly GUIStyle _style = new GUIStyle { alignment = TextAnchor.MiddleCenter };
+
+        private int _bump;
 	
-	private static int barsShown = 3;
+        public int CurrentBar {
+            get {
 
-	private static int _currentBar = 0;
+                return CurrentBar = _currentBar;
 
-	private GUIStyle style = new GUIStyle () { alignment = TextAnchor.MiddleCenter };
+            }
+            set {
 
-	private int bump = 0;
-	
-	public int CurrentBar {
-		get {
+                if(value < 0) {
+                    _currentBar = 0;
+                } else if(value >= (_target.Bars.Length - BarsShown)) {
+                    var b = _target.Bars.Length - BarsShown;
+                    _currentBar = b < 0 ? 0 : b;
+                } else {
+                    _currentBar = value;
+                }
 
-			return CurrentBar = _currentBar;
+            }
+        }
 
-		}
-		set {
-
-			if(value < 0) {
-				_currentBar = 0;
-			} else if(value >= (target.Bars.Length - barsShown)) {
-				int b = target.Bars.Length - barsShown;
-				_currentBar = b < 0 ? 0 : b;
-			} else {
-				_currentBar = value;
-			}
-
-		}
-	}
-
-	[MenuItem ("Window/Beatmap")]
-	public static void ShowWindow() {
+        [MenuItem ("Window/Beatmap")]
+        public static void ShowWindow() {
 		
-		EditorWindow.GetWindow (typeof(Beatmap));
+            GetWindow (typeof(Beatmap));
 		
-	}
-
-	void OnSelectionChange() {
-
-		GameObject g = Selection.activeGameObject;
-
-		if(g != null) {
-
-			target = g.GetComponentInParent<Section>();
-
-		} else {
-
-			target = null;
-
-		}
-
-		this.Repaint();
-
-	}
-
-	void OnGUI() {
-
-		if(target == null) {
-			return;
-		}
-
-		start += bump;
-		bump = 0;
-
-		EditorGUILayout.BeginHorizontal();
-
-		OnNotesColumn();	
-
-		OnLeftButton();
-
-		OnBarsAndBeats ();
-
-		OnRightButton();
-
-		EditorGUILayout.EndHorizontal();
-
-	}
-
-	private void OnNotesColumn() {
-
-		EditorGUILayout.BeginVertical();
+        }
 
 
-		Color stdColor = GUI.color;
 
-		GUI.color = Color.gray;
+        private void OnSelectionChange() {
 
-		if(GUILayout.Button("", GUILayout.Height (24f))) {
+            var g = Selection.activeGameObject;
 
-			bump = (bump + 1) % target.sources.Length;
+            _target = g != null ? g.GetComponentInParent<Section>() : null;
 
-		}
+            Repaint();
 
-		GUI.color = stdColor;
+        }
 
-		//EditorGUILayout.LabelField("Notes", style, GUILayout.Height(32f), GUILayout.Width(64f));
+        private void OnGUI() {
 
-		for(int n = 0; n < target.sources.Length; ++n) {
+            if(_target == null) {
+                return;
+            }
 
-			int idx = (n + start) % target.sources.Length;
+            _start += _bump;
+            _bump = 0;
 
-			AudioSource aus = target.sources[idx];
+            EditorGUILayout.BeginHorizontal();
 
-			if(GUILayout.Button(aus.name, GUILayout.ExpandHeight (true))) {
+            OnNotesColumn();	
 
-				//bump = n;
+            OnLeftButton();
 
-				AudioUtil.PlayClip(aus.clip);
+            OnBarsAndBeats ();
 
-			}
+            OnRightButton();
+
+            EditorGUILayout.EndHorizontal();
+
+        }
+
+        private void OnNotesColumn() {
+
+            EditorGUILayout.BeginVertical();
+
+
+            var stdColor = GUI.color;
+
+            GUI.color = Color.gray;
+
+            if(GUILayout.Button("", GUILayout.Height (24f))) {
+
+                _bump = (_bump + 1) % _target.Sources.Length;
+
+            }
+
+            GUI.color = stdColor;
+
+            //EditorGUILayout.LabelField("Notes", style, GUILayout.Height(32f), GUILayout.Width(64f));
+
+            for(var n = 0; n < _target.Sources.Length; ++n) {
+
+                var idx = (n + _start) % _target.Sources.Length;
+
+                var aus = _target.Sources[idx];
+
+                if(GUILayout.Button(aus.name, GUILayout.ExpandHeight (true))) {
+
+                    //bump = n;
+
+                    AudioUtility.PlayClip(aus.clip);
+
+                }
 			
-		}
+            }
 
-		GUI.color = Color.gray;
+            GUI.color = Color.gray;
 		
-		if(GUILayout.Button("", GUILayout.Height (24f))) {
+            if(GUILayout.Button("", GUILayout.Height (24f))) {
 			
-			bump--;
+                _bump--;
 
-			if(bump < 0) {
-				bump += target.sources.Length;
-			}
+                if(_bump < 0) {
+                    _bump += _target.Sources.Length;
+                }
 
-		}
+            }
 		
-		GUI.color = stdColor;
+            GUI.color = stdColor;
 		
-		EditorGUILayout.EndVertical ();
+            EditorGUILayout.EndVertical ();
 
-	}
+        }
 
-	private void OnLeftButton() {
+        private void OnLeftButton() {
 
-		if (GUILayout.Button ("<", GUILayout.Width(20f), GUILayout.ExpandHeight (true))) {
-			CurrentBar--;
-		}
+            var enabled = CurrentBar > 0;
 
-	}
+            var stdColor = GUI.color;
 
-	private void OnRightButton() {
+            if (!enabled)
+                GUI.color = Color.grey;
 
-		if (GUILayout.Button (">", GUILayout.Width(20f), GUILayout.ExpandHeight (true))) {
-			CurrentBar++;
-		}
 
-	}
+            if (GUILayout.Button ("<", GUILayout.Width(20f), GUILayout.ExpandHeight (true))
+                && enabled) {
+                CurrentBar--;
+            }
 
-	private void OnBarsAndBeats() {
+            GUI.color = stdColor;
 
-		EditorGUILayout.BeginHorizontal(style);
+        }
 
-		OnAddAt(0);
+        private void OnRightButton()
+        {
 
-		for (int barIdx = CurrentBar; barIdx < (CurrentBar+barsShown) && barIdx < target.Bars.Length; ++barIdx) {
+            var enabled = CurrentBar + BarsShown < _target.Bars.Length;
 
-			EditorGUILayout.BeginVertical();
+            var stdColor = GUI.color;
 
-			EditorGUILayout.BeginHorizontal();
+            if (!enabled)
+                GUI.color = Color.grey;
 
-			OnBarFocus(barIdx);
+            if (GUILayout.Button (">", GUILayout.Width(20f), GUILayout.ExpandHeight (true)) 
+                && enabled) {
+                CurrentBar++;
+            }
 
-			if(OnBarRemove(barIdx)) {
+            GUI.color = stdColor;
 
-				return;
+        }
 
-			}
+        private void OnBarsAndBeats() {
 
-			EditorGUILayout.EndHorizontal();
+            EditorGUILayout.BeginHorizontal(_style);
 
-			for(int n = 0; n < target.sources.Length; ++n) {
+            OnAddAt(0);
+
+            for (int barIdx = CurrentBar; barIdx < (CurrentBar+BarsShown) && barIdx < _target.Bars.Length; ++barIdx) {
+
+                EditorGUILayout.BeginVertical();
+
+                EditorGUILayout.BeginHorizontal();
+
+                OnBarFocus(barIdx);
+
+                if(OnBarRemove(barIdx)) {
+
+                    return;
+
+                }
+
+                EditorGUILayout.EndHorizontal();
+
+                for(var n = 0; n < _target.Sources.Length; ++n) {
 				
-				int noteIdx = (n + start) % target.sources.Length;
+                    var noteIdx = (n + _start) % _target.Sources.Length;
 
-				EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.BeginHorizontal();
 
-				Bar bar = target.Bars[barIdx];
+                    var bar = _target.Bars[barIdx];
 
-				for(int beatIdx = 0; beatIdx < bar.Beats.Length; ++beatIdx) {
+                    foreach (var beat in bar.Beats)
+                    {
+                        beat.SetNoteCount(_target.Sources.Length);
 
-					Beat beat = bar.Beats[beatIdx];
+                        OnNoteToggle(beat.Notes[noteIdx]);
+                    }
 
-					beat.SetNoteCount(target.sources.Length);
-
-					OnNoteToggle(bar.Beats[beatIdx].Notes[noteIdx]);
-
-				}
-
-				EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.EndHorizontal();
 				
-			}
+                }
 
-			EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.BeginHorizontal();
 
-			OnBeatAdd(barIdx);
+                OnBeatAdd(barIdx);
 			
-			OnBeatRemove(barIdx);
+                OnBeatRemove(barIdx);
 
-			EditorGUILayout.EndHorizontal();
+                EditorGUILayout.EndHorizontal();
 			
-			EditorGUILayout.EndVertical();
+                EditorGUILayout.EndVertical();
 
-			OnAddAt(barIdx+1);
+                OnAddAt(barIdx+1);
 
-		}
+            }
 		
-		EditorGUILayout.EndHorizontal();
+            EditorGUILayout.EndHorizontal();
 
-	}
+        }
 
-	private void OnAddAt(int index) {
+        private void OnAddAt(int index) {
 
-		EditorGUILayout.BeginVertical();
+            EditorGUILayout.BeginVertical();
 
-		if(index == 0 || index == target.Bars.Length) {
+            if(index == 0 || index == _target.Bars.Length) {
 
-			GUILayout.Label("", GUILayout.Height(24f));
+                GUILayout.Label("", GUILayout.Height(24f));
 			
-		} else {
+            } else {
 
-			OnBarSwap(index);
+                OnBarSwap(index);
 
-		}
+            }
 
-		if(GUILayout.Button("+", GUILayout.Width(24f), GUILayout.ExpandHeight(true))) {
+            if(GUILayout.Button("+", GUILayout.Width(24f), GUILayout.ExpandHeight(true))) {
 
-			target.AddBar(index);
+                _target.AddBar(index);
 
-		}
+                SceneView.RepaintAll();
 
-		GUILayout.Label("", GUILayout.Height(24f));
+            }
 
-		EditorGUILayout.EndVertical();
+            GUILayout.Label("", GUILayout.Height(24f));
+
+            EditorGUILayout.EndVertical();
 		
-	}
+        }
 
-	private void OnBarFocus(int index) {
+        private void OnBarFocus(int index) {
 
-		Bar bar = target.Bars[index];
+            var bar = _target.Bars[index];
 
-		if(GUILayout.Button(bar.name, GUILayout.Height(24f))) {
+            if (!GUILayout.Button(bar.name, GUILayout.Height(24f))) 
+                return;
 
-			Selection.activeObject = bar.gameObject;
+            Selection.activeObject = bar.gameObject;
 			
-			SceneView.lastActiveSceneView.FrameSelected();
-			
-		}
+            SceneView.lastActiveSceneView.FrameSelected();
+        }
 
-	}
+        private void OnBeatAdd(int index) {
+            if (!GUILayout.Button("+1", GUILayout.Height(24f))) 
+                return;
 
-	private void OnBeatAdd(int index) {
+            _target.Bars[index].AddBeat();
 
-		if(GUILayout.Button("+1", GUILayout.Height(24f))) {
-
-			target.Bars[index].AddBeat();
-		}
-
-	}
+            SceneView.RepaintAll();
+        }
 	
-	private void OnBeatRemove(int index) {
+        private void OnBeatRemove(int index) {
 
 
-		if(GUILayout.Button("-1", GUILayout.Height(24f))) {
+            if(GUILayout.Button("-1", GUILayout.Height(24f))) {
 
-			target.Bars[index].RemoveBeat();
+                _target.Bars[index].RemoveBeat();
 
-		}
+            }
 
-	}
+        }
 	
-	private bool OnBarRemove(int index) {
+        private bool OnBarRemove(int index) {
 
-		if(GUILayout.Button("-", GUILayout.Height(24f))) {
+            if (!GUILayout.Button("-", GUILayout.Height(24f))) 
+                return false;
+
+            _target.RemoveBar(index);
 			
-			target.RemoveBar(index);
+            Selection.activeObject = _target.gameObject;
+
+            SceneView.RepaintAll();
+
+            return true;
+
+        }
+
+        private void OnBarSwap(int index) {
+            if ((index >= _target.Bars.Length) || !GUILayout.Button("<>", GUILayout.Width(24f), GUILayout.Height(24f)))
+                return;
+
+            _target.MoveBar(index-1, index);
+
+            SceneView.RepaintAll();
+        }
+
+        private void OnNoteToggle(Note note) {
+
+            var stdColor = GUI.color;
+
+
+            if(note.Kind != NoteKind.None) {
+
+                GUI.color = _target.PalettePrefab.GetColor(note.Kind);
+
+            }
+
+            if(GUILayout.Button("", GUILayout.ExpandHeight (true))) {
 			
-			Selection.activeObject = target.gameObject;
+                note.Kind = note.Kind.Next();
 
-			return true;
-		}
-
-		return false;
-
-	}
-
-	private void OnBarSwap(int index) {
-
-		if ((index < target.Bars.Length) && GUILayout.Button ("<>", GUILayout.Width(24f), GUILayout.Height(24f))) {
+                SceneView.RepaintAll();
 			
-			target.MoveBar(index-1, index);
-			
-		}
-
-	}
-
-	private void OnNoteToggle(Note note) {
-
-		Color stdColor = GUI.color;
-
-
-		if(note.Kind != NoteKind.None) {
-
-			GUI.color = target.palettePrefab.GetColor(note.Kind);
-
-		}
-
-		if(GUILayout.Button("", GUILayout.ExpandHeight (true))) {
-			
-			note.Kind = note.Kind.Next();
-			
-		}
+            }
 		
-		GUI.color = stdColor;
+            GUI.color = stdColor;
 		
-	}
+        }
 	
+    }
 }
