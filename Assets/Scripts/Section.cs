@@ -6,23 +6,10 @@ namespace Assets.Scripts
     public class Section : MonoBehaviour {
 
         public ColorPalette PalettePrefab;
-        public AudioSource[] Sources;
-
-
+        public AudioClip[] Clips;
         public Bar BarPrefab;
         public Beat BeatPrefab;
         public Note NotePrefab;
-
-        public string[] SourceNames {
-
-            get {
-
-                var inames = from source in Sources select source.name;
-
-                return inames.ToArray();
-
-            }
-        }
 
         public Bar[] Bars {
 		

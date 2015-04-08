@@ -84,7 +84,7 @@ namespace Assets.Scripts
 
                 var idx = note.transform.GetSiblingIndex();
 
-                note.name = section.Sources[idx].name;
+                note.name = section.Clips[idx].name;
 
                 float a = idx;
 			

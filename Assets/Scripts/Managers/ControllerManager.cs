@@ -5,6 +5,11 @@ namespace Assets.Scripts.Managers
 {
     public class ControllerManager : MonoBehaviour
     {
+        public InputControlType Modifier;
+        public InputControlType InputControlType;
+
+        public float DeadZone;
+
         public static ControllerManager Controllers { get; private set; }
 
         private readonly InputDevice[] _controllers = new InputDevice[2];
@@ -53,12 +58,51 @@ namespace Assets.Scripts.Managers
             _controllers[oldest] = device;
         }
 
+        
+
+        private bool stickIsLive(InputDevice device)
+        {
+            var foo = new TwoAxisInputControl[] {device.LeftStick, device.RightStick};
+
+            foreach (var baz in foo)
+            {
+                var v = baz.Vector;
+
+                if (v.sqrMagnitude > DeadZone * DeadZone)
+                    return true;
+
+
+
+            }
+
+            return false;
+
+        }
+
         private void Update() {
 
-            foreach(var device in InputManager.Devices) 
-                if (device.AnyButton.WasPressed) 
+            foreach (var device in InputManager.Devices)
+            {
+
+                if (device.AnyButton.WasPressed || stickIsLive(device))
                     RegisterDevice(device);
-        
+
+            }
+
+            foreach (var device in _controllers)
+            {
+                if(device == null)
+                    break;
+
+                if (!device.GetControl(Modifier).IsPressed) 
+                    continue;
+
+                if (device.GetControl(InputControlType).WasPressed)
+                {
+                    Application.LoadLevel(Application.loadedLevel);
+                }
+            }
+
         }
     }
 }

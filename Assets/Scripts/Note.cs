@@ -21,9 +21,9 @@ namespace Assets.Scripts {
             }
         }
 
-        public AudioSource Audio
+        public AudioClip Clip
         {
-            get { return Section.Sources[transform.GetSiblingIndex()]; }
+            get { return Section.Clips[transform.GetSiblingIndex()]; }
         }
 
         public float LocalRadius;
@@ -202,7 +202,7 @@ namespace Assets.Scripts {
 
         private void OnCollision()
         {
-            InstrumentManager.Instance.Play(Audio);
+            InstrumentManager.Instance.Play(Clip);
 
             if(Collision != null)
                 Collision(this);

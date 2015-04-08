@@ -29,18 +29,24 @@ namespace Assets.Scripts.Managers
             }
         }
 
-        public void Play(AudioSource source)
+        public void Play(AudioClip clip)
         {
-            if (source == null)
+            if (clip == null)
             {
-                Debug.LogError("Asked to play null source.");
+                Debug.LogError("Asked to play null clip.");
                 return;
             }
 
+            var obj = new GameObject();
+            
+            var src = obj.AddComponent<AudioSource>();
+            src.clip = clip;
 
-            var obj = (AudioSource) Instantiate(source, Vector3.zero, Quaternion.identity);
-
+            obj.transform.position = Vector3.zero;
+            obj.transform.rotation = Quaternion.identity;
             obj.transform.parent = transform;
+
+            src.Play();
 
         }
 

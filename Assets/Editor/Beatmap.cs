@@ -92,7 +92,7 @@ namespace Assets.Editor
 
             if(GUILayout.Button("", GUILayout.Height (24f))) {
 
-                _bump = (_bump + 1) % _target.Sources.Length;
+                _bump = (_bump + 1) % _target.Clips.Length;
 
             }
 
@@ -100,17 +100,17 @@ namespace Assets.Editor
 
             //EditorGUILayout.LabelField("Notes", style, GUILayout.Height(32f), GUILayout.Width(64f));
 
-            for(var n = 0; n < _target.Sources.Length; ++n) {
+            for(var n = 0; n < _target.Clips.Length; ++n) {
 
-                var idx = (n + _start) % _target.Sources.Length;
+                var idx = (n + _start) % _target.Clips.Length;
 
-                var aus = _target.Sources[idx];
+                var clip = _target.Clips[idx];
 
-                if(GUILayout.Button(aus.name, GUILayout.ExpandHeight (true))) {
+                if(GUILayout.Button(clip.name, GUILayout.ExpandHeight (true))) {
 
                     //bump = n;
 
-                    AudioUtility.PlayClip(aus.clip);
+                    AudioUtility.PlayClip(clip);
 
                 }
 			
@@ -123,7 +123,7 @@ namespace Assets.Editor
                 _bump--;
 
                 if(_bump < 0) {
-                    _bump += _target.Sources.Length;
+                    _bump += _target.Clips.Length;
                 }
 
             }
@@ -194,9 +194,9 @@ namespace Assets.Editor
 
                 EditorGUILayout.EndHorizontal();
 
-                for(var n = 0; n < _target.Sources.Length; ++n) {
+                for(var n = 0; n < _target.Clips.Length; ++n) {
 				
-                    var noteIdx = (n + _start) % _target.Sources.Length;
+                    var noteIdx = (n + _start) % _target.Clips.Length;
 
                     EditorGUILayout.BeginHorizontal();
 
@@ -204,7 +204,7 @@ namespace Assets.Editor
 
                     foreach (var beat in bar.Beats)
                     {
-                        beat.SetNoteCount(_target.Sources.Length);
+                        beat.SetNoteCount(_target.Clips.Length);
 
                         OnNoteToggle(beat.Notes[noteIdx]);
                     }
