@@ -1,47 +1,105 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using InControl;
+﻿using InControl;
+using UnityEngine;
 
 public class ControllerManager : MonoBehaviour
 {
-	public static ControllerManager Controllers { get; private set; }
+    public InputControlType Modifier = InputControlType.Start;
+    public InputControlType InputControlType = InputControlType.Action4;
 
-	private InputDevice[] _controllers = new InputDevice[2];
+    public float DeadZone;
 
-	public InputDevice this[int i] {
-		get {
-			if (_controllers[i] == null) return InputDevice.Null;
-			return _controllers[i];
-		}
-	}
+    public static ControllerManager Controllers { get; private set; }
 
-	private void Start ()
-	{
-		if (Controllers == null) {
-			Controllers = this;
-		} else {
-			Debug.LogError ("A scene should only have one ControllerManager");
-		}
-	}
+    private readonly InputDevice[] _controllers = new InputDevice[2];
 
-	private void Update ()
-	{
-		// Watch out for break and goto abuse...
-		for (int i = 0; i < InputManager.Devices.Count; i++) {
-			if (InputManager.Devices[i].AnyButton.WasPressed) {
-				int oldest = 0;
-				for (int j = 0; j < _controllers.Length; j++) {
-					if (_controllers[j] == null) {
-						oldest = j;
-						break;
-					}
-					if (_controllers[j] == InputManager.Devices[i]) goto End; // C# WHY U NO LABELED CONTINUE???++?+??
-					if (_controllers[oldest].LastChangedAfter(_controllers[j])) oldest = j;
-				}
-				_controllers[oldest] = InputManager.Devices[i];
-			}
-		End:;
-		}
-	}
+    public InputDevice this[int i]
+    {
+        get
+        {
+            return _controllers[i] ?? InputDevice.Null;
+        }
+    }
+
+    private void Start()
+    {
+        if (Controllers == null)
+        {
+            Controllers = this;
+        }
+        else
+        {
+            Debug.LogError("A scene should only have one ControllerManager");
+        }
+    }
+
+    private void RegisterDevice(InputDevice device) {
+
+        var oldest = 0;
+
+        for (var i = 0; i < _controllers.Length; i++) {
+
+            if (_controllers[i] == null) {
+                oldest = i;
+                break;
+            }
+
+            if (_controllers[i] == device) {
+                return;
+            }
+
+            if (_controllers[oldest].LastChangedAfter(_controllers[i])) { 
+                oldest = i; 
+            }
+
+        }
+
+        _controllers[oldest] = device;
+    }
+
+    
+
+    private bool stickIsLive(InputDevice device)
+    {
+        var foo = new TwoAxisInputControl[] {device.LeftStick, device.RightStick};
+
+        foreach (var baz in foo)
+        {
+            var v = baz.Vector;
+
+            if (v.sqrMagnitude > DeadZone * DeadZone)
+                return true;
+
+
+
+        }
+
+        return false;
+
+    }
+
+    private void Update() {
+
+        foreach (var device in InputManager.Devices)
+        {
+
+            if (device.AnyButton.WasPressed || stickIsLive(device))
+                RegisterDevice(device);
+
+        }
+
+        foreach (var device in _controllers)
+        {
+            if(device == null)
+                break;
+
+            if (!device.GetControl(Modifier).IsPressed) 
+                continue;
+
+            if (device.GetControl(InputControlType).WasPressed)
+            {
+                Application.LoadLevel(Application.loadedLevel);
+            }
+        }
+
+    }
 }
