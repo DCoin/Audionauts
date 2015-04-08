@@ -51,5 +51,14 @@ public class MusicManager : MonoBehaviour
 
 			LastSamples = GetComponent<AudioSource>().timeSamples;
 		}
+
+	    
 	}
+
+    void OnGUI()
+    {
+
+        GUI.TextArea(new Rect(0f, 0f, 256f, 32f), BeatsPlayed.ToString());
+
+    }
 }
