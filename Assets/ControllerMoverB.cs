@@ -11,6 +11,10 @@ public class ControllerMoverB : MonoBehaviour {
 	public float speed;
 
 	public int controller;
+
+	public Vector2 disturbance = Vector2.zero;
+
+	public float drag = 0.9f;
 	
 	void Update () {
 		
@@ -35,6 +39,8 @@ public class ControllerMoverB : MonoBehaviour {
 		transform.Translate (axis.Vector * speed
 //		                     * Time.deltaTime
 		                     , Space.World);
+		transform.Translate (disturbance, Space.World);
+		disturbance *= drag;
 
 		transform.localPosition = Vector2.ClampMagnitude (transform.localPosition, radius);
 
