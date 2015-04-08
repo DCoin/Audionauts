@@ -100,14 +100,13 @@ public class MusicManager : MonoBehaviour
     void OnGUI()
     {
 
-		float beats = BeatsPlayed;
-		float bars = beats / 4.0f;
-		float beatOfBar = (bars - ((int)bars)) * 4.0f + 1.0f;
+		var beat = BeatsPlayed;
+		var bar = beat / 4.0f;
+        var beatOfBar = (bar - ((int)bar)) * 4.0f + 1.0f;
 
-        GUI.TextArea(new Rect(0f, 0f, 256f, 32f), "Beat: " + beats.ToString());
+        var text = string.Format("Beat:\n{0}\nBar:\n{1}\nBeat of Bar:\n{2}", beat, bar, beatOfBar);
+
+        GUI.TextArea(new Rect(0f, 0f, 256f, 100f), text);
 		
-		GUI.TextArea (new Rect (0f, 32f, 256f, 32f), "Bar: " + bars.ToString ());
-
-		GUI.TextArea (new Rect (0f, 64f, 256f, 32f), "Beat of Bar: " + beatOfBar.ToString ());
     }
 }

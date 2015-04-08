@@ -24,10 +24,10 @@ public class Slice : MonoBehaviour {
 
 	private List<AudioSource> playing = new List<AudioSource>();
 
-	private AudioSource audio;
+	private AudioSource mAudio;
 
 	void Start() {
-		audio = GetComponent<AudioSource>();
+		mAudio = GetComponent<AudioSource>();
 	}
 
 	void Update() {
@@ -110,8 +110,8 @@ public class Slice : MonoBehaviour {
 		{
 			PlaySource(audioSource);
 		}
-		if (audio != null) {
-			audio.Play();
+		if (mAudio != null) {
+			mAudio.Play();
 		}
 
 
