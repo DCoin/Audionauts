@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Channels;
+using UnityEditor;
 
 [RequireComponent (typeof(AudioSource))]
 public class MusicManager : MonoBehaviour
@@ -9,6 +11,11 @@ public class MusicManager : MonoBehaviour
 
 	private int _timesPlayed = 0;
 	private int LastSamples = 0;
+
+    public Transform startAtBar;
+
+    private bool positionSet = false;
+
 
 	public static MusicManager Instance { get; private set; }
 
@@ -40,11 +47,46 @@ public class MusicManager : MonoBehaviour
 		} else {
 			Debug.LogError ("A scene should only have one MusicManager");
 		}
+
 	}
 	
 	void Update ()
 	{
+
 		if (GetComponent<AudioSource>().isPlaying) {
+
+		    if (!positionSet)
+		    {
+
+		        var startTime = 0f;
+
+		        if (startAtBar != null)
+		        {
+                    startTime = startAtBar.localPosition.z;
+                }
+
+                startTime /= BPS;
+
+                var src = GetComponent<AudioSource>();
+
+
+		        var l = src.clip.length;
+
+		        _timesPlayed = 0;
+
+		        while (startTime >= l)
+		        {
+		            startTime -= l;
+		            _timesPlayed++;
+
+		        }
+
+                src.time = startTime;
+
+		        positionSet = true;
+		    }
+
+
 			if (GetComponent<AudioSource>().timeSamples < LastSamples) {
 				_timesPlayed++;
 			}
