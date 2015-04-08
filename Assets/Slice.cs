@@ -82,8 +82,8 @@ public class Slice : MonoBehaviour {
 
 		}
 
-		if (sliceType == SliceType.First && hit == HitType.First
-			|| sliceType == SliceType.Second && hit == HitType.Second
+		if (sliceType == SliceType.First && (hit == HitType.First || hit == HitType.Both)
+		    || sliceType == SliceType.Second && (hit == HitType.Second  || hit == HitType.Both)
 			|| sliceType == SliceType.Both && hit == HitType.Both
 			|| sliceType == SliceType.Any) {
 
