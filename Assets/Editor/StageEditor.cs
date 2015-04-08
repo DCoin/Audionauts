@@ -29,13 +29,13 @@ public class StageEditor : Editor {
 	void AdjustBars(Stage stage) {
 
 		foreach (Transform bar in stage.GetBars()) {
-
-			int i = GetNumberSuffix(stage.barPrefix, bar.gameObject.name);
-			
-			Vector3 pos = bar.localPosition;
-			pos.z = (float) (i - 1) * 4;
-			bar.localPosition = pos;
-			
+			try {
+				int i = GetNumberSuffix(stage.barPrefix, bar.gameObject.name);
+				
+				Vector3 pos = bar.localPosition;
+				pos.z = (float) (i - 1) * 4;
+				bar.localPosition = pos;
+			} catch (Exception) {}
 		}
 
 	}
