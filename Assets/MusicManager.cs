@@ -7,6 +7,8 @@ using UnityEditor;
 [RequireComponent (typeof(AudioSource))]
 public class MusicManager : MonoBehaviour
 {
+    public bool ShowDebugInfo;
+
 	public int BeatsPerLoop = 32;
 
 	private int _timesPlayed = 0;
@@ -99,14 +101,14 @@ public class MusicManager : MonoBehaviour
 
     void OnGUI()
     {
+        if (!ShowDebugInfo) return;
 
-		var beat = BeatsPlayed;
-		var bar = beat / 4.0f;
-        var beatOfBar = (bar - ((int)bar)) * 4.0f + 1.0f;
+        var beat = BeatsPlayed;
+        var bar = beat/4.0f;
+        var beatOfBar = (bar - ((int) bar))*4.0f + 1.0f;
 
         var text = string.Format("Beat:\n{0}\nBar:\n{1}\nBeat of Bar:\n{2}", beat, bar, beatOfBar);
 
         GUI.TextArea(new Rect(0f, 0f, 256f, 100f), text);
-		
     }
 }
