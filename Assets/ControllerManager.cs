@@ -92,7 +92,11 @@ public class ControllerManager : MonoBehaviour
             if(device == null)
                 break;
 
-			if (device.Action1.WasPressed) {
+            var act =
+                //device.Action1.WasPressed;
+                device.MenuWasPressed;
+
+			if (act) {
 				var audio = MusicManager.Instance.GetComponent<AudioSource>();
 				if (audio.isPlaying) {
 					audio.Pause();
