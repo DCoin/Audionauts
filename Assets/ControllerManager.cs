@@ -95,9 +95,9 @@ public class ControllerManager : MonoBehaviour
             var act =
                 //device.Action1.WasPressed;
                 device.MenuWasPressed;
-
+			
+			var audio = MusicManager.Instance.GetComponent<AudioSource>();
 			if (act) {
-				var audio = MusicManager.Instance.GetComponent<AudioSource>();
 				if (audio.isPlaying) {
 					audio.Pause();
 					Time.timeScale = 0;
@@ -108,11 +108,14 @@ public class ControllerManager : MonoBehaviour
 				}
 			}
 
-            if (!device.GetControl(Modifier).IsPressed) 
-                continue;
+			if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
 
-            if (device.GetControl(InputControlType).WasPressed)
+//            if (!device.GetControl(Modifier).IsPressed) 
+//                continue;
+
+            if (!audio.isPlaying && device.GetControl(InputControlType).WasPressed)
             {
+				Time.timeScale = 1;
                 Application.LoadLevel(Application.loadedLevel);
             }
         }
