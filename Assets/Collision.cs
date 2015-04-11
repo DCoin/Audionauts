@@ -6,6 +6,7 @@ public class Collision : MonoBehaviour
 {
 	public float power;
 	private Radius[] players;
+    public bool disabled;
 
 	void Start ()
 	{
@@ -14,6 +15,12 @@ public class Collision : MonoBehaviour
 
 	void Update ()
 	{
+	    if (Input.GetKeyDown(KeyCode.Space))
+	    {
+	        disabled = !disabled;
+	    }
+
+        if (!disabled)
 		// For some reason i decided to allow any number of players
 		for (int i = 0; i < players.Length; i++) {
 			var curr = players[i];
