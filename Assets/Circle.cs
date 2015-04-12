@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
-[ExecuteInEditMode]
 public class Circle : MonoBehaviour
 {
 
@@ -11,9 +10,14 @@ public class Circle : MonoBehaviour
 
     [Range(4,360)]
     public int Detail = 4;
-	
+
+    void OnValidate()
+    {
+        Refresh();
+    }
+
 	// Update is called once per frame
-	void Update ()
+	public void Refresh ()
 	{
 
         const float tau = Mathf.PI * 2.0f;

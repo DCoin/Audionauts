@@ -2,6 +2,7 @@
 using UnityEditor;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 
 [CustomEditor(typeof(Stage))]
 public class StageEditor : Editor {
@@ -15,6 +16,11 @@ public class StageEditor : Editor {
 
 		if (GUILayout.Button ("Adjust Beats"))
 			AdjustBeats(target as Stage);
+
+	    if (GUILayout.Button("Clean Notes"))
+	    {
+	        CleanNotes(target as Stage);
+	    }
 
 	}
 
@@ -68,4 +74,29 @@ public class StageEditor : Editor {
 
 	}
 
+    static void CleanNotes(Stage stage)
+    {
+        if (stage == null) return;
+
+
+        foreach (var s in stage.transform.GetComponentsInChildren<Slice>(true))
+        {
+            var go = s.gameObject;
+
+            if (go.activeSelf)
+            {
+
+                continue;
+            }
+            else
+            {
+                DestroyImmediate(go);
+
+                Debug.Log("FOOOOO");
+
+            }
+
+        }
+
+    }
 }
