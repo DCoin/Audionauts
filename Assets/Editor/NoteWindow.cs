@@ -1,8 +1,10 @@
 ﻿using Assets.Scripts;
 using Assets.Scripts.Enums;
+using Assets.Scripts.Utilities;
 using System;
 using UnityEditor;
 using UnityEngine;
+
 
 namespace Assets.Editor {
     public class NoteWindow : EditorWindow {
@@ -15,8 +17,6 @@ namespace Assets.Editor {
             GetWindow(typeof(NoteWindow));
 
         }
-
-
 
         private void OnSelectionChange() {
 
@@ -34,11 +34,59 @@ namespace Assets.Editor {
                 return;
             }
 
-            EditorGUILayout.BeginVertical();
+            EditorGUILayout.BeginHorizontal();
 
             OnNoteKinds();
 
-            EditorGUILayout.EndVertical();
+            OnNoteBite();
+
+            EditorGUILayout.EndHorizontal();
+
+        }
+
+        private void OnNoteBite() {
+
+            var section = _target.GetComponentInParent<Section>();
+
+            if(section == null)
+                return;
+
+            EditorGUILayout.BeginHorizontal();
+
+            foreach (var batch in section.SoundBatches)
+            {
+                EditorGUILayout.BeginVertical();
+
+                if (GUILayout.Button(batch.name))
+                {
+                    Selection.activeObject = batch.gameObject;
+                }
+
+                EditorGUILayout.Space();
+
+                var stdColor = GUI.color;
+
+                foreach(var bite in batch.GetComponentsInImmediateChildren<SoundBite>())
+                {
+
+                    GUI.color = bite == _target.SoundBite ? Color.grey : stdColor;
+
+                    if (GUILayout.Button(bite.name))
+                    {
+
+                        AudioUtility.PlayClip(bite.Clip);
+
+                        _target.SoundBite = bite;
+                    }
+                    
+                }
+
+                GUI.color = stdColor;
+
+                EditorGUILayout.EndVertical();
+            }
+            
+            EditorGUILayout.EndHorizontal();
 
         }
         public void OnInspectorUpdate() {
@@ -46,14 +94,17 @@ namespace Assets.Editor {
             Repaint();
         }
 
-        private void OnNoteKinds() {
+        private void OnNoteKinds()
+        {
+
+            EditorGUILayout.BeginVertical();
 
             var stdColor = GUI.color;
 
             foreach(var nk in (NoteKind[]) Enum.GetValues(typeof(NoteKind)))
             {
 
-                GUI.color = nk == _target.Kind ? Color.grey : stdColor;
+                GUI.color = nk == _target.Kind ? _target.CurrentColor : stdColor;
 
                 var s = nk.ToString();
 
@@ -67,6 +118,8 @@ namespace Assets.Editor {
             }
 
             GUI.color = stdColor;
+
+            EditorGUILayout.EndVertical();
 
         }
 

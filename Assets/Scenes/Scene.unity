@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fccf0ed6d3e1b2498554d9f24f819c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundBite: {fileID: 0}
+  SoundBite: {fileID: 750286253}
   LocalRadius: 1.25
   _kind: 4
 --- !u!1 &391206322
@@ -811,6 +811,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f30b98fed568468362daaa88ea655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &510161360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 510161361}
+  - 114: {fileID: 510161362}
+  m_Layer: 0
+  m_Name: Bell 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &510161361
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510161360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2013082710}
+  m_RootOrder: 0
+--- !u!114 &510161362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510161360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 7a27eb19f9ec579448e0936be938e472, type: 3}
+  Volume: 1
 --- !u!1 &518997442
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,14 +882,17 @@ MonoBehaviour:
   PalettePrefab: {fileID: 11418570, guid: af20982165f3ea942a2b7f4ac5f0cc81, type: 2}
   BarPrefab: {fileID: 11457146, guid: da8f1250efaae9947820070c0e28bd8d, type: 2}
   Notes:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
+  - N
+  - NE
+  - E
+  - SE
+  - S
+  - SW
+  - W
+  - NW
+  SoundBatches:
+  - {fileID: 2013082711}
+  - {fileID: 1533145492}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
 --- !u!4 &518997444
@@ -1103,6 +1147,47 @@ MonoBehaviour:
   SoundBite: {fileID: 0}
   LocalRadius: 1.25
   _kind: 3
+--- !u!1 &718885038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 718885039}
+  - 114: {fileID: 718885040}
+  m_Layer: 0
+  m_Name: Bell 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &718885039
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 718885038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533145493}
+  m_RootOrder: 3
+--- !u!114 &718885040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 718885038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 41edfea801e1c084d86ccaa3a102e9e2, type: 3}
+  Volume: 1
 --- !u!1 &736621138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1257,47 @@ MonoBehaviour:
   SoundBite: {fileID: 0}
   LocalRadius: 1.25
   _kind: 0
+--- !u!1 &750286251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 750286252}
+  - 114: {fileID: 750286253}
+  m_Layer: 0
+  m_Name: Bell 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &750286252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750286251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533145493}
+  m_RootOrder: 1
+--- !u!114 &750286253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750286251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 4638f5785eb1a6b4f8b2cd2d1a358173, type: 3}
+  Volume: 1
 --- !u!1 &782564167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,7 +2483,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d66a52ce6568f8d4785dccccc1a220b2, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: .498039216, g: .498039216, b: .498039216, a: 1}
 --- !u!114 &1383037350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2369,9 +2495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fccf0ed6d3e1b2498554d9f24f819c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundBite: {fileID: 0}
+  SoundBite: {fileID: 2035411011}
   LocalRadius: 1.25
-  _kind: 0
+  _kind: 1
 --- !u!1 &1410553957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,6 +2705,90 @@ MonoBehaviour:
   SoundBite: {fileID: 0}
   LocalRadius: 1.25
   _kind: 0
+--- !u!1 &1505993265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1505993266}
+  - 114: {fileID: 1505993267}
+  m_Layer: 0
+  m_Name: Bell 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1505993266
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505993265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533145493}
+  m_RootOrder: 2
+--- !u!114 &1505993267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505993265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: a00ef03f8f4fc9f459937ecfcaa7b403, type: 3}
+  Volume: 1
+--- !u!1 &1533145491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1533145493}
+  - 114: {fileID: 1533145492}
+  m_Layer: 0
+  m_Name: Bells2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1533145492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533145491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5e4c405004ac944a007aeb9c587464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1533145493
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533145491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1747884072}
+  - {fileID: 750286252}
+  - {fileID: 1505993266}
+  - {fileID: 718885039}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &1542277244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,7 +2916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fccf0ed6d3e1b2498554d9f24f819c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundBite: {fileID: 0}
+  SoundBite: {fileID: 718885040}
   LocalRadius: 1.25
   _kind: 0
 --- !u!4 &1580944141
@@ -2721,6 +2931,129 @@ Transform:
   m_Children: []
   m_Father: {fileID: 216158308}
   m_RootOrder: 3
+--- !u!1 &1594281821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1594281823}
+  - 114: {fileID: 1594281822}
+  m_Layer: 0
+  m_Name: Bell 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1594281822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594281821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 8a5898138078a8f48bb65b3999bea435, type: 3}
+  Volume: 1
+--- !u!4 &1594281823
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594281821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2013082710}
+  m_RootOrder: 2
+--- !u!1 &1666205960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1666205961}
+  - 114: {fileID: 1666205962}
+  m_Layer: 0
+  m_Name: Bell 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1666205961
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666205960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2013082710}
+  m_RootOrder: 3
+--- !u!114 &1666205962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666205960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 6c8ede5c9ff3b6141a60d1aafcce4d83, type: 3}
+  Volume: 1
+--- !u!1 &1747884071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1747884072}
+  - 114: {fileID: 1747884073}
+  m_Layer: 0
+  m_Name: Bell 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747884072
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747884071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533145493}
+  m_RootOrder: 0
+--- !u!114 &1747884073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747884071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: f9cc0a5131d5c0749b4a541562973b79, type: 3}
+  Volume: 1
 --- !u!1 &1809843021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,6 +3557,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioSourcePrefab: {fileID: 8289434, guid: 55d60cc297809314b9bb20701f7c504c, type: 2}
   PoolIncrement: 5
+--- !u!1 &2013082709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2013082710}
+  - 114: {fileID: 2013082711}
+  m_Layer: 0
+  m_Name: Bells1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2013082710
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013082709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 510161361}
+  - {fileID: 2035411010}
+  - {fileID: 1594281823}
+  - {fileID: 1666205961}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!114 &2013082711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013082709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5e4c405004ac944a007aeb9c587464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2035411009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2035411010}
+  - 114: {fileID: 2035411011}
+  m_Layer: 0
+  m_Name: Bell 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2035411010
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2035411009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2013082710}
+  m_RootOrder: 1
+--- !u!114 &2035411011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2035411009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1cb59abda75674cb922ed8e4330e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: bcaf1a0506e861345abe63f5a836ec49, type: 3}
+  Volume: 1
 --- !u!1 &2042690423
 GameObject:
   m_ObjectHideFlags: 0

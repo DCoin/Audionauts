@@ -8,6 +8,7 @@ namespace Assets.Scripts
         public ColorPalette PalettePrefab;
         public Bar BarPrefab;
         public string[] Notes;
+        public SoundBatch[] SoundBatches;
         public Beat BeatPrefab;
         public Note NotePrefab;
 

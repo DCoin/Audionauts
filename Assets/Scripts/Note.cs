@@ -27,7 +27,7 @@ namespace Assets.Scripts {
             base.OnCollision();
         }
 
-        private Color CurrentColor {
+        public Color CurrentColor {
             get {
                 var section = GetComponentInParent<Section>();
                 return section.PalettePrefab.GetColor(Kind);
