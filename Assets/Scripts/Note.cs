@@ -45,6 +45,7 @@ namespace Assets.Scripts {
         private static PlayerManager PlayerManager { get { return PlayerManager.Instance; } }
 
         [SerializeField]
+		[HideInInspector]
         private NoteKind _kind;
 
         public NoteKind Kind
