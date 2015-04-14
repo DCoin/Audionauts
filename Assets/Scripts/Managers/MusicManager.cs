@@ -14,22 +14,12 @@ namespace Assets.Scripts.Managers
 
         public static MusicManager Instance { get; private set; }
 
-        public float Position
+        private float Position
         {
-            get { return (float)_audioSource.timeSamples /_audioSource.clip.samples; }
+            get { return (float)_audioSource.timeSamples / _audioSource.clip.samples; }
         }
 
-        public float BeatsPerSecond
-        {
-
-            get
-            {
-                return BeatsPerLoop / _audioSource.clip.length;
-            }
-
-        }
-
-        public float TimesPlayed
+        private float TimesPlayed
         {
             get { return Position + _timesPlayed; }
         }
@@ -55,14 +45,14 @@ namespace Assets.Scripts.Managers
 
         private void Update()
         {
-            if (!GetComponent<AudioSource>().isPlaying) return;
+			if (!_audioSource.isPlaying) return;
 
-            if (GetComponent<AudioSource>().timeSamples < _lastSamples)
+			if (_audioSource.timeSamples < _lastSamples)
             {
                 _timesPlayed++;
             }
 
-            _lastSamples = GetComponent<AudioSource>().timeSamples;
+			_lastSamples = _audioSource.timeSamples;
         }
     }
 }
