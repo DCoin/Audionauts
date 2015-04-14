@@ -9,18 +9,23 @@ using UnityEditor;
 
 namespace Assets.Scripts {
 
-    [RequireComponent(typeof(NoteCollisionHandler))]
     [RequireComponent(typeof(SpriteRenderer))]
-    public class Note : MonoBehaviour {
+    public class Note : CollisionHandler {
         private static CollisionHandler Player1 {
             get { return PlayerManager.Instance.Player1; }
         }
 
         private static CollisionHandler Player2 {
-            get { return PlayerManager.Instance.Player1; }
+            get { return PlayerManager.Instance.Player2; }
         }
 
-        private NoteCollisionHandler Handler { get { return GetComponent<NoteCollisionHandler>(); } }
+        public SoundBite SoundBite;
+
+        public override void OnCollision() {
+            SoundBite.Play();
+
+            base.OnCollision();
+        }
 
         private Color CurrentColor {
             get {
@@ -65,9 +70,14 @@ namespace Assets.Scripts {
         void OnDrawGizmosSelected() {
             var stdColor = Handles.color;
 
-            Handles.color = CurrentColor;
+            Handles.color = Color.Lerp(Color.white, Color.clear, 0.5f);
+
+            Handles.DrawSolidArc(transform.parent.position, transform.forward, transform.localPosition, 5f, transform.localPosition.magnitude);
+            Handles.DrawSolidArc(transform.parent.position, transform.forward, transform.localPosition, -5f, transform.localPosition.magnitude);
+
 
             Handles.DrawSolidDisc(transform.position, transform.forward, GlobalRadius);
+
 
             Handles.color = stdColor;
 
@@ -124,12 +134,13 @@ namespace Assets.Scripts {
 
         }
 
-        private void OnCollisionFirst() {
+        private void OnCollisionFirst()
+        {
             switch(_kind) {
                 case NoteKind.Any:
                 case NoteKind.First:
                     Player1.OnCollision();
-                    Handler.OnCollision();
+                    OnCollision();
                     break;
                 case NoteKind.Second:
                 case NoteKind.Both:
@@ -141,12 +152,13 @@ namespace Assets.Scripts {
             }
         }
 
-        private void OnCollisionSecond() {
+        private void OnCollisionSecond()
+        {
             switch(_kind) {
                 case NoteKind.Any:
                 case NoteKind.Second:
                     Player2.OnCollision();
-                    Handler.OnCollision();
+                    OnCollision();
                     break;
                 case NoteKind.First:
                 case NoteKind.Both:
@@ -163,17 +175,17 @@ namespace Assets.Scripts {
             switch(_kind) {
                 case NoteKind.Second:
                     Player2.OnCollision();
-                    Handler.OnCollision();
+                    OnCollision();
                     break;
                 case NoteKind.First:
                     Player2.OnCollision();
-                    Handler.OnCollision();
+                    OnCollision();
                     break;
                 case NoteKind.Any:
                 case NoteKind.Both:
                     Player1.OnCollision();
                     Player2.OnCollision();
-                    Handler.OnCollision();
+                    OnCollision();
                     break;
                 default:
                     OnCollisionError();

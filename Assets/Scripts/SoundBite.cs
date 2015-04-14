@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class SoundBite : Component
+    public class SoundBite : MonoBehaviour
     {
 
         public AudioClip Clip;
-        public float Volume;
+        public float Volume = 1;
 
         public void Play()
         {

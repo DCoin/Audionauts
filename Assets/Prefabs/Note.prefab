@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fccf0ed6d3e1b2498554d9f24f819c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundBite: {fileID: 0}
   LocalRadius: 1.25
   _kind: 0
 --- !u!212 &21265732

@@ -84,11 +84,11 @@ namespace Assets.Scripts
 
                 var idx = note.transform.GetSiblingIndex();
 
-                note.name = section.Clips[idx].name;
+                note.name = section.Notes[idx];
 
                 float a = idx;
 			
-                note.transform.localPosition = Quaternion.Euler(0f, 0f, a * 360f / b) * (new Vector3(0f, Radius, 0f));
+                note.transform.localPosition = Quaternion.Euler(0f, 0f, -a * 360f / b) * (new Vector3(0f, Radius, 0f));
 
             }
 

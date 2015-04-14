@@ -11,7 +11,7 @@ namespace Assets.Scripts.Enums {
 	};
 	
 	public static class NoteKindExtensions {
-		
+
 		public static NoteKind Next(this NoteKind n) {
 			
 			NoteKind[] ns = (NoteKind[]) Enum.GetValues (typeof(NoteKind));

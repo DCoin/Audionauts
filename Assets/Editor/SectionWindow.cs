@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Assets.Editor
 {
-    public class Beatmap : EditorWindow {
+    public class SectionWindow : EditorWindow {
 
         private Section _target;
 
@@ -39,10 +39,10 @@ namespace Assets.Editor
             }
         }
 
-        [MenuItem ("Window/Beatmap")]
+        [MenuItem ("Window/Section")]
         public static void ShowWindow() {
 		
-            GetWindow (typeof(Beatmap));
+            GetWindow (typeof(SectionWindow));
 		
         }
 
@@ -92,7 +92,7 @@ namespace Assets.Editor
 
             if(GUILayout.Button("", GUILayout.Height (24f))) {
 
-                _bump = (_bump + 1) % _target.Clips.Length;
+                _bump = (_bump + 1) % _target.Notes.Length;
 
             }
 
@@ -100,17 +100,17 @@ namespace Assets.Editor
 
             //EditorGUILayout.LabelField("Notes", style, GUILayout.Height(32f), GUILayout.Width(64f));
 
-            for(var n = 0; n < _target.Clips.Length; ++n) {
+            for(var n = 0; n < _target.Notes.Length; ++n) {
 
-                var idx = (n + _start) % _target.Clips.Length;
+                var idx = (n + _start) % _target.Notes.Length;
 
-                var clip = _target.Clips[idx];
+                var noteName = _target.Notes[idx];
 
-                if(GUILayout.Button(clip.name, GUILayout.ExpandHeight (true))) {
+                if(GUILayout.Button(noteName, GUILayout.ExpandHeight(true))) {
 
                     //bump = n;
 
-                    AudioUtility.PlayClip(clip);
+                    
 
                 }
 			
@@ -123,7 +123,7 @@ namespace Assets.Editor
                 _bump--;
 
                 if(_bump < 0) {
-                    _bump += _target.Clips.Length;
+                    _bump += _target.Notes.Length;
                 }
 
             }
@@ -194,9 +194,9 @@ namespace Assets.Editor
 
                 EditorGUILayout.EndHorizontal();
 
-                for(var n = 0; n < _target.Clips.Length; ++n) {
-				
-                    var noteIdx = (n + _start) % _target.Clips.Length;
+                for(var n = 0; n < _target.Notes.Length; ++n) {
+
+                    var noteIdx = (n + _start) % _target.Notes.Length;
 
                     EditorGUILayout.BeginHorizontal();
 
@@ -204,7 +204,7 @@ namespace Assets.Editor
 
                     foreach (var beat in bar.Beats)
                     {
-                        beat.SetNoteCount(_target.Clips.Length);
+                        beat.SetNoteCount(_target.Notes.Length);
 
                         OnNoteToggle(beat.Notes[noteIdx]);
                     }
@@ -314,11 +314,14 @@ namespace Assets.Editor
 
             SceneView.RepaintAll();
         }
+        public void OnInspectorUpdate() {
+            // This will only get called 10 times per second.
+            Repaint();
+        }
 
         private void OnNoteToggle(Note note) {
 
             var stdColor = GUI.color;
-
 
             if(note.Kind != NoteKind.None) {
 
@@ -327,10 +330,14 @@ namespace Assets.Editor
             }
 
             if(GUILayout.Button("", GUILayout.ExpandHeight (true))) {
-			
-                note.Kind = note.Kind.Next();
 
-                SceneView.RepaintAll();
+                Selection.activeObject = note.gameObject;
+
+                SceneView.lastActiveSceneView.FrameSelected();
+			
+                //note.Kind = note.Kind.Next();
+
+                //SceneView.RepaintAll();
 			
             }
 		

@@ -6,8 +6,8 @@ namespace Assets.Scripts
     public class Section : MonoBehaviour {
 
         public ColorPalette PalettePrefab;
-        public AudioClip[] Clips;
         public Bar BarPrefab;
+        public string[] Notes;
         public Beat BeatPrefab;
         public Note NotePrefab;
 
@@ -32,7 +32,10 @@ namespace Assets.Scripts
 
             bar.transform.SetSiblingIndex(index);
 
-            bar.AddBeat();
+            for (int i = 0; i < 4; ++i)
+            {
+                bar.AddBeat();
+            }
 
             RefreshChildren();
 
