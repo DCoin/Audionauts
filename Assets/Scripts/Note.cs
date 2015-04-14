@@ -1,85 +1,71 @@
-﻿using Assets.Scripts.Enums;
+﻿using Assets.Scripts.CollisionHandlers;
+using Assets.Scripts.Enums;
 using Assets.Scripts.Managers;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
+
 namespace Assets.Scripts {
 
+    [RequireComponent(typeof(NoteCollisionHandler))]
     [RequireComponent(typeof(SpriteRenderer))]
-    public class Note : MonoBehaviour
-    {
-        public delegate void CollisionEventHandler(object sender);
-
-        public event CollisionEventHandler Collision;
-
-        public Section Section
-        {
-            get
-            {
-                return GetComponentInParent<Section>();
-
-            }
+    public class Note : MonoBehaviour {
+        private static CollisionHandler Player1 {
+            get { return PlayerManager.Instance.Player1; }
         }
 
-        public AudioClip Clip
-        {
-            get { return Section.Clips[transform.GetSiblingIndex()]; }
+        private static CollisionHandler Player2 {
+            get { return PlayerManager.Instance.Player1; }
+        }
+
+        private NoteCollisionHandler Handler { get { return GetComponent<NoteCollisionHandler>(); } }
+
+        private Color CurrentColor {
+            get {
+                var section = GetComponentInParent<Section>();
+                return section.PalettePrefab.GetColor(Kind);
+            }
         }
 
         public float LocalRadius;
 
-        public float GlobalRadius
-        {
-            get
-            {
-
+        public float GlobalRadius {
+            get {
                 var s = transform.lossyScale;
-
                 return LocalRadius * (s.x + s.y) / 2f;
 
             }
         }
 
-        private static PlayerManager PlayerManager { get { return PlayerManager.Instance; } }
-
         [SerializeField]
-		[HideInInspector]
+        [HideInInspector]
         private NoteKind _kind;
 
-        public NoteKind Kind
-        {
+        public NoteKind Kind {
 
             get { return _kind; }
 
-            set
-            {
+            set {
                 _kind = value;
                 RefreshColor();
             }
 
         }
 
-        private Color CurrentColor()
-        {
-            return Section.PalettePrefab.GetColor(Kind);
-        }
-
-        public void RefreshColor()
-        {
+        public void RefreshColor() {
 
             var spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.color = CurrentColor();
+            spriteRenderer.color = CurrentColor;
 
         }
-		
+
 #if UNITY_EDITOR
-        private void OnDrawGizmosSelected()
-        {
+        void OnDrawGizmosSelected() {
             var stdColor = Handles.color;
 
-            Handles.color = CurrentColor();
+            Handles.color = CurrentColor;
 
             Handles.DrawSolidDisc(transform.position, transform.forward, GlobalRadius);
 
@@ -88,8 +74,7 @@ namespace Assets.Scripts {
         }
 #endif
 
-        private bool CollidesWith(Transform subject)
-        {
+        private bool CollidesWith(Transform subject) {
             Vector2 a = transform.position;
             Vector2 b = subject.position;
 
@@ -102,21 +87,19 @@ namespace Assets.Scripts {
 
         }
 
-        public void ResolveCollisions()
-        {
-            if (_kind == NoteKind.None)
+        public void ResolveCollisions() {
+            if(_kind == NoteKind.None)
                 return;
 
             var c = 0;
 
-            if (CollidesWith(PlayerManager.Player1.transform))
+            if(CollidesWith(Player1.transform))
                 c += 1;
 
-            if (CollidesWith(PlayerManager.Player2.transform))
+            if(CollidesWith(Player2.transform))
                 c += 2;
 
-            switch (c)
-            {
+            switch(c) {
                 // No hits.
                 case 0:
                     // Do nothing.
@@ -141,14 +124,12 @@ namespace Assets.Scripts {
 
         }
 
-        private void OnCollisionFirst()
-        {
-            switch (_kind)
-            {
+        private void OnCollisionFirst() {
+            switch(_kind) {
                 case NoteKind.Any:
                 case NoteKind.First:
-                    PlayerManager.Player1.OnCollision();
-                    OnCollision();
+                    Player1.OnCollision();
+                    Handler.OnCollision();
                     break;
                 case NoteKind.Second:
                 case NoteKind.Both:
@@ -160,14 +141,12 @@ namespace Assets.Scripts {
             }
         }
 
-        private void OnCollisionSecond()
-        {
-            switch (_kind)
-            {
+        private void OnCollisionSecond() {
+            switch(_kind) {
                 case NoteKind.Any:
                 case NoteKind.Second:
-                    PlayerManager.Player2.OnCollision();
-                    OnCollision();
+                    Player2.OnCollision();
+                    Handler.OnCollision();
                     break;
                 case NoteKind.First:
                 case NoteKind.Both:
@@ -180,23 +159,21 @@ namespace Assets.Scripts {
 
         }
 
-        private void OnCollisionBoth()
-        {
-            switch (_kind)
-            {
+        private void OnCollisionBoth() {
+            switch(_kind) {
                 case NoteKind.Second:
-                    PlayerManager.Player2.OnCollision();
-                    OnCollision();
+                    Player2.OnCollision();
+                    Handler.OnCollision();
                     break;
                 case NoteKind.First:
-                    PlayerManager.Player2.OnCollision();
-                    OnCollision();
+                    Player2.OnCollision();
+                    Handler.OnCollision();
                     break;
                 case NoteKind.Any:
                 case NoteKind.Both:
-                    PlayerManager.Player1.OnCollision();
-                    PlayerManager.Player2.OnCollision();
-                    OnCollision();
+                    Player1.OnCollision();
+                    Player2.OnCollision();
+                    Handler.OnCollision();
                     break;
                 default:
                     OnCollisionError();
@@ -205,17 +182,7 @@ namespace Assets.Scripts {
 
         }
 
-        private void OnCollision()
-        {
-            InstrumentManager.Instance.Play(Clip);
-
-            if(Collision != null)
-                Collision(this);
-
-        }
-
-        private static void OnCollisionError()
-        {
+        private static void OnCollisionError() {
             Debug.LogError("Unexpected result in collision detection.");
         }
 

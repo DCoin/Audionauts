@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.CollisionHandlers;
+using UnityEngine;
 
 namespace Assets.Scripts.Managers
 {
