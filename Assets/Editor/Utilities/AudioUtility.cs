@@ -3,7 +3,7 @@ using UnityEditor;
 using System;
 using System.Reflection;
 
-public class AudioUtility : MonoBehaviour {
+public static class AudioUtility {
 
 	public static void PlayClip(AudioClip clip) {
 

@@ -1,7 +1,9 @@
 ﻿using Assets.Scripts.Enums;
 using Assets.Scripts.Managers;
-using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Assets.Scripts {
 
@@ -70,7 +72,8 @@ namespace Assets.Scripts {
             spriteRenderer.color = CurrentColor();
 
         }
-
+		
+#if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
             var stdColor = Handles.color;
@@ -82,6 +85,7 @@ namespace Assets.Scripts {
             Handles.color = stdColor;
 
         }
+#endif
 
         private bool CollidesWith(Transform subject)
         {
