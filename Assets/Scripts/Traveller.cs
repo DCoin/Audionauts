@@ -21,7 +21,7 @@ namespace Assets.Scripts
 
             var pos = transform.localPosition;
 
-            pos.z = MusicManager.Instance.BeatsPlayed;
+            pos.z = MusicManager.Instance.SmoothBeatsPlayed;
 
             transform.localPosition = pos;
         }
