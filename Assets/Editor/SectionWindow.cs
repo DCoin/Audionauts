@@ -11,7 +11,7 @@ namespace Assets.Editor
 
         private static int _start;
 
-        private const int BarsShown = 3;
+        private const int BarsShown = 1;
 
         private static int _currentBar;
 
@@ -202,8 +202,20 @@ namespace Assets.Editor
 
                     var bar = _target.Bars[barIdx];
 
+                    int i = 0;
+
                     foreach (var beat in bar.Beats)
                     {
+
+                        
+
+                        if (i == 4) {
+                            i -= 4;
+                            EditorGUILayout.Space();
+                        }
+
+                        i++;
+
                         beat.SetNoteCount(_target.Notes.Length);
 
                         OnNoteToggle(beat.Notes[noteIdx]);
@@ -216,8 +228,10 @@ namespace Assets.Editor
                 EditorGUILayout.BeginHorizontal();
 
                 OnBeatAdd(barIdx);
-			
+
                 OnBeatRemove(barIdx);
+
+                GUILayout.Label(_target.Bars[barIdx].Beats.Length.ToString() + " Beats");
 
                 EditorGUILayout.EndHorizontal();
 			
@@ -272,23 +286,37 @@ namespace Assets.Editor
         }
 
         private void OnBeatAdd(int index) {
-            if (!GUILayout.Button("+1", GUILayout.Height(24f))) 
-                return;
 
-            _target.Bars[index].AddBeat();
+            var bar = _target.Bars[index];
+
+            if (!GUILayout.Button("*2", GUILayout.Height(24f))) return;
+
+            var l = bar.Beats.Length;
+
+                
+            for (var i = 0; i < l; ++i) {
+                bar.AddBeat();
+            }
+                
 
             SceneView.RepaintAll();
         }
 	
         private void OnBeatRemove(int index) {
 
+            var bar = _target.Bars[index];
 
-            if(GUILayout.Button("-1", GUILayout.Height(24f))) {
+            if (!GUILayout.Button("/2", GUILayout.Height(24f))) return;
 
-                _target.Bars[index].RemoveBeat();
+            var l = bar.Beats.Length / 2;
 
+
+            for(var i = 0; i < l; ++i) {
+                bar.RemoveBeat();
             }
 
+
+            SceneView.RepaintAll();
         }
 	
         private bool OnBarRemove(int index) {
@@ -323,10 +351,12 @@ namespace Assets.Editor
 
             var stdColor = GUI.color;
 
-            if(note.Kind != NoteKind.None) {
+            if (note.Kind != NoteKind.None) {
 
                 GUI.color = _target.PalettePrefab.GetColor(note.Kind);
 
+            } else {
+                GUI.color = Color.black;
             }
 
             if(GUILayout.Button("", GUILayout.ExpandHeight (true))) {
