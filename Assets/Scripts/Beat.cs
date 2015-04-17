@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Assets.Scripts.Managers;
 using UnityEngine;
 
@@ -96,7 +96,7 @@ namespace Assets.Scripts
 
         private void LateUpdate()
         {
-            var traveller = PlayerManager.Instance.Traveller;
+            var traveller = StageManager.Instance.Traveller;
 
             var za = traveller.LastPosition.z;
 
@@ -104,12 +104,20 @@ namespace Assets.Scripts
 
             var zb = traveller.CurrentPosition.z;
 
-            if (!(za < z) || !(z < zb)) 
-                return;
+            var diff = zb - za;
+            
+            if ((zb < z) && (z < zb + diff * 1.5)) {
+                foreach (var note in Notes)
+                {
+                    note.ResolveCollisions(true);
+                }
+            }
 
-            foreach (var note in Notes)
-            {
-                note.ResolveCollisions();
+            if ((za < z) && (z < zb)) {
+                foreach (var note in Notes)
+                {
+                    note.ResolveCollisions(false);
+                }
             }
         }
 
