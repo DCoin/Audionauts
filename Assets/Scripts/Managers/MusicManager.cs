@@ -7,6 +7,8 @@ namespace Assets.Scripts.Managers
     {
         public int BeatsPerLoop = 32;
 
+        public Section StartAtSection;
+
         private AudioSource _audioSource;
 
         private int _timesPlayed;
@@ -66,6 +68,22 @@ namespace Assets.Scripts.Managers
 
             _audioSource = GetComponent<AudioSource>();
 
+
+
+            if (StartAtSection != null) {
+                float startBeat = StartAtSection.transform.localPosition.z * 4;
+                while (startBeat > BeatsPerLoop) {
+                    startBeat -= BeatsPerLoop;
+                    _timesPlayed++;
+                }
+
+                var prog = startBeat/BeatsPerLoop;
+                _audioSource.timeSamples = (int) (prog*_audioSource.clip.samples);
+
+
+            }
+
+
             // The value of this should lie between 0 and 10000 and only matters for the first XFRAMES frames
             var sampleGuess = 1000;
             for (int i = 0; i < XFRAMES; i++) {
@@ -104,6 +122,10 @@ namespace Assets.Scripts.Managers
 
             // Prepare for the next frame
             _currentFrame = (_currentFrame + 1) % XFRAMES;
+
+
+            // Start placement code
+
 
 			if (_audioSource.timeSamples < _lastSamples)
             {

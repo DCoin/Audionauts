@@ -12,6 +12,19 @@ namespace Assets.Scripts
         public Beat BeatPrefab;
         public Note NotePrefab;
 
+        public Section NextSection;
+
+        void OnValidate() {
+
+            if (NextSection == null)
+                return;
+
+            var pos = NextSection.transform.localPosition;
+            pos.z = Bars.Length + transform.localPosition.z;
+            NextSection.transform.localPosition = pos;
+
+        }
+
         public Bar[] Bars {
 		
             get {
@@ -68,7 +81,7 @@ namespace Assets.Scripts
 
                 var idx = b.transform.GetSiblingIndex();
 
-                b.name = "Bar" + idx;
+                b.name = "Bar" + (idx+1);
 
                 b.transform.localPosition = new Vector3(0f, 0f, idx);
 
