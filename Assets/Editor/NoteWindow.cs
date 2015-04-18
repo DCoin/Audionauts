@@ -34,6 +34,8 @@ namespace Assets.Editor {
                 return;
             }
 
+            title = "Note";
+
             EditorGUILayout.BeginHorizontal();
 
             OnNoteKinds();
@@ -89,9 +91,10 @@ namespace Assets.Editor {
             EditorGUILayout.EndHorizontal();
 
         }
-        public void OnInspectorUpdate() {
+        public void Update() {
             // This will only get called 10 times per second.
             Repaint();
+            
         }
 
         private void OnNoteKinds()

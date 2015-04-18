@@ -56,7 +56,9 @@ namespace Assets.Scripts
                 }
             }
 
-            transform.Translate(axis.Vector * Speed * Time.deltaTime, Space.World);
+            transform.Translate(axis.Vector * Speed 
+                * Time.deltaTime
+                , Space.World);
 
             transform.localPosition = Vector2.ClampMagnitude(transform.localPosition, Radius);
 
