@@ -55,6 +55,18 @@ namespace Assets.Scripts.Managers
             get { return SmoothTimesPlayed * BeatsPerLoop; }
         }
 
+        // The time the clip base clip has been playing (Used for comparing to the general dsp time scale)
+        private float dspTimePlayed
+        {
+            get { return _timesPlayed * _audioSource.clip.length + _audioSource.time; }
+        }
+
+        // The time when the clip started playing on the general dsp time scale
+        private double dspStart
+        {
+            get { return AudioSettings.dspTime - dspTimePlayed; }
+        }
+
         private void Start()
         {
             if (Instance == null)
@@ -133,6 +145,16 @@ namespace Assets.Scripts.Managers
             }
             
             _lastSamples = _audioSource.timeSamples;
+        }
+
+        private float BeatsInSeconds(float Beats)
+        {
+            return _audioSource.clip.length / BeatsPerLoop * Beats;
+        }
+
+        public double BeatsOnDSP(float Beats)
+        {
+            return dspStart + BeatsInSeconds(Beats);
         }
     }
 }

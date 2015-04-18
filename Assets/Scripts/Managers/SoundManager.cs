@@ -73,21 +73,35 @@ namespace Assets.Scripts.Managers
             return _audioSourcePool[_objectCount++];
         }
 
-        public void Play(SoundBite bite)
+        // Plays the sound bite at the given beat.
+        public AudioSource Play(SoundBite bite, float Beats = 0, bool pre = false)
         {
             if (bite == null || bite.Clip == null)
             {
                 Debug.LogError("Asked to play null clip.");
-                return;
+                return null;
             }
 
             var instance = GetNextInstance();
             instance.clip = bite.Clip;
             instance.volume = bite.Volume;
-            instance.Play();
+            if (Beats == 0) instance.Play();
+            else {
+                var time = MusicManager.Instance.BeatsOnDSP(Beats);
+                // If the given beat is in the future schedule the instance to play there.
+                if (time >= AudioSettings.dspTime) {
+                    //Debug.Log("PrePlaying: " + time + " dpsTime: " + AudioSettings.dspTime);
+                    instance.PlayScheduled(time);
+                }
+                // If it is in the past play it immediately and offset its time so it is playing at the correct timing.
+                else {
+                    instance.Play();
+                    instance.time = (float)(AudioSettings.dspTime - time);
+                }
+            }
 
+            return instance;
         }
-
     }
 }
 

@@ -11,21 +11,30 @@ namespace Assets.Scripts {
 
     [RequireComponent(typeof(SpriteRenderer))]
     public class Note : CollisionHandler {
+        // Is used to store an audiosource if it has been prepared
+        private AudioSource playing;
+
         private static CollisionHandler Player1 {
-            get { return PlayerManager.Instance.Player1; }
+            get { return StageManager.Instance.Player1; }
         }
 
         private static CollisionHandler Player2 {
-            get { return PlayerManager.Instance.Player2; }
+            get { return StageManager.Instance.Player2; }
         }
 
         public SoundBite SoundBite;
 
-        public override void OnCollision() {
-            SoundBite.Play();
+        public override void OnCollision(bool pre) {
+            //Debug.Log("SongPosition: " + SongPosition + " BeatsPlayed: " + MusicManager.Instance.BeatsPlayed);
+            if (pre && playing == null) playing = SoundBite.Play(SongPosition, true);
+            else if (playing == null) playing = SoundBite.Play(SongPosition);
 
-            base.OnCollision();
+            base.OnCollision(pre);
         }
+
+//        public void Update() {
+//            if (playing != null) Debug.Log ("Shouldhaplayed: " + (MusicManager.Instance.BeatsPlayed - SongPosition) + " HasPlayed: " + playing.time);
+//        }
 
         public Color CurrentColor {
             get {
@@ -57,6 +66,10 @@ namespace Assets.Scripts {
                 RefreshColor();
             }
 
+        }
+
+        private float SongPosition {
+            get { return transform.position.z / StageManager.Instance.Stage.localScale.z; }
         }
 
         public void RefreshColor() {
@@ -97,7 +110,7 @@ namespace Assets.Scripts {
 
         }
 
-        public void ResolveCollisions() {
+        public void ResolveCollisions(bool pre) {
             if(_kind == NoteKind.None)
                 return;
 
@@ -116,15 +129,15 @@ namespace Assets.Scripts {
                     break;
                 // Only first player.
                 case 1:
-                    OnCollisionFirst();
+                    OnCollisionFirst(pre);
                     break;
                 // Only second player.
                 case 2:
-                    OnCollisionSecond();
+                    OnCollisionSecond(pre);
                     break;
                 // Both players.
                 case 3:
-                    OnCollisionBoth();
+                    OnCollisionBoth(pre);
                     break;
                 // This case should not happen.
                 default:
@@ -134,13 +147,13 @@ namespace Assets.Scripts {
 
         }
 
-        private void OnCollisionFirst()
+        private void OnCollisionFirst(bool pre)
         {
             switch(_kind) {
                 case NoteKind.Any:
                 case NoteKind.First:
-                    Player1.OnCollision();
-                    OnCollision();
+                    Player1.OnCollision(pre);
+                    OnCollision(pre);
                     break;
                 case NoteKind.Second:
                 case NoteKind.Both:
@@ -152,13 +165,13 @@ namespace Assets.Scripts {
             }
         }
 
-        private void OnCollisionSecond()
+        private void OnCollisionSecond(bool pre)
         {
             switch(_kind) {
                 case NoteKind.Any:
                 case NoteKind.Second:
-                    Player2.OnCollision();
-                    OnCollision();
+                    Player2.OnCollision(pre);
+                    OnCollision(pre);
                     break;
                 case NoteKind.First:
                 case NoteKind.Both:
@@ -171,21 +184,21 @@ namespace Assets.Scripts {
 
         }
 
-        private void OnCollisionBoth() {
+        private void OnCollisionBoth(bool pre) {
             switch(_kind) {
                 case NoteKind.Second:
-                    Player2.OnCollision();
-                    OnCollision();
+                    Player2.OnCollision(pre);
+                    OnCollision(pre);
                     break;
                 case NoteKind.First:
-                    Player2.OnCollision();
-                    OnCollision();
+                    Player2.OnCollision(pre);
+                    OnCollision(pre);
                     break;
                 case NoteKind.Any:
                 case NoteKind.Both:
-                    Player1.OnCollision();
-                    Player2.OnCollision();
-                    OnCollision();
+                    Player1.OnCollision(pre);
+                    Player2.OnCollision(pre);
+                    OnCollision(pre);
                     break;
                 default:
                     OnCollisionError();

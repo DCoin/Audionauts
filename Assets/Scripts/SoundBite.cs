@@ -9,9 +9,9 @@ namespace Assets.Scripts
         public AudioClip Clip;
         public float Volume = 1;
 
-        public void Play()
+        public AudioSource Play(float Beat = 0, bool pre = false)
         {
-            SoundManager.Instance.Play(this);
+            return SoundManager.Instance.Play(this, Beat, pre);
         }
 
     }

@@ -3,13 +3,14 @@ using UnityEngine;
 
 namespace Assets.Scripts.Managers
 {
-    public class PlayerManager : MonoBehaviour
+    public class StageManager : MonoBehaviour
     {
         public Traveller Traveller;
         public CollisionHandler Player1;
         public CollisionHandler Player2;
+        public Transform Stage;
 
-        public static PlayerManager Instance { get; private set; }
+        public static StageManager Instance { get; private set; }
 
         private void Start()
         {
