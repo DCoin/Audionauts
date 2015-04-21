@@ -26,8 +26,8 @@ namespace Assets.Scripts {
 
         public override void OnCollision(bool pre) {
             //Debug.Log("SongPosition: " + SongPosition + " BeatsPlayed: " + MusicManager.Instance.BeatsPlayed);
-            if (pre && playing == null) playing = SoundBite.Play(SongPosition, true);
-            else if (playing == null) playing = SoundBite.Play(SongPosition);
+            if (pre && playing == null) playing = SoundBite.Play(BeatPosition, true);
+            else if (playing == null) playing = SoundBite.Play(BeatPosition);
 
             base.OnCollision(pre);
         }
@@ -68,8 +68,8 @@ namespace Assets.Scripts {
 
         }
 
-        private float SongPosition {
-            get { return transform.position.z / StageManager.Instance.Stage.localScale.z; }
+        private float BeatPosition {
+            get { return transform.position.z / StageManager.Instance.Stage.localScale.z / Traveller.BeatScaling; }
         }
 
         public void RefreshColor() {
