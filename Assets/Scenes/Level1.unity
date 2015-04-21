@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: f0d9887671e64444589040a5ca429aac, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &2705158
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 12e273273cd9d4407a8a572f9e49cd58, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &4496670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,7 +4296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: d5e2183405c334dbfbbe40a4622bd1ee, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &60461954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4820,7 +4820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 28d54e64451e9451f89cdbabf0a6d374, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &68083530
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,7 +4941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 7fd006c34065345b9ae4470b48511587, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &70054222
 GameObject:
   m_ObjectHideFlags: 0
@@ -8932,7 +8932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 7f76dbf8508d448daaef8233ff08b74a, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &130323924
 GameObject:
   m_ObjectHideFlags: 0
@@ -10302,7 +10302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 4c3406023df114e908f6009e05a66f6a, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &156123191
 GameObject:
   m_ObjectHideFlags: 0
@@ -10383,7 +10383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 8b5084b14686449e4840a589a9bbde8e, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &157861385
 GameObject:
   m_ObjectHideFlags: 0
@@ -18549,7 +18549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: ab0e9f42317c447d7befc7f6468facb0, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &277146376
 GameObject:
   m_ObjectHideFlags: 0
@@ -19893,7 +19893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 7fb749251a53f49148942a9e030479e8, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &310163549
 GameObject:
   m_ObjectHideFlags: 0
@@ -23355,7 +23355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: fb978b5f44db44d578dcdc685ddd2c74, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &370759760
 GameObject:
   m_ObjectHideFlags: 0
@@ -27952,7 +27952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: bdb8bed3b0f624c008de2a506119b919, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &443344123
 GameObject:
   m_ObjectHideFlags: 0
@@ -32133,7 +32133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: c6d8893c06c184143b3d8ce2136e9c30, type: 3}
-  Volume: 1
+  Volume: .300000012
 --- !u!1 &515685429
 GameObject:
   m_ObjectHideFlags: 0
@@ -33830,7 +33830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 8e24a91113ddd45b4aaa36e0e70831ca, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1001 &542468833
 Prefab:
   m_ObjectHideFlags: 0
@@ -35475,7 +35475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 2b74ed80c59914bf1aa0c3c21c5ea22c, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &569159208
 GameObject:
   m_ObjectHideFlags: 0
@@ -36797,7 +36797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 6f0eab4627dea40dfb16662d728a0903, type: 3}
-  Volume: 1
+  Volume: .300000012
 --- !u!1 &588638061
 GameObject:
   m_ObjectHideFlags: 0
@@ -42945,7 +42945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 28bea25e55c8f412aaaabef69501b513, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &685162261
 GameObject:
   m_ObjectHideFlags: 0
@@ -48612,7 +48612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: d79a652dfca1e42baa129065d2e8d3a3, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &762786600
 GameObject:
   m_ObjectHideFlags: 0
@@ -50014,7 +50014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: e62a831d50c4644fdac279ea2176cca4, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!4 &786515680 stripped
 Transform:
   m_PrefabParentObject: {fileID: 481502, guid: 5d131e9203f5fec4791e86f719c0d4bd, type: 2}
@@ -52882,7 +52882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 89e96bee379e64dc8ab6f7518d68f09b, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &832897146
 GameObject:
   m_ObjectHideFlags: 0
@@ -54148,7 +54148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 1b1c33e24ab4e4b8c86984f8f7974074, type: 3}
-  Volume: 1
+  Volume: .300000012
 --- !u!1 &859295453
 GameObject:
   m_ObjectHideFlags: 0
@@ -59010,7 +59010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: b846c7d5c98c94fe583c8a6f96a63df8, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &942062931
 GameObject:
   m_ObjectHideFlags: 0
@@ -59291,7 +59291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: b24932bbc1a5d4934a27f300bad88902, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &948922774
 GameObject:
   m_ObjectHideFlags: 0
@@ -59372,7 +59372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 1073b49915d3a46baa5908aa03678987, type: 3}
-  Volume: 1
+  Volume: .300000012
 --- !u!1 &950744986
 GameObject:
   m_ObjectHideFlags: 0
@@ -62934,7 +62934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 49de9fd97212f49418bae71e871bc09a, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1008627649
 GameObject:
   m_ObjectHideFlags: 0
@@ -63424,7 +63424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 0571ed46840494b748a8fd0c33735202, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1014959942
 GameObject:
   m_ObjectHideFlags: 0
@@ -66450,7 +66450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 5746dc0379a9949e4ac5cf00e3b6ab18, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!4 &1052518517
 Transform:
   m_ObjectHideFlags: 0
@@ -67781,7 +67781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: becbaef7db06346a39524d42dcdd55b7, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1076622730
 GameObject:
   m_ObjectHideFlags: 0
@@ -70917,7 +70917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 96e3f4777a3c6405b80cb55d20d9feb2, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1127904004
 GameObject:
   m_ObjectHideFlags: 0
@@ -72245,7 +72245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: d5f231928e40c4dfdac479bb7bd669ef, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1145495753
 GameObject:
   m_ObjectHideFlags: 0
@@ -76692,7 +76692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 28c4a284c7b894f209eb6152882486b1, type: 3}
-  Volume: 1
+  Volume: .300000012
 --- !u!1 &1201359680
 GameObject:
   m_ObjectHideFlags: 0
@@ -76934,7 +76934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: c9fa72721779c4d7985c7356952d59b5, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1206267906
 GameObject:
   m_ObjectHideFlags: 0
@@ -78467,7 +78467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: c9b1dd96b4f454cee920963c0d37cb42, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1235814339
 GameObject:
   m_ObjectHideFlags: 0
@@ -80716,7 +80716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 70323d7efb9cd42eb859b439214b6e6b, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1268137205
 GameObject:
   m_ObjectHideFlags: 0
@@ -82211,7 +82211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: ab119478a3f654269bd53a13e8ace00e, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!4 &1286446527
 Transform:
   m_ObjectHideFlags: 0
@@ -82788,7 +82788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 1d0dd84454fe640ddb935e5669c6be9e, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1297107402
 GameObject:
   m_ObjectHideFlags: 0
@@ -88674,7 +88674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: deb4e948c18864d13876827fa31a10f2, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!4 &1398262831
 Transform:
   m_ObjectHideFlags: 0
@@ -89504,7 +89504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 160ca1b4dec54408ca6365866eb0c305, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1407163479
 GameObject:
   m_ObjectHideFlags: 0
@@ -90210,7 +90210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 74c38cf140d6c4817aa4ec8a804048c0, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1423036266
 GameObject:
   m_ObjectHideFlags: 0
@@ -95811,7 +95811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: e23b85ddb87d447a49e4ade2425290d4, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1491892858
 GameObject:
   m_ObjectHideFlags: 0
@@ -97468,7 +97468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 8d031c4137f9b473a84103bf08b5f016, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1526026483
 GameObject:
   m_ObjectHideFlags: 0
@@ -98338,7 +98338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 64bf7a205ed8a4ffa9964c9231a03e3c, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1541036456
 GameObject:
   m_ObjectHideFlags: 0
@@ -98419,7 +98419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 7fa20bed4009740d1ae7cd56fe2310d1, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1541856043
 GameObject:
   m_ObjectHideFlags: 0
@@ -98655,7 +98655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 28a17a52bf6b2473891db7ae4447e208, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1543634550
 GameObject:
   m_ObjectHideFlags: 0
@@ -102828,7 +102828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 4248c93ca4da647d3890fb68caab79a2, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1605399389
 GameObject:
   m_ObjectHideFlags: 0
@@ -103980,7 +103980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 8217b7c45d4094d928dbe6922254656b, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1617502408
 GameObject:
   m_ObjectHideFlags: 0
@@ -105782,7 +105782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 046ec5c824182436face78fa9b618dba, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1660682504
 GameObject:
   m_ObjectHideFlags: 0
@@ -106829,7 +106829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 4f7fa63159ed84a1b9ae78b91ebb11d1, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1674488840
 GameObject:
   m_ObjectHideFlags: 0
@@ -108029,7 +108029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 81de64c4145ef4fe8ac511b5fd47b3c1, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1686562719
 GameObject:
   m_ObjectHideFlags: 0
@@ -113473,7 +113473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 1276d5a9011554d619e5b8172ee49691, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1780685732
 GameObject:
   m_ObjectHideFlags: 0
@@ -119230,7 +119230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 8de14776ea2ca4db5ac87b6c37aaca28, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1862549121
 GameObject:
   m_ObjectHideFlags: 0
@@ -119622,7 +119622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 9cdc042093c6e436a92fa017bdec7511, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1864675018
 GameObject:
   m_ObjectHideFlags: 0
@@ -119946,7 +119946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 6c0a1781ea1b547cc8e89f36d12bf743, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1871087789
 GameObject:
   m_ObjectHideFlags: 0
@@ -121088,7 +121088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 923db8bdb4cba451ab62f28af4a31a32, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1890771821
 GameObject:
   m_ObjectHideFlags: 0
@@ -122444,7 +122444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: f50badfda14e6463f90c22f857f5a632, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1909161841
 GameObject:
   m_ObjectHideFlags: 0
@@ -123534,7 +123534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: e77a1e17b749d49d9a0fd71cfa73b8dc, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1929049371
 GameObject:
   m_ObjectHideFlags: 0
@@ -125880,7 +125880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 1da1d7419e24e4999aa744127f2f21b6, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1962742557
 GameObject:
   m_ObjectHideFlags: 0
@@ -127527,7 +127527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 81e65dff1a2e6477886ce0054eaad8ee, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1984036407
 GameObject:
   m_ObjectHideFlags: 0
@@ -128703,7 +128703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 13549b01885e8486cb1dbd1916e5041d, type: 3}
-  Volume: 1
+  Volume: .5
 --- !u!1 &1997962841
 GameObject:
   m_ObjectHideFlags: 0
@@ -137851,4 +137851,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: 21f275f23dc5a41318840c35b18e8ee1, type: 3}
-  Volume: 1
+  Volume: .5
