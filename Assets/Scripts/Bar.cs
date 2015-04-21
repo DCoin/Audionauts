@@ -55,10 +55,14 @@ namespace Assets.Scripts
             foreach(var beat in Beats) {
 			
                 var idx = beat.transform.GetSiblingIndex();
-			
+
                 beat.name = "Beat" + (idx+1);
 
                 float a = idx;
+
+                var section = GetComponentInParent<Section>();
+
+                beat.SetNoteCount(section.Notes.Length);
 
                 beat.transform.localPosition = new Vector3(0f, 0f, a/b);
 

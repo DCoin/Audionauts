@@ -14,6 +14,8 @@ namespace Assets.Scripts {
         // Is used to store an audiosource if it has been prepared
         private AudioSource playing;
 
+        public int Index = -1;
+
         private static CollisionHandler Player1 {
             get { return StageManager.Instance.Player1; }
         }

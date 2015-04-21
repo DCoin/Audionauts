@@ -3,30 +3,29 @@ using Assets.Scripts.Enums;
 using UnityEditor;
 using UnityEngine;
 
-namespace Assets.Editor
-{
+namespace Assets.Editor {
     public class BarWindow : EditorWindow {
 
-        private Bar _target;
+        private Bar target;
 
-        private readonly GUIStyle _style = new GUIStyle { alignment = TextAnchor.MiddleCenter };
+        private readonly GUIStyle style = new GUIStyle { alignment = TextAnchor.MiddleCenter };
 
-        private static int _start;
+        private static int start;
 
-        private int _bump;
+        private int bump;
 
-        [MenuItem ("Window/Bar")]
+        [MenuItem("Window/Bar")]
         public static void ShowWindow() {
-		
-            GetWindow (typeof(BarWindow));
-		
+
+            GetWindow(typeof(BarWindow));
+
         }
 
         private void OnSelectionChange() {
 
             var g = Selection.activeGameObject;
 
-            _target = g != null ? g.GetComponentInParent<Bar>() : null;
+            target = g != null ? g.GetComponentInParent<Bar>() : null;
 
             Repaint();
 
@@ -36,19 +35,19 @@ namespace Assets.Editor
 
             title = "Bar";
 
-            if(_target == null) {
+            if(target == null) {
                 return;
             }
 
-            _start += _bump;
-            _bump = 0;
+            start += bump;
+            bump = 0;
 
 
             EditorGUILayout.BeginHorizontal();
 
-            OnNotesColumn();	
+            OnNotesColumn();
 
-            OnBarsAndBeats ();
+            OnBarsAndBeats();
 
             EditorGUILayout.EndHorizontal();
 
@@ -56,7 +55,7 @@ namespace Assets.Editor
 
         private string[] Notes { get { return Section.Notes; } }
 
-        private Section Section { get { return _target.GetComponentInParent<Section>(); } }
+        private Section Section { get { return target.GetComponentInParent<Section>(); } }
 
         private void OnNotesColumn() {
 
@@ -67,9 +66,9 @@ namespace Assets.Editor
 
             GUI.color = Color.gray;
 
-            if(GUILayout.Button("", GUILayout.Height (24f))) {
+            if(GUILayout.Button("", GUILayout.Height(24f))) {
 
-                _bump = (_bump + 1) % Notes.Length;
+                bump = (bump + 1) % Notes.Length;
 
             }
 
@@ -79,39 +78,39 @@ namespace Assets.Editor
 
             for(var n = 0; n < Notes.Length; ++n) {
 
-                var idx = (n + _start) % Notes.Length;
+                var idx = (n + start) % Notes.Length;
 
                 var noteName = Notes[idx];
 
                 if(GUILayout.Button(noteName, GUILayout.ExpandHeight(true))) {
 
-                    _bump = n;
+                    bump = n;
 
                 }
-			
+
             }
 
             GUI.color = Color.gray;
-		
-            if(GUILayout.Button("", GUILayout.Height (24f))) {
-			
-                _bump--;
 
-                if(_bump < 0) {
-                    _bump += Notes.Length;
+            if(GUILayout.Button("", GUILayout.Height(24f))) {
+
+                bump--;
+
+                if(bump < 0) {
+                    bump += Notes.Length;
                 }
 
             }
-		
+
             GUI.color = stdColor;
-		
-            EditorGUILayout.EndVertical ();
+
+            EditorGUILayout.EndVertical();
 
         }
 
         private void OnBarsAndBeats() {
 
-            EditorGUILayout.BeginHorizontal(_style);
+            EditorGUILayout.BeginHorizontal(style);
 
             EditorGUILayout.BeginVertical();
 
@@ -123,18 +122,17 @@ namespace Assets.Editor
 
             for(var n = 0; n < Notes.Length; ++n) {
 
-                var noteIdx = (n + _start) % Notes.Length;
+                var noteIdx = (n + start) % Notes.Length;
 
                 EditorGUILayout.BeginHorizontal();
 
                 int i = 0;
 
-                foreach (var beat in _target.Beats)
-                {
+                foreach(var beat in target.Beats) {
 
-                        
 
-                    if (i == 4) {
+
+                    if(i == 4) {
                         i -= 4;
                         EditorGUILayout.Space();
                     }
@@ -143,11 +141,11 @@ namespace Assets.Editor
 
                     beat.SetNoteCount(Notes.Length);
 
-                    OnNoteToggle(beat.Notes[noteIdx]);
+                    OnNoteToggle(beat, noteIdx);
                 }
 
                 EditorGUILayout.EndHorizontal();
-				
+
             }
 
             EditorGUILayout.BeginHorizontal();
@@ -156,49 +154,51 @@ namespace Assets.Editor
 
             OnBeatRemove();
 
-            GUILayout.Label(_target.Beats.Length.ToString() + " Beats");
+            GUILayout.Label(target.Beats.Length.ToString() + " Beats");
 
             EditorGUILayout.EndHorizontal();
-			
+
             EditorGUILayout.EndVertical();
-		
+
             EditorGUILayout.EndHorizontal();
 
         }
 
         private void OnBarFocus() {
 
-            if (!GUILayout.Button(_target.name, GUILayout.Height(24f))) 
+            if(!GUILayout.Button(target.name, GUILayout.Height(24f)))
                 return;
 
-            Selection.activeObject = _target.gameObject;
-			
+            Selection.activeObject = target.gameObject;
+
             SceneView.lastActiveSceneView.FrameSelected();
         }
 
         private void OnBeatAdd() {
 
-            if (!GUILayout.Button("*2", GUILayout.Height(24f))) return;
+            if(!GUILayout.Button("*2", GUILayout.Height(24f)))
+                return;
 
-            var l = _target.Beats.Length;
-
-                
-            for (var i = 0; i < l; ++i) {
-                _target.AddBeat();
-            }
-            
-            SceneView.RepaintAll();
-        }
-	
-        private void OnBeatRemove() {
-
-            if (!GUILayout.Button("/2", GUILayout.Height(24f))) return;
-
-            var l = _target.Beats.Length / 2;
+            var l = target.Beats.Length;
 
 
             for(var i = 0; i < l; ++i) {
-                _target.RemoveBeat();
+                target.AddBeat();
+            }
+
+            SceneView.RepaintAll();
+        }
+
+        private void OnBeatRemove() {
+
+            if(!GUILayout.Button("/2", GUILayout.Height(24f)))
+                return;
+
+            var l = target.Beats.Length / 2;
+
+
+            for(var i = 0; i < l; ++i) {
+                target.RemoveBeat();
             }
 
             SceneView.RepaintAll();
@@ -209,35 +209,39 @@ namespace Assets.Editor
             Repaint();
         }
 
-        private void OnNoteToggle(Note note) {
+        private void OnNoteToggle(Beat beat, int noteIdx) {
 
             var stdColor = GUI.color;
 
-            if (note.Kind != NoteKind.None) {
+            var kind = beat.GetNoteKind(noteIdx);
 
-                GUI.color = Section.PalettePrefab.GetColor(note.Kind);
+            if(kind != NoteKind.None) {
+
+                GUI.color = Section.PalettePrefab.GetColor(kind);
 
             } else {
                 GUI.color = Color.black;
             }
 
-            if(GUILayout.Button("", GUILayout.ExpandHeight (true))) {
+            if(GUILayout.Button("", GUILayout.ExpandHeight(true))) {
+
+                var note = beat[noteIdx];
 
                 Selection.activeObject = note.gameObject;
 
                 var v = SceneView.lastActiveSceneView;
                 if(v != null)
                     v.FrameSelected();
-			
+
                 //note.Kind = note.Kind.Next();
 
                 //SceneView.RepaintAll();
-			
+
             }
-		
+
             GUI.color = stdColor;
-		
+
         }
-	
+
     }
 }

@@ -1,93 +1,100 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts.Enums;
 using Assets.Scripts.Managers;
 using UnityEngine;
 
-namespace Assets.Scripts
-{
+namespace Assets.Scripts {
     public class Beat : MonoBehaviour {
 
         public float Radius;
 
-        public Note[] Notes {
-		
-            get {
+        private IEnumerable<Note> Notes {
 
-                var inotes = 
+            get {
+                return
                     from note in transform.GetComponentsInChildren<Note>()
                     where note.transform.parent == transform
                     select note;
-
-                return inotes.ToArray();
-
-            }
-		
-        }
-
-        public void SetNoteCount(int count) {
-
-            var diff = Notes.Length - count;
-
-            if(diff > 0) {
-
-                RemoveNotes(diff);
-
-            }
-
-            if(diff < 0) {
-
-                AddNotes(-diff);
-
             }
 
         }
 
-	
-        public void AddNotes(int count) {
+        private Note AddNote(int index) {
 
             var section = GetComponentInParent<Section>();
 
-            for(var i = 0; i < count; ++i) {
+            var note = (Note) Instantiate(section.NotePrefab, Vector3.zero, Quaternion.identity);
 
-                var note = (Note) Instantiate(section.NotePrefab, Vector3.zero, Quaternion.identity);
-			
-                note.transform.parent = transform;
-			
-                note.transform.SetAsLastSibling();
+            note.transform.parent = transform;
 
-            }
+            note.Index = index;
+
+            note.transform.SetAsLastSibling();
 
             RefreshChildren();
+
+            return note;
 
         }
-	
-        public void RemoveNotes(int count) {
 
-            for(var i = 0; i < count; ++i) {
+        public NoteKind GetNoteKind(int i) {
+            if(i < 0 || i >= noteCount)
+                throw new IndexOutOfRangeException();
 
-                DestroyImmediate(transform.GetChild(transform.childCount-1).gameObject);
+            foreach(var note in Notes.Where(note => i == note.Index)) {
+                return note.Kind;
+            }
+
+            return NoteKind.None;
+        }
+
+        public Note this[int i] {
+            get {
+                if(i < 0 || i >= noteCount)
+                    throw new IndexOutOfRangeException();
+
+                foreach(var note in Notes.Where(note => i == note.Index)) {
+                    return note;
+                }
+
+                return AddNote(i);
 
             }
-		
-            RefreshChildren();
-		
+        }
+
+        private int noteCount;
+
+        public void SetNoteCount(int count) {
+
+            noteCount = count;
+
         }
 
         public void RefreshChildren() {
 
             var section = GetComponentInParent<Section>();
 
-            float b = Notes.Length;
-		
+            float b = noteCount;
+
             foreach(var note in Notes) {
 
-                note.RefreshColor();
+                if (note.Kind == NoteKind.None) {
+                    DestroyImmediate(note.gameObject);
+                    continue;
+                }
 
-                var idx = note.transform.GetSiblingIndex();
+                if (note.Index == -1) {
+                    note.Index = note.transform.GetSiblingIndex();
+                }
 
+                var idx = note.Index;
+                
                 note.name = section.Notes[idx];
 
                 float a = idx;
-			
+
                 note.transform.localPosition = Quaternion.Euler(0f, 0f, -a * 360f / b) * (new Vector3(0f, Radius, 0f));
 
                 note.RefreshColor();
@@ -96,8 +103,7 @@ namespace Assets.Scripts
 
         }
 
-        private void LateUpdate()
-        {
+        private void LateUpdate() {
             var traveller = StageManager.Instance.Traveller;
 
             var za = traveller.LastPosition.z;
@@ -107,17 +113,15 @@ namespace Assets.Scripts
             var zb = traveller.CurrentPosition.z;
 
             var diff = zb - za;
-            
-            if ((zb < z) && (z < zb + diff * 1.5)) {
-                foreach (var note in Notes)
-                {
+
+            if((zb < z) && (z < zb + diff * 1.5)) {
+                foreach(var note in Notes) {
                     note.ResolveCollisions(true);
                 }
             }
 
-            if ((za < z) && (z < zb)) {
-                foreach (var note in Notes)
-                {
+            if((za < z) && (z < zb)) {
+                foreach(var note in Notes) {
                     note.ResolveCollisions(false);
                 }
             }
