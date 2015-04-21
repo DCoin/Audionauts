@@ -10,7 +10,7 @@ namespace Assets.Scripts.Managers
 
         private List<AudioSource> _audioSourcePool;
 
-        public int PoolIncrement = 5;
+        public int PoolIncrement = 20;
 
         private int PoolSize
         {

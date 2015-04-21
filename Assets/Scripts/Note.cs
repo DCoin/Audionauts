@@ -8,8 +8,6 @@ using UnityEditor;
 
 
 namespace Assets.Scripts {
-
-    [RequireComponent(typeof(SpriteRenderer))]
     public class Note : CollisionHandler {
         // Is used to store an audiosource if it has been prepared
         private AudioSource playing;
@@ -26,14 +24,27 @@ namespace Assets.Scripts {
 
         public SoundBite SoundBite;
 
-        public override void OnCollision(bool pre) {
+        public override void OnCollision(bool pre, bool success) {
             //Debug.Log("SongPosition: " + SongPosition + " BeatsPlayed: " + MusicManager.Instance.BeatsPlayed);
-            if (pre && playing == null) playing = SoundBite.Play(BeatPosition, true);
-            else if (playing == null) playing = SoundBite.Play(BeatPosition);
+            if (success) {
+                if (pre && playing == null) playing = SoundBite.Play(BeatPosition, true);
+                else if (playing == null) playing = SoundBite.Play(BeatPosition);
+            }
 
-			if (!pre) GrooveManager.Instance.Groove += 1;
+            if (!pre) GrooveManager.Instance.Groove += 1;
 
-            base.OnCollision(pre);
+            base.OnCollision(pre, success);
+        }
+
+        void Start() {
+
+            var model = ModelManager.Instance.NoteModel;
+            model = Instantiate(model);
+            model.transform.parent = transform;
+            model.transform.localPosition = Vector3.zero;
+            model.transform.localRotation = Quaternion.identity;
+            model.transform.localScale = Vector3.one;
+
         }
 
 //        public void Update() {
@@ -57,37 +68,17 @@ namespace Assets.Scripts {
             }
         }
 
-        [SerializeField]
-        [HideInInspector]
-        private NoteKind _kind;
-
-        public NoteKind Kind {
-
-            get { return _kind; }
-
-            set {
-                _kind = value;
-                RefreshColor();
-            }
-
-        }
+        public NoteKind Kind;
 
         private float BeatPosition {
             get { return transform.position.z / StageManager.Instance.Stage.localScale.z / Traveller.BeatScaling; }
-        }
-
-        public void RefreshColor() {
-
-            var spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.color = CurrentColor;
-
         }
 
 #if UNITY_EDITOR
         void OnDrawGizmosSelected() {
             var stdColor = Handles.color;
 
-            Handles.color = Color.Lerp(Color.white, Color.clear, 0.5f);
+            Handles.color = Color.Lerp(CurrentColor, Color.clear, 0.5f);
 
             Handles.DrawSolidArc(transform.parent.position, transform.forward, transform.localPosition, 5f, transform.localPosition.magnitude);
             Handles.DrawSolidArc(transform.parent.position, transform.forward, transform.localPosition, -5f, transform.localPosition.magnitude);
@@ -115,7 +106,7 @@ namespace Assets.Scripts {
         }
 
         public void ResolveCollisions(bool pre) {
-            if(_kind == NoteKind.None)
+            if(Kind == NoteKind.None)
                 return;
 
             var c = 0;
@@ -129,6 +120,7 @@ namespace Assets.Scripts {
             switch(c) {
                 // No hits.
                 case 0:
+                    OnCollision(pre, false);
                     // Do nothing.
                     break;
                 // Only first player.
@@ -153,15 +145,15 @@ namespace Assets.Scripts {
 
         private void OnCollisionFirst(bool pre)
         {
-            switch(_kind) {
+            switch(Kind) {
                 case NoteKind.Any:
                 case NoteKind.First:
-                    Player1.OnCollision(pre);
-                    OnCollision(pre);
+                    Player1.OnCollision(pre, true);
+                    OnCollision(pre, true);
                     break;
                 case NoteKind.Second:
                 case NoteKind.Both:
-                    // Do nothing.
+                    OnCollision(pre, false);
                     break;
                 default:
                     OnCollisionError();
@@ -171,15 +163,15 @@ namespace Assets.Scripts {
 
         private void OnCollisionSecond(bool pre)
         {
-            switch(_kind) {
+            switch(Kind) {
                 case NoteKind.Any:
                 case NoteKind.Second:
-                    Player2.OnCollision(pre);
-                    OnCollision(pre);
+                    Player2.OnCollision(pre, true);
+                    OnCollision(pre, true);
                     break;
                 case NoteKind.First:
                 case NoteKind.Both:
-                    // Do nothing.
+                    OnCollision(pre, false);
                     break;
                 default:
                     OnCollisionError();
@@ -189,20 +181,20 @@ namespace Assets.Scripts {
         }
 
         private void OnCollisionBoth(bool pre) {
-            switch(_kind) {
+            switch(Kind) {
                 case NoteKind.Second:
-                    Player2.OnCollision(pre);
-                    OnCollision(pre);
+                    Player2.OnCollision(pre, true);
+                    OnCollision(pre, true);
                     break;
                 case NoteKind.First:
-                    Player2.OnCollision(pre);
-                    OnCollision(pre);
+                    Player2.OnCollision(pre, true);
+                    OnCollision(pre, true);
                     break;
                 case NoteKind.Any:
                 case NoteKind.Both:
-                    Player1.OnCollision(pre);
-                    Player2.OnCollision(pre);
-                    OnCollision(pre);
+                    Player1.OnCollision(pre, true);
+                    Player2.OnCollision(pre, true);
+                    OnCollision(pre, true);
                     break;
                 default:
                     OnCollisionError();

@@ -14,7 +14,7 @@ namespace Assets.Scripts {
 
             get {
                 return
-                    from note in transform.GetComponentsInChildren<Note>()
+                    from note in transform.GetComponentsInChildren<Note>(true)
                     where note.transform.parent == transform
                     select note;
             }
@@ -96,8 +96,6 @@ namespace Assets.Scripts {
                 float a = idx;
 
                 note.transform.localPosition = Quaternion.Euler(0f, 0f, -a * 360f / b) * (new Vector3(0f, Radius, 0f));
-
-                note.RefreshColor();
 
             }
 

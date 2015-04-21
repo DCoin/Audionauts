@@ -9,7 +9,7 @@ namespace Assets.Scripts
 		
             get {
                 var ibeats = 
-                    from note in transform.GetComponentsInChildren<Beat>()
+                    from note in transform.GetComponentsInChildren<Beat>(true)
                     where note.transform.parent == transform
                     select note;
 			

@@ -16,7 +16,7 @@ namespace Assets.Scripts
 		
             get {
                 var ibars = 
-                    from note in transform.GetComponentsInChildren<Bar>()
+                    from note in transform.GetComponentsInChildren<Bar>(true)
                     where note.transform.parent == transform
                     select note;
 			
