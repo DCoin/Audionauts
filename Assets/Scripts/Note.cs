@@ -29,6 +29,8 @@ namespace Assets.Scripts {
             if (pre && playing == null) playing = SoundBite.Play(BeatPosition, true);
             else if (playing == null) playing = SoundBite.Play(BeatPosition);
 
+			if (!pre) GrooveManager.Instance.Groove += 1;
+
             base.OnCollision(pre);
         }
 
