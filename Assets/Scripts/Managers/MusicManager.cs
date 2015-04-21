@@ -19,7 +19,7 @@ namespace Assets.Scripts.Managers
         private int[] _lastXFrames = new int[XFRAMES];
         private int _currentFrame = 0;
         private int _sumLastXFrames = 0;
-        private float _smoothFramesPlayed = 0;
+        private float _smoothSamplesPlayed = 0;
         // private Vector3 lastPoint;
         // private Vector3 lastAVGPoint;
 
@@ -40,14 +40,14 @@ namespace Assets.Scripts.Managers
             get { return TimesPlayed * BeatsPerLoop; }
         }
 
-        private int FramesPlayed
+        private int SamplesPlayed
         {
             get { return _audioSource.timeSamples + _timesPlayed * _audioSource.clip.samples; }
         }
 
         private float SmoothTimesPlayed
         {
-            get { return _smoothFramesPlayed / _audioSource.clip.samples; }
+            get { return _smoothSamplesPlayed / _audioSource.clip.samples; }
         }
         
         public float SmoothBeatsPlayed
@@ -83,7 +83,12 @@ namespace Assets.Scripts.Managers
 
 
             if (StartAtSection != null) {
-                float startBeat = StartAtSection.transform.localPosition.z * 4;
+                float startBeat = StartAtSection.transform.localPosition.z / Traveller.BeatScaling;
+
+				// Offset the smoothing
+				_smoothSamplesPlayed = startBeat / BeatsPerLoop * _audioSource.clip.samples;
+				_lastSamples = (int) _smoothSamplesPlayed;
+
                 while (startBeat > BeatsPerLoop) {
                     startBeat -= BeatsPerLoop;
                     _timesPlayed++;
@@ -91,7 +96,6 @@ namespace Assets.Scripts.Managers
 
                 var prog = startBeat/BeatsPerLoop;
                 _audioSource.timeSamples = (int) (prog*_audioSource.clip.samples);
-
 
             }
 
@@ -118,9 +122,9 @@ namespace Assets.Scripts.Managers
             _sumLastXFrames += _lastXFrames[_currentFrame];
 
             // Add the predicted change
-            _smoothFramesPlayed += _sumLastXFrames / XFRAMES;
+            _smoothSamplesPlayed += _sumLastXFrames / XFRAMES;
             // Correct for errors
-            _smoothFramesPlayed += (FramesPlayed - _smoothFramesPlayed) * ERRORCORRECTION;
+            _smoothSamplesPlayed += (SamplesPlayed - _smoothSamplesPlayed) * ERRORCORRECTION;
             // TODO Make sure this correction does not make it go backwards
 
             /* Code for visualising the smoothing
@@ -143,7 +147,7 @@ namespace Assets.Scripts.Managers
             {
                 _timesPlayed++;
             }
-            
+
             _lastSamples = _audioSource.timeSamples;
         }
 
