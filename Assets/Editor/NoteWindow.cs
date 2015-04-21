@@ -73,6 +73,10 @@ namespace Assets.Editor {
 
                     GUI.color = bite == _target.SoundBite ? Color.grey : stdColor;
 
+                    var stdAlignment = GUI.skin.button.alignment;
+
+                    GUI.skin.button.alignment = TextAnchor.MiddleLeft;
+
                     if (GUILayout.Button(bite.name))
                     {
 
@@ -80,7 +84,9 @@ namespace Assets.Editor {
 
                         _target.SoundBite = bite;
                     }
-                    
+
+                    GUI.skin.button.alignment = stdAlignment;
+
                 }
 
                 GUI.color = stdColor;

@@ -225,7 +225,9 @@ namespace Assets.Editor
 
                 Selection.activeObject = note.gameObject;
 
-                SceneView.lastActiveSceneView.FrameSelected();
+                var v = SceneView.lastActiveSceneView;
+                if(v != null)
+                    v.FrameSelected();
 			
                 //note.Kind = note.Kind.Next();
 
