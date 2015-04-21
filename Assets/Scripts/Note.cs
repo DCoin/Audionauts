@@ -38,7 +38,7 @@ namespace Assets.Scripts {
 
         void Start() {
 
-            var model = ModelManager.Instance.NoteModel;
+            var model = GetComponentInParent<Section>().NoteModelPrefab;
             model = Instantiate(model);
             model.transform.parent = transform;
             model.transform.localPosition = Vector3.zero;

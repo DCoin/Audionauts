@@ -1,14 +1,19 @@
 ﻿using Assets.Scripts.CollisionHandlers;
+using Assets.Scripts.Managers;
 using UnityEngine;
 
 namespace Assets.Scripts {
 
     public class NoteHitAnimator : MonoBehaviour {
 
+        public AnimationCurve Animation;
         public AnimationCurve SucessAnimation;
         public AnimationCurve FailureAnimation;
 
-        public bool Success;
+        private MusicManager mm;
+
+
+        private bool hitSuccess;
 
         public float Length = 1;
 
@@ -16,19 +21,22 @@ namespace Assets.Scripts {
 
         private Vector3 localScale;
 
-        private bool play = false;
+        private bool hit = false;
 
         private void OnCollision(object sender, bool pre, bool success) {
 
             if (pre)
                 return;
 
-            play = true;
-            Success = success;
+            hit = true;
+            hitSuccess = success;
         }
 
         // Use this for initialization
         void Start () {
+
+            mm = MusicManager.Instance;
+
 
             var note = (CollisionHandler) GetComponentInParent<Note>();
 
@@ -41,16 +49,25 @@ namespace Assets.Scripts {
         // Update is called once per frame
         void Update () {
 
-            if (!play)
-                return;
+            if (!hit) {
 
-            time += Time.deltaTime / Length;
+                var t = mm.SmoothBeatsPlayed;
+                t -= (int) t;
 
-            var animation = Success ? SucessAnimation : FailureAnimation;
-	    
-            var value = animation.Evaluate(time);
+                var v = Animation.Evaluate(t);
 
-            transform.localScale = value*localScale;
+                transform.localScale = v*localScale;
+
+            } else {
+
+                time += Time.deltaTime/Length;
+
+                var anim = hitSuccess ? SucessAnimation : FailureAnimation;
+
+                var value = anim.Evaluate(time);
+
+                transform.localScale = value*localScale;
+            }
 
 
         }

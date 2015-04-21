@@ -10,7 +10,10 @@ namespace Assets.Scripts
         public string[] Notes;
         public SoundBatch[] SoundBatches;
         public Beat BeatPrefab;
+        
         public Note NotePrefab;
+        public GameObject NoteModelPrefab;
+
 
         public Bar[] Bars {
 		

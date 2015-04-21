@@ -111,6 +111,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2f8a58e5d056c42b159d62f6382fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Animation:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .25
+      value: .75
+      inSlope: 3.82802511e-07
+      outSlope: 3.82802511e-07
+      tangentMode: 0
+    - time: .5
+      value: .899999976
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .75
+      value: .75
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
   SucessAnimation:
     serializedVersion: 2
     m_Curve:
@@ -146,7 +176,6 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-  Success: 1
   Length: .25
 --- !u!114 &11436294
 MonoBehaviour:

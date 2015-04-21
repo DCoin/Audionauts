@@ -6016,46 +6016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
---- !u!1 &89267583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 89267585}
-  - 114: {fileID: 89267584}
-  m_Layer: 0
-  m_Name: ModelManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &89267584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 89267583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a4ea90590562d644970f1c972c0e016, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NoteModel: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
---- !u!4 &89267585
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 89267583}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 557459182}
-  m_RootOrder: 6
 --- !u!1 &89763293
 GameObject:
   m_ObjectHideFlags: 0
@@ -19992,6 +19952,7 @@ MonoBehaviour:
   - {fileID: 893226633}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &310492948
 GameObject:
   m_ObjectHideFlags: 0
@@ -20170,6 +20131,7 @@ MonoBehaviour:
   - {fileID: 117144267}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &315914143
 GameObject:
   m_ObjectHideFlags: 0
@@ -21864,6 +21826,7 @@ MonoBehaviour:
   - {fileID: 893226633}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &342397915
 GameObject:
   m_ObjectHideFlags: 0
@@ -31460,6 +31423,7 @@ MonoBehaviour:
   - {fileID: 739131589}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &507499187
 GameObject:
   m_ObjectHideFlags: 0
@@ -32377,6 +32341,7 @@ MonoBehaviour:
   - {fileID: 117144267}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!4 &518997444
 Transform:
   m_ObjectHideFlags: 0
@@ -34626,7 +34591,6 @@ Transform:
   - {fileID: 1012735841}
   - {fileID: 1944857758}
   - {fileID: 508817340}
-  - {fileID: 89267585}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &557460761
@@ -35538,6 +35502,7 @@ MonoBehaviour:
   - {fileID: 739131589}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &569887654
 GameObject:
   m_ObjectHideFlags: 0
@@ -42862,6 +42827,7 @@ MonoBehaviour:
   - {fileID: 739131589}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &680462494
 GameObject:
   m_ObjectHideFlags: 0
@@ -44995,6 +44961,7 @@ MonoBehaviour:
   - {fileID: 739131589}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &714532372
 GameObject:
   m_ObjectHideFlags: 0
@@ -49315,6 +49282,7 @@ MonoBehaviour:
   - {fileID: 117144267}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &771180222
 GameObject:
   m_ObjectHideFlags: 0
@@ -54328,6 +54296,7 @@ MonoBehaviour:
   - {fileID: 739131589}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &864478631
 GameObject:
   m_ObjectHideFlags: 0
@@ -66601,6 +66570,7 @@ MonoBehaviour:
   - {fileID: 117144267}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1054354882
 GameObject:
   m_ObjectHideFlags: 0
@@ -75204,6 +75174,7 @@ MonoBehaviour:
   - {fileID: 117144267}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1180316588
 GameObject:
   m_ObjectHideFlags: 0
@@ -89727,6 +89698,7 @@ MonoBehaviour:
   - {fileID: 1184677370}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1409738945
 GameObject:
   m_ObjectHideFlags: 0
@@ -105339,6 +105311,7 @@ MonoBehaviour:
   - {fileID: 117144267}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1646853505
 GameObject:
   m_ObjectHideFlags: 0
@@ -111493,6 +111466,7 @@ MonoBehaviour:
   - {fileID: 739131589}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1749271672
 GameObject:
   m_ObjectHideFlags: 0
@@ -113612,6 +113586,7 @@ MonoBehaviour:
   - {fileID: 893226633}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1783291411
 GameObject:
   m_ObjectHideFlags: 0
@@ -116801,6 +116776,7 @@ MonoBehaviour:
   - {fileID: 117144267}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1827302627
 GameObject:
   m_ObjectHideFlags: 0
@@ -120565,6 +120541,7 @@ MonoBehaviour:
   - {fileID: 893226633}
   BeatPrefab: {fileID: 11424082, guid: 1054ea40bffb32e4e80a1672dbd3bf34, type: 2}
   NotePrefab: {fileID: 11480366, guid: 8abb672312c57904cb9a32736bd038d1, type: 2}
+  NoteModelPrefab: {fileID: 140016, guid: 0d0e36e8aee234c46a80e1694f1bbb01, type: 2}
 --- !u!1 &1881566999
 GameObject:
   m_ObjectHideFlags: 0
