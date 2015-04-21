@@ -41,7 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   First: {r: 1, g: 0, b: 1, a: 1}
   Second: {r: 0, g: 1, b: 1, a: 1}
-  Both: {r: 0, g: 0, b: 1, a: 1}
+  Both: {r: 1, g: .724137902, b: 0, a: 1}
   Any: {r: .498039216, g: .498039216, b: .498039216, a: 1}
   None: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &100100000
