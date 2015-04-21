@@ -48,7 +48,7 @@ namespace Assets.Scripts
 		
         }
 
-        private void RefreshChildren() {
+        public void RefreshChildren() {
 
             float b = Beats.Length;
 
@@ -56,11 +56,13 @@ namespace Assets.Scripts
 			
                 var idx = beat.transform.GetSiblingIndex();
 			
-                beat.name = "Beat" + idx;
+                beat.name = "Beat" + (idx+1);
 
                 float a = idx;
 
                 beat.transform.localPosition = new Vector3(0f, 0f, a/b);
+
+                beat.RefreshChildren();
 			
             }
 		

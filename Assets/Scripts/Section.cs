@@ -12,19 +12,6 @@ namespace Assets.Scripts
         public Beat BeatPrefab;
         public Note NotePrefab;
 
-        public Section NextSection;
-
-        void OnValidate() {
-
-            if (NextSection == null)
-                return;
-
-            var pos = NextSection.transform.localPosition;
-            pos.z = Bars.Length + transform.localPosition.z;
-            NextSection.transform.localPosition = pos;
-
-        }
-
         public Bar[] Bars {
 		
             get {
@@ -75,7 +62,7 @@ namespace Assets.Scripts
 
         }
 
-        private void RefreshChildren() {
+        public void RefreshChildren() {
 
             foreach(var b in Bars) {
 
@@ -88,6 +75,8 @@ namespace Assets.Scripts
                 var s = b.transform.localScale;
                 s.z = 1f;
                 b.transform.localScale = s;
+
+                b.RefreshChildren();
 
             }
 

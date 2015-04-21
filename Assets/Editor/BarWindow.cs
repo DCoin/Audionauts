@@ -34,7 +34,7 @@ namespace Assets.Editor
 
         private void OnGUI() {
 
-            this.title = "Bar";
+            title = "Bar";
 
             if(_target == null) {
                 return;

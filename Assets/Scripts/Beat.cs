@@ -72,7 +72,7 @@ namespace Assets.Scripts
 		
         }
 
-        private void RefreshChildren() {
+        public void RefreshChildren() {
 
             var section = GetComponentInParent<Section>();
 
@@ -89,6 +89,8 @@ namespace Assets.Scripts
                 float a = idx;
 			
                 note.transform.localPosition = Quaternion.Euler(0f, 0f, -a * 360f / b) * (new Vector3(0f, Radius, 0f));
+
+                note.RefreshColor();
 
             }
 
