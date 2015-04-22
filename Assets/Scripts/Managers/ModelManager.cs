@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.CollisionHandlers;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Managers {
     public class ModelManager : MonoBehaviour {

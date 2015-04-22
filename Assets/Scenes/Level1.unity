@@ -34591,6 +34591,7 @@ Transform:
   - {fileID: 1012735841}
   - {fileID: 1944857758}
   - {fileID: 508817340}
+  - {fileID: 2118589598}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &557460761
@@ -124368,7 +124369,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d559c468fb11646449f43dcac71f653b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -136031,6 +136032,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
+--- !u!1 &2118589597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2118589598}
+  - 114: {fileID: 2118589599}
+  m_Layer: 0
+  m_Name: FadeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2118589598
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2118589597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 557459182}
+  m_RootOrder: 6
+--- !u!114 &2118589599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2118589597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933b269953bf3654ea9bb7396d904718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Menu
+  FadeSpeed: .800000012
+  FadeTexture: {fileID: 2800000, guid: dca112a0db5cea94c8780d1464a8e95f, type: 3}
+  Key: 32
 --- !u!1 &2119033937
 GameObject:
   m_ObjectHideFlags: 0

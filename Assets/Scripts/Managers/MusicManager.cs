@@ -67,6 +67,9 @@ namespace Assets.Scripts.Managers
             get { return AudioSettings.dspTime - dspTimePlayed; }
         }
 
+
+        private float initialVolume;
+
         private void Start()
         {
             if (Instance == null)
@@ -79,6 +82,16 @@ namespace Assets.Scripts.Managers
             }
 
             _audioSource = GetComponent<AudioSource>();
+            initialVolume = _audioSource.volume;
+
+            // Fade volume.
+            var fm = FadeManager.Instance;
+
+            if (fm != null) {
+                _audioSource.volume = initialVolume*fm.Progress;
+            } 
+
+            _audioSource.Play();
 
 
 
@@ -111,6 +124,14 @@ namespace Assets.Scripts.Managers
         private void Update()
         {
 			if (!_audioSource.isPlaying) return;
+
+            // Volume fading.
+            var fm = FadeManager.Instance;
+
+            if(fm != null) {
+                _audioSource.volume = initialVolume * fm.Progress;
+            }
+
 
             // Subtract the oldest frames length from the sum
             _sumLastXFrames -= _lastXFrames[_currentFrame];
