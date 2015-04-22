@@ -35,6 +35,16 @@ namespace Assets.Scripts.Managers {
 
         void Update() {
 
+            if (aop != null) {
+                
+
+
+                aop.allowSceneActivation = isReady();
+
+                if(!aop.isDone)
+                    alpha = aop.progress / 0.9f;
+            }
+
             if(Input.GetKeyDown(Key)) {
                 EndScene();
             }
@@ -68,6 +78,29 @@ namespace Assets.Scripts.Managers {
         public void EndScene() {
 
             fadeDirection = 1;
+
+        }
+
+        private AsyncOperation aop = null;
+
+        private bool isReady() {
+
+            return aop != null && aop.progress >= .9f;
+
+        }
+
+        public void EndScene(string level) {
+
+
+            if(aop != null)
+                return;
+
+            aop = Application.LoadLevelAsync(level);
+
+            aop.allowSceneActivation = false;
+
+
+            fadeDirection = 0;
 
         }
 

@@ -1,22 +1,16 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Managers;
 
-public class ActionLoad : MenuAction {
+namespace Assets.Scripts.Menu.Actions {
+    public class ActionLoad : MenuAction {
 
-    public string Level;
+        public string Level;
 
-    private bool loading = false;
+        public override void Execute() {
 
-    public override void Execute() {
 
-        if (loading)
-            return;
+            FadeManager.Instance.EndScene(Level);
 
-        loading = true;
-
-        Application.LoadLevelAsync(Level);
-        
-
-        //Application.LoadLevel(Level);
+        }
 
     }
 }
