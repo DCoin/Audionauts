@@ -69,6 +69,12 @@ public class KeyboardProfile : UnityInputDeviceProfile
 					Handle = "DPad right",
 					Target = InputControlType.DPadRight,
 					Source = KeyCodeButton( KeyCode.RightArrow )
+				},
+				new InputControlMapping
+				{
+					Handle = "Menu",
+					Target = InputControlType.Menu,
+					Source = KeyCodeButton( KeyCode.Space, KeyCode.Escape )
 				}
 			};
 
