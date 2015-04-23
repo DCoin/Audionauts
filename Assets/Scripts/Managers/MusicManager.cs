@@ -181,5 +181,13 @@ namespace Assets.Scripts.Managers
         {
             return dspStart + BeatsInSeconds(Beats);
         }
+
+		public void Pause() {
+			_audioSource.Pause();
+		}
+
+		public void UnPause() {
+			_audioSource.UnPause();
+		}
     }
 }
