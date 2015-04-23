@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts;
 using Assets.Scripts.Enums;
+using Assets.Scripts.Managers;
 using UnityEditor;
 using UnityEngine;
 
@@ -164,12 +165,18 @@ namespace Assets.Editor {
 
         }
 
+        private void Preview() {
+            
+        }
+
         private void OnBarFocus() {
 
             if(!GUILayout.Button(target.name, GUILayout.Height(24f)))
                 return;
 
             Selection.activeObject = target.gameObject;
+
+            Preview();
 
             SceneView.lastActiveSceneView.FrameSelected();
         }

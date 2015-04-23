@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Assets.Scripts.Managers
 {
+    [ExecuteInEditMode]
     public class SoundManager : MonoBehaviour
     {
 
