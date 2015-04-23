@@ -137,7 +137,10 @@ namespace Assets.Scripts.Managers
             _sumLastXFrames -= _lastXFrames[_currentFrame];
             // Replace its value with the length of the current frame
             // and take into account that the clip is looping
-            if (_audioSource.timeSamples < _lastSamples) _lastXFrames[_currentFrame] = _audioSource.timeSamples + _audioSource.clip.samples - _lastSamples;
+            if (_audioSource.timeSamples < _lastSamples) {
+				_lastXFrames[_currentFrame] = _audioSource.timeSamples + _audioSource.clip.samples - _lastSamples;
+				_timesPlayed++;
+			}
             else _lastXFrames[_currentFrame] = _audioSource.timeSamples - _lastSamples;
             // Add the new length to the sum
             _sumLastXFrames += _lastXFrames[_currentFrame];
@@ -159,15 +162,6 @@ namespace Assets.Scripts.Managers
 
             // Prepare for the next frame
             _currentFrame = (_currentFrame + 1) % XFRAMES;
-
-
-            // Start placement code
-
-
-			if (_audioSource.timeSamples < _lastSamples)
-            {
-                _timesPlayed++;
-            }
 
             _lastSamples = _audioSource.timeSamples;
         }
