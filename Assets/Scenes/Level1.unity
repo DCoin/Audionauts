@@ -1286,7 +1286,7 @@ GameObject:
   - 4: {fileID: 21560104}
   - 114: {fileID: 21560105}
   m_Layer: 0
-  m_Name: Section013_Synth_4.2
+  m_Name: Synth 4 Part 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19998,7 +19998,7 @@ GameObject:
   - 4: {fileID: 310209359}
   - 114: {fileID: 310209360}
   m_Layer: 0
-  m_Name: Section016_Bass_3
+  m_Name: Bass Part 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20177,7 +20177,7 @@ GameObject:
   - 4: {fileID: 315737267}
   - 114: {fileID: 315737268}
   m_Layer: 0
-  m_Name: Section004_Synth_1.3
+  m_Name: Synth 1 Part 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21912,7 +21912,7 @@ GameObject:
   - 4: {fileID: 341464790}
   - 114: {fileID: 341464791}
   m_Layer: 0
-  m_Name: Section015_Bass_2
+  m_Name: Bass Part 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31700,7 +31700,7 @@ GameObject:
   - 4: {fileID: 507365568}
   - 114: {fileID: 507365569}
   m_Layer: 0
-  m_Name: Section008_Synth_2.3
+  m_Name: Synth 2 Part 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32674,7 +32674,7 @@ GameObject:
   - 4: {fileID: 518997444}
   - 114: {fileID: 518997443}
   m_Layer: 0
-  m_Name: Section002_Synth_1.1
+  m_Name: Synth 1 Part 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35859,7 +35859,7 @@ GameObject:
   - 4: {fileID: 569159209}
   - 114: {fileID: 569159210}
   m_Layer: 0
-  m_Name: Section012_Synth_3.2
+  m_Name: Synth 3 Part 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43080,7 +43080,7 @@ GameObject:
   - 4: {fileID: 680455674}
   - 114: {fileID: 680455675}
   m_Layer: 0
-  m_Name: Section006_Synth_2.1
+  m_Name: Synth 2 Part 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45050,7 +45050,7 @@ GameObject:
   - 4: {fileID: 714258520}
   - 114: {fileID: 714258521}
   m_Layer: 0
-  m_Name: Section011_Synth_3.1
+  m_Name: Synth 3 Part 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49485,7 +49485,7 @@ GameObject:
   - 4: {fileID: 770854431}
   - 114: {fileID: 770854432}
   m_Layer: 0
-  m_Name: Section018_Empty
+  m_Name: Empty Outro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54632,7 +54632,7 @@ GameObject:
   - 4: {fileID: 863476277}
   - 114: {fileID: 863476278}
   m_Layer: 0
-  m_Name: Section009_Synth_2.4
+  m_Name: Synth 2 Part 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66672,7 +66672,7 @@ GameObject:
   - 4: {fileID: 1053652214}
   - 114: {fileID: 1053652215}
   m_Layer: 0
-  m_Name: Section003_Synth_1.2
+  m_Name: Synth 1 Part 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75401,7 +75401,7 @@ GameObject:
   - 4: {fileID: 1180068103}
   - 114: {fileID: 1180068104}
   m_Layer: 0
-  m_Name: Section005_Synth_1.4
+  m_Name: Synth 1 Part 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89879,7 +89879,7 @@ GameObject:
   - 4: {fileID: 1409328670}
   - 114: {fileID: 1409328671}
   m_Layer: 0
-  m_Name: Section010_Plucks
+  m_Name: Plucks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105259,7 +105259,7 @@ GameObject:
   - 4: {fileID: 1645499526}
   - 114: {fileID: 1645499527}
   m_Layer: 0
-  m_Name: Section001_Empty
+  m_Name: Empty Intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111321,7 +111321,7 @@ GameObject:
   - 4: {fileID: 1749202696}
   - 114: {fileID: 1749202697}
   m_Layer: 0
-  m_Name: Section007_Synth_2.2
+  m_Name: Synth 2 Part 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113294,7 +113294,7 @@ GameObject:
   - 4: {fileID: 1782955465}
   - 114: {fileID: 1782955466}
   m_Layer: 0
-  m_Name: Section014_Bass_1
+  m_Name: Bass Part 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116480,7 +116480,7 @@ GameObject:
   - 4: {fileID: 1826920096}
   - 114: {fileID: 1826920097}
   m_Layer: 0
-  m_Name: Section013_Synth_4.1
+  m_Name: Synth 4 Part 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120553,7 +120553,7 @@ GameObject:
   - 4: {fileID: 1880362270}
   - 114: {fileID: 1880362271}
   m_Layer: 0
-  m_Name: Section017_Bass_4
+  m_Name: Bass Part 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -233,6 +233,8 @@ namespace Assets.Editor {
                 if(v != null)
                     v.FrameSelected();
 
+                Section.RefreshChildren();
+
                 //note.Kind = note.Kind.Next();
 
                 //SceneView.RepaintAll();

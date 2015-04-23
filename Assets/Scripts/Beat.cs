@@ -33,6 +33,8 @@ namespace Assets.Scripts {
 
             note.transform.SetAsLastSibling();
 
+            note.Kind = NoteKind.Any;
+
             RefreshChildren();
 
             return note;
@@ -84,7 +86,7 @@ namespace Assets.Scripts {
                     DestroyImmediate(note.gameObject);
                     continue;
                 }
-
+                
                 if (note.Index == -1) {
                     note.Index = note.transform.GetSiblingIndex();
                 }
