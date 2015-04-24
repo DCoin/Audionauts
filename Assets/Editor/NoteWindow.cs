@@ -135,14 +135,20 @@ namespace Assets.Editor {
         }
 
         private void OnNoteMove() {
-            
-            GUILayout.BeginHorizontal();
 
-            GUILayout.Button("<");
+            if(GUILayout.Button("<", GUILayout.Height(48f), GUILayout.Width(128f))) {
 
-            GUILayout.Button(">");
+                _target.Index--;
+                _target.OnValidate();
 
-            GUILayout.EndHorizontal();
+            }
+
+            if(GUILayout.Button(">", GUILayout.Height(48f), GUILayout.Width(128f))) {
+
+                _target.Index++;
+                _target.OnValidate();
+
+            }
 
 
         }

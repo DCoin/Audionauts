@@ -132016,7 +132016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeatsPerLoop: 704
-  StartAtSection: {fileID: 912077499}
+  StartAtSection: {fileID: 0}
 --- !u!82 &1939912147
 AudioSource:
   m_ObjectHideFlags: 0

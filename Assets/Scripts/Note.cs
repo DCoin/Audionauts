@@ -22,6 +22,26 @@ namespace Assets.Scripts {
             get { return StageManager.Instance.Player2; }
         }
 
+        public void OnValidate() {
+
+            var section = GetComponentInParent<Section>();
+
+            if (section == null)
+                return;
+
+            var l = section.Notes.Length;
+
+            if (l < 1)
+                return;
+
+            while (Index < 0)
+                Index += l;
+            
+            while (Index >= l)
+                Index -= l;
+
+        }
+
         public SoundBite SoundBite;
 
         public override void OnCollision(bool pre, bool success) {
