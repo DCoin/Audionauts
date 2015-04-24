@@ -38,7 +38,13 @@ namespace Assets.Editor {
 
             EditorGUILayout.BeginHorizontal();
 
+            EditorGUILayout.BeginVertical();
+
             OnNoteKinds();
+
+            OnNoteMove();
+
+            EditorGUILayout.EndVertical();
 
             OnNoteBite();
 
@@ -106,8 +112,6 @@ namespace Assets.Editor {
         private void OnNoteKinds()
         {
 
-            EditorGUILayout.BeginVertical();
-
             var stdColor = GUI.color;
 
             foreach(var nk in (NoteKind[]) Enum.GetValues(typeof(NoteKind)))
@@ -117,7 +121,7 @@ namespace Assets.Editor {
 
                 var s = nk.ToString();
 
-                if(GUILayout.Button(s, GUILayout.ExpandHeight(true)))
+                if(GUILayout.Button(s, GUILayout.Height(48f), GUILayout.Width(128f)))
                 {
                     _target.Kind = nk;
 
@@ -128,7 +132,18 @@ namespace Assets.Editor {
 
             GUI.color = stdColor;
 
-            EditorGUILayout.EndVertical();
+        }
+
+        private void OnNoteMove() {
+            
+            GUILayout.BeginHorizontal();
+
+            GUILayout.Button("<");
+
+            GUILayout.Button(">");
+
+            GUILayout.EndHorizontal();
+
 
         }
 

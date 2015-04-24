@@ -7,6 +7,7 @@ TagManager:
   - Note
   - Beat
   - Bar
+  - SoundBite
   layers:
   - Default
   - TransparentFX
