@@ -1,17 +1,29 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using Assets.Scripts.Managers;
+using System.Linq;
 
 public class MenuHandler : MonoBehaviour {
 
     private Transform player1;
     private Transform player2;
 
-	// Use this for initialization
+    public Transform ActiveMenu;
+    public Transform NextMenu = null;
+
+    public float TransitionSpeed;
+    public float TransitionDistance;
+
+    private IEnumerable<Transform> Children
+    {
+        get { return transform.GetComponentsInChildren<Transform>().Where(c => c.parent == transform); }
+    }
+
+    // Use this for initialization
 	void Start () {
 
 	    player1 = StageManager.Instance.Player1.transform;
 	    player2 = StageManager.Instance.Player2.transform;
-
 
 	}
 
@@ -29,21 +41,53 @@ public class MenuHandler : MonoBehaviour {
 
     }
 
+
+    private bool transitioning;
 	
 	// Update is called once per frame
 	void Update () {
 
-	    var options = GetComponentsInChildren<MenuOption>();
+	    if (transitioning) {
 
-	    foreach (var option in options) {
+	        var pos = ActiveMenu.localPosition;
+	        pos.z -= Time.deltaTime*TransitionSpeed;
+	        ActiveMenu.localPosition = pos;
 
-	        if (hits(player1, option) || hits(player2, option)) {
 
-                option.ExecuteActions();
-
+	        if (Mathf.Abs(pos.z) > TransitionDistance) {
+	            pos.z = TransitionDistance;
+                ActiveMenu.localPosition = pos;
+	            ActiveMenu.gameObject.SetActive(false);
+	            transitioning = false;
+	            ActiveMenu = NextMenu;
 	        }
 
+            
+
+	    } else {
+
+	        if (ActiveMenu == null)
+	            return;
+
+            var options = ActiveMenu.GetComponentsInChildren<MenuOption>();
+
+            foreach(var option in options) {
+
+                if(hits(player1, option) || hits(player2, option)) {
+
+                    transitioning = true;
+
+                    option.ExecuteActions();
+
+                }
+
+            }
+
+
 	    }
+
+
+	    
 
 	}
 }
