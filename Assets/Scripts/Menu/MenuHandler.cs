@@ -60,6 +60,7 @@ public class MenuHandler : MonoBehaviour {
 	            ActiveMenu.gameObject.SetActive(false);
 	            transitioning = false;
 	            ActiveMenu = NextMenu;
+	            NextMenu = null;
 	        }
 
             
@@ -69,13 +70,18 @@ public class MenuHandler : MonoBehaviour {
 	        if (ActiveMenu == null)
 	            return;
 
+	        if (NextMenu != null) {
+
+                transitioning = true;
+
+	        }
+
             var options = ActiveMenu.GetComponentsInChildren<MenuOption>();
 
             foreach(var option in options) {
 
                 if(hits(player1, option) || hits(player2, option)) {
 
-                    transitioning = true;
 
                     option.ExecuteActions();
 

@@ -104,5 +104,11 @@ namespace Assets.Scripts.Managers
             }
 
         }
+
+        public void FlipAxis(int player, int axis) {
+            
+        }
+
+        
     }
 }
