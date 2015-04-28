@@ -107870,7 +107870,7 @@ MonoBehaviour:
   Index: 1
   SoundBite: {fileID: 1760501456}
   LocalRadius: 1.25
-  Kind: 1
+  Kind: 2
 --- !u!1 &1560946081
 GameObject:
   m_ObjectHideFlags: 0
@@ -120560,7 +120560,7 @@ MonoBehaviour:
   Index: 0
   SoundBite: {fileID: 1319698441}
   LocalRadius: 1.25
-  Kind: 1
+  Kind: 3
 --- !u!1 &1749734176
 GameObject:
   m_ObjectHideFlags: 0

@@ -136,10 +136,13 @@ namespace Assets.Editor {
 
         private void OnNoteMove() {
 
+            var beat = _target.GetComponentInParent<Beat>();
+
             if(GUILayout.Button("<", GUILayout.Height(48f), GUILayout.Width(128f))) {
 
                 _target.Index--;
                 _target.OnValidate();
+                beat.RefreshChildren();
 
             }
 
@@ -147,6 +150,7 @@ namespace Assets.Editor {
 
                 _target.Index++;
                 _target.OnValidate();
+                beat.RefreshChildren();
 
             }
 
