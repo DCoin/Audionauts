@@ -14391,7 +14391,7 @@ GameObject:
   - 4: {fileID: 229483070}
   - 114: {fileID: 229483071}
   m_Layer: 0
-  m_Name: SW
+  m_Name: S
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14404,7 +14404,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229483069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.53553343, y: -3.53553486, z: 0}
+  m_LocalPosition: {x: -4.37113897e-07, y: -5, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 1764787837}
@@ -14420,7 +14420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fccf0ed6d3e1b2498554d9f24f819c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 5
+  Index: 4
   SoundBite: {fileID: 596146734}
   LocalRadius: 1.25
   Kind: 3
@@ -46168,7 +46168,7 @@ GameObject:
   - 4: {fileID: 718208028}
   - 114: {fileID: 718208029}
   m_Layer: 0
-  m_Name: SW
+  m_Name: SE
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46181,7 +46181,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 718208027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.53553343, y: -3.53553486, z: 0}
+  m_LocalPosition: {x: 3.53553391, y: -3.53553343, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 148955951}
@@ -46197,7 +46197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fccf0ed6d3e1b2498554d9f24f819c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 5
+  Index: 3
   SoundBite: {fileID: 702255819}
   LocalRadius: 1.25
   Kind: 2
@@ -131993,7 +131993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeatsPerLoop: 704
-  StartAtSection: {fileID: 634440246}
+  StartAtSection: {fileID: 0}
 --- !u!82 &1939912147
 AudioSource:
   m_ObjectHideFlags: 0
