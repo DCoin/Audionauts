@@ -49,6 +49,27 @@ namespace Assets.Scripts {
             if (success) {
                 if (pre && playing == null) playing = SoundBite.Play(BeatPosition, true);
                 else if (playing == null) playing = SoundBite.Play(BeatPosition);
+
+                var children = GetComponentsInChildren<Transform>(true);
+
+                foreach (Transform child in children) {
+
+                    var go = child.gameObject;
+
+                    if (!go.tag.Equals("Explosion"))
+                        continue;
+                    
+                    var homer = go.GetComponent<ParticleHomer>();
+
+                    if (homer == null)
+                        continue;
+
+                    homer.Target = StageManager.Instance.Player1.transform;
+                    
+                    go.SetActive(true);
+                }
+
+
             }
 
             if (!pre) GrooveManager.Instance.Hit (success);
@@ -67,18 +88,12 @@ namespace Assets.Scripts {
 
         }
 
+        /*
         public void Update() {
             //if (playing != null) Debug.Log ("Shouldhaplayed: " + (MusicManager.Instance.BeatsPlayed - SongPosition) + " HasPlayed: " + playing.time);
 
-
-            var pos = transform.position;
-            var a = pos;
-            var b = pos;
-            a.x -= GlobalRadius;
-            b.x += GlobalRadius;
-
-            Debug.DrawLine(a,b,Color.white);
         }
+         */
 
         public Color CurrentColor {
             get {
