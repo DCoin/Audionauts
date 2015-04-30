@@ -25,7 +25,7 @@ namespace Assets.Scripts {
             var time = mm.SmoothBeatsPlayed;
             time -= (int) time;
 
-            var value = Animation.Evaluate(time);
+			var value = Mathf.Lerp(1, Animation.Evaluate(time), GrooveManager.Instance.PercentGroove);
 
             transform.localScale = value*localScale;
 

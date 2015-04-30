@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 490424}
   - 198: {fileID: 19892004}
   - 199: {fileID: 19941028}
+  - 114: {fileID: 11412276}
   m_Layer: 0
   m_Name: Star System
   m_TagString: Untagged
@@ -199,6 +200,7 @@ GameObject:
   - 4: {fileID: 474348}
   - 198: {fileID: 19815612}
   - 199: {fileID: 19962360}
+  - 114: {fileID: 11406076}
   m_Layer: 0
   m_Name: Fast Stars
   m_TagString: Untagged
@@ -525,6 +527,18 @@ MonoBehaviour:
   rotateAcceleration: 1
   rotateMaxSpeed: 1
   relativeTo: 0
+--- !u!114 &11406076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ac39ab1f99a4af4b77be85bd5a00f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxEmissionRate: 60
 --- !u!114 &11407338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -588,6 +602,18 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &11412276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ac39ab1f99a4af4b77be85bd5a00f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxEmissionRate: 200
 --- !u!114 &11413882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2014,7 +2040,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 60
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4115,7 +4141,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 200
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5041,7 +5067,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: .5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 10
+  m_LengthScale: 5
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 0
