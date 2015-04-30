@@ -58,14 +58,12 @@ namespace Assets.Scripts {
 
                     if (!go.tag.Equals("Explosion"))
                         continue;
-                    
-                    var homer = go.GetComponent<ParticleHomer>();
 
-                    if (homer == null)
-                        continue;
-
-                    homer.Target = StageManager.Instance.Player1.transform;
+                    var ps = go.GetComponent<ParticleSystem>();
                     
+                    if(ps != null)
+                        ps.Play();
+
                     go.SetActive(true);
                 }
 
