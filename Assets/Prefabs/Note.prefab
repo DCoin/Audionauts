@@ -41,7 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: -1
   SoundBite: {fileID: 0}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 0
 --- !u!1001 &100100000
 Prefab:

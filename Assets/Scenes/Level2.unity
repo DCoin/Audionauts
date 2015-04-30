@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2449607
 GameObject:
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &4064187
 GameObject:
@@ -443,6 +443,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
+--- !u!1 &7924989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 194290, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 7924990}
+  - 114: {fileID: 7924992}
+  - 114: {fileID: 7924991}
+  m_Layer: 0
+  m_Name: Player2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7924990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 471098, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7924989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1549205569}
+  - {fileID: 828570506}
+  m_Father: {fileID: 992541472}
+  m_RootOrder: 4
+--- !u!114 &7924991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11408772, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7924989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9292eb977df354641bac01d5620fa517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7924992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11458958, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7924989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b906889a09806b41864f16605623df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AxisSource: 2
+  Radius: 6
+  Speed: 60
+  Controller: 1
 --- !u!1 &9298833
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &13136705
 GameObject:
@@ -1050,7 +1109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &18426034
 GameObject:
@@ -1093,7 +1152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &19799351
 GameObject:
@@ -1136,7 +1195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 369482081}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &20124232
 GameObject:
@@ -1179,121 +1238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
---- !u!1 &20523141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 20523142}
-  - 33: {fileID: 20523145}
-  - 135: {fileID: 20523144}
-  - 23: {fileID: 20523143}
-  - 114: {fileID: 20523146}
-  m_Layer: 0
-  m_Name: Model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &20523142
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 20523141}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children: []
-  m_Father: {fileID: 1073287276}
-  m_RootOrder: 1
---- !u!23 &20523143
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 20523141}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 1a881e839dee45349ad1a004dcddd187, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!135 &20523144
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 20523141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &20523145
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 20523141}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &20523146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 20523141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342b6466460824b44860a1ae7de7e0ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Animation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: .25
-      value: .75
-      inSlope: 3.82802511e-07
-      outSlope: 3.82802511e-07
-      tangentMode: 0
-    - time: .5
-      value: .899999976
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: .75
-      value: .75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &21615891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 452599349}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &31798455
 GameObject:
@@ -1782,7 +1726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &32238623
 GameObject:
@@ -1825,7 +1769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &33198359
 GameObject:
@@ -1868,7 +1812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &34458486
 GameObject:
@@ -3506,7 +3450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &62089961
 GameObject:
@@ -3549,7 +3493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &63833715
 GameObject:
@@ -4208,7 +4152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &74110094
 GameObject:
@@ -4373,7 +4317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &77657022
 GameObject:
@@ -4536,7 +4480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &78291936
 GameObject:
@@ -4861,7 +4805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &83663685
 GameObject:
@@ -5184,7 +5128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &90214348
 GameObject:
@@ -5589,7 +5533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &98329875
 GameObject:
@@ -5792,7 +5736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 369482081}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &102550625
 GameObject:
@@ -5921,7 +5865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &105253870
 GameObject:
@@ -6204,7 +6148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &111046401
 GameObject:
@@ -6595,7 +6539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &114357068
 GameObject:
@@ -6718,7 +6662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &118720940
 GameObject:
@@ -7124,7 +7068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &126143723
 GameObject:
@@ -7411,7 +7355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &129531499
 GameObject:
@@ -7985,7 +7929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &137633883
 GameObject:
@@ -8148,7 +8092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 888143051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &140630420
 GameObject:
@@ -8721,7 +8665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &145599826
 GameObject:
@@ -8965,7 +8909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &147494281
 GameObject:
@@ -9377,7 +9321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1150849428}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &148138120
 GameObject:
@@ -9420,7 +9364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &148687932
 GameObject:
@@ -9584,7 +9528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &150664199
 GameObject:
@@ -9947,7 +9891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1408400788}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &156872159
 GameObject:
@@ -10070,7 +10014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &158272575
 GameObject:
@@ -10234,7 +10178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &162585212
 GameObject:
@@ -10358,7 +10302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &166868167
 GameObject:
@@ -10669,7 +10613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &171068721
 GameObject:
@@ -10912,7 +10856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1319698441}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &174139503
 GameObject:
@@ -10955,7 +10899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &176562533
 GameObject:
@@ -11038,7 +10982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &180039113
 GameObject:
@@ -11162,7 +11106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 369482081}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &180460558
 GameObject:
@@ -11535,7 +11479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &186665143
 GameObject:
@@ -11740,7 +11684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &191436185
 GameObject:
@@ -11863,7 +11807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 567854652}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &195684583
 GameObject:
@@ -12071,7 +12015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &199061226
 GameObject:
@@ -12394,7 +12338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &203063752
 GameObject:
@@ -12437,7 +12381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &203413824
 GameObject:
@@ -12601,7 +12545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 792885747}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &206017718
 GameObject:
@@ -12684,7 +12628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &206241287
 GameObject:
@@ -12931,7 +12875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &209789240
 GameObject:
@@ -12974,7 +12918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &209932645
 GameObject:
@@ -13365,7 +13309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &212266995
 GameObject:
@@ -13649,7 +13593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &216731788
 GameObject:
@@ -13732,7 +13676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &217195726
 GameObject:
@@ -13815,7 +13759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &220332929
 GameObject:
@@ -14422,7 +14366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &229605725
 GameObject:
@@ -14902,7 +14846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &236150728
 GameObject:
@@ -15838,7 +15782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1815251534}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &250484307
 GameObject:
@@ -16221,7 +16165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &256713725
 GameObject:
@@ -16264,7 +16208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1475648568}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &256947426
 GameObject:
@@ -16467,7 +16411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &261668408
 GameObject:
@@ -17150,7 +17094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &274417157
 GameObject:
@@ -17302,6 +17246,125 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
+--- !u!1 &275587711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121728, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 275587712}
+  - 33: {fileID: 275587716}
+  - 135: {fileID: 275587715}
+  - 23: {fileID: 275587714}
+  - 114: {fileID: 275587713}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &275587712
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 435818, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275587711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1574941010}
+  m_RootOrder: 0
+--- !u!114 &275587713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11413882, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275587711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342b6466460824b44860a1ae7de7e0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animation:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .25
+      value: .75
+      inSlope: 3.82802511e-07
+      outSlope: 3.82802511e-07
+      tangentMode: 0
+    - time: .5
+      value: .899999976
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .75
+      value: .75
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!23 &275587714
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2312708, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275587711}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 9e2d6d156bc1dce46b0b36be9b86e3b8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &275587715
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13547506, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275587711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &275587716
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3390944, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275587711}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &276528095
 GameObject:
   m_ObjectHideFlags: 0
@@ -17424,7 +17487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1495213339}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &277914687
 GameObject:
@@ -17467,7 +17530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &278538306
 GameObject:
@@ -17818,7 +17881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &282671241
 GameObject:
@@ -18020,7 +18083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 2079645703}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &285227298
 GameObject:
@@ -18104,7 +18167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 180071572}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &287284470
 GameObject:
@@ -18428,7 +18491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &288872258
 GameObject:
@@ -18949,7 +19012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1227750609}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &298118029
 GameObject:
@@ -18992,7 +19055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &299622188
 GameObject:
@@ -19688,7 +19751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &313048500
 GameObject:
@@ -19811,7 +19874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &313474315
 GameObject:
@@ -20648,7 +20711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &325945922
 GameObject:
@@ -20812,7 +20875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &330798787
 GameObject:
@@ -21230,7 +21293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &338207492
 GameObject:
@@ -21984,7 +22047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1760501456}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &347043053
 GameObject:
@@ -22067,7 +22130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &348540247
 GameObject:
@@ -22231,7 +22294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 408698690}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &350753382
 GameObject:
@@ -22541,6 +22604,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
+--- !u!1001 &352748814
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7924990}
+    m_Modifications:
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &352783934
 GameObject:
   m_ObjectHideFlags: 0
@@ -22582,7 +22687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1815251534}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &352884377
 GameObject:
@@ -22946,7 +23051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &359485396
 GameObject:
@@ -23109,7 +23214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &360492249
 GameObject:
@@ -23232,7 +23337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &363328283
 GameObject:
@@ -23275,7 +23380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1282892020}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &363942048
 GameObject:
@@ -23762,7 +23867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1610746372}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &373031082
 GameObject:
@@ -24046,7 +24151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 80696478}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &376952190
 GameObject:
@@ -24129,7 +24234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &378448116
 GameObject:
@@ -24723,7 +24828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &387861038
 GameObject:
@@ -25259,7 +25364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &392171501
 GameObject:
@@ -25787,7 +25892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 827440535}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &400238031
 GameObject:
@@ -25830,7 +25935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &400441063
 GameObject:
@@ -26634,7 +26739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &416548901
 GameObject:
@@ -27522,7 +27627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &429065303
 GameObject:
@@ -28352,7 +28457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &439160677
 GameObject:
@@ -28395,7 +28500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &439450516
 GameObject:
@@ -28518,7 +28623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &441280704
 GameObject:
@@ -28963,7 +29068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &449271648
 GameObject:
@@ -30021,7 +30126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &467768313
 GameObject:
@@ -30226,7 +30331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &472816052
 GameObject:
@@ -30269,7 +30374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &473870694
 GameObject:
@@ -30392,7 +30497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &475220610
 GameObject:
@@ -30597,7 +30702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &477910130
 GameObject:
@@ -31164,7 +31269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 180071572}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &485577586
 GameObject:
@@ -31805,7 +31910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &497951158
 GameObject:
@@ -32141,7 +32246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &501321785
 GameObject:
@@ -32184,7 +32289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &501972347
 GameObject:
@@ -32227,7 +32332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &502298143
 GameObject:
@@ -32631,8 +32736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4ee9648d78405b8e94742cc47491f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Groove: 0
   Decay: .999000013
+  MissScale: .5
+  Smoothing: .100000001
 --- !u!1 &509527841
 GameObject:
   m_ObjectHideFlags: 0
@@ -32714,7 +32820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &509634995
 GameObject:
@@ -32837,7 +32943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &517067158
 GameObject:
@@ -32880,7 +32986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &517074884
 GameObject:
@@ -32964,7 +33070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &517740906
 GameObject:
@@ -33087,7 +33193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 888143051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &519244351
 GameObject:
@@ -33668,7 +33774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &530133093
 GameObject:
@@ -33751,7 +33857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &532223654
 GameObject:
@@ -33995,7 +34101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1475648568}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &535031034
 GameObject:
@@ -34078,7 +34184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 556969819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &536296987
 GameObject:
@@ -34201,7 +34307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &537685049
 GameObject:
@@ -34244,7 +34350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &538052999
 GameObject:
@@ -34447,7 +34553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &541435644
 GameObject:
@@ -34694,7 +34800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &550287067
 GameObject:
@@ -34858,7 +34964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &555187174
 GameObject:
@@ -35021,7 +35127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &556969817
 GameObject:
@@ -35456,8 +35562,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1760501456}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
+--- !u!1 &561473960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 561473961}
+  - 108: {fileID: 561473962}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &561473961
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561473960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 992541472}
+  m_RootOrder: 5
+--- !u!108 &561473962
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561473960}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3
+  m_Range: 25
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &562848886
 GameObject:
   m_ObjectHideFlags: 0
@@ -35660,7 +35826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &566892885
 GameObject:
@@ -35703,7 +35869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 283054392}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &567727178
 GameObject:
@@ -36148,7 +36314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &575317117
 GameObject:
@@ -36633,7 +36799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &581805503
 GameObject:
@@ -36716,7 +36882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &582459157
 GameObject:
@@ -36996,7 +37162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &584781530
 GameObject:
@@ -37320,7 +37486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1150849428}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &591134102
 GameObject:
@@ -37444,7 +37610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &595095747
 GameObject:
@@ -37906,7 +38072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 381416815}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &600325165
 GameObject:
@@ -38030,7 +38196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &601382411
 GameObject:
@@ -38234,7 +38400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &604115830
 GameObject:
@@ -38317,7 +38483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &605689693
 GameObject:
@@ -38440,7 +38606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &609363219
 GameObject:
@@ -38603,7 +38769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &614182206
 GameObject:
@@ -39103,7 +39269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &620812420
 GameObject:
@@ -39454,7 +39620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &623295687
 GameObject:
@@ -39577,7 +39743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
---- !u!4 &624920056
+--- !u!4 &624920056 stripped
 Transform:
   m_PrefabParentObject: {fileID: 437854, guid: b75fa5e86a6ad404a92e6dac51743b8f, type: 2}
   m_PrefabInternal: {fileID: 1822374680}
@@ -39902,7 +40068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &632700322
 GameObject:
@@ -40373,7 +40539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 792885747}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &642276115
 GameObject:
@@ -40577,7 +40743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1758221666}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &643788107
 GameObject:
@@ -40818,7 +40984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &646064201
 GameObject:
@@ -40902,7 +41068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 556969819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &646688194
 GameObject:
@@ -41306,7 +41472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 369482081}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &653464359
 GameObject:
@@ -41390,7 +41556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1475648568}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &654573036
 GameObject:
@@ -41433,7 +41599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &654577147
 GameObject:
@@ -41881,7 +42047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &656975409
 GameObject:
@@ -42556,7 +42722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &667012054
 GameObject:
@@ -42599,7 +42765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 180071572}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &667023391
 GameObject:
@@ -43115,7 +43281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1797349486}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &680005459
 GameObject:
@@ -43440,7 +43606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &686451534
 GameObject:
@@ -43483,7 +43649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1922594260}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &686509604
 GameObject:
@@ -43526,7 +43692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 80696478}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &686693909
 GameObject:
@@ -43822,7 +43988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &688669576
 GameObject:
@@ -43945,7 +44111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &689540063
 GameObject:
@@ -44028,7 +44194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &692158961
 GameObject:
@@ -44564,7 +44730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1495213339}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &697821294
 GameObject:
@@ -44888,7 +45054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &703561717
 GameObject:
@@ -44971,7 +45137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &705002215
 GameObject:
@@ -45631,7 +45797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &712974660
 GameObject:
@@ -45714,7 +45880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &714332709
 GameObject:
@@ -46116,7 +46282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1227750609}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &717838892
 GameObject:
@@ -46199,7 +46365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 702255819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &719042973
 GameObject:
@@ -46282,7 +46448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1749734178}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &719518886
 GameObject:
@@ -46325,7 +46491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &719724097
 GameObject:
@@ -47279,7 +47445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 452599349}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &731801386
 GameObject:
@@ -47322,7 +47488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 264023187}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &731940497
 GameObject:
@@ -47365,7 +47531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &732975911
 GameObject:
@@ -47528,7 +47694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &737076140
 GameObject:
@@ -47611,7 +47777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &739200539
 GameObject:
@@ -47695,7 +47861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &744173358
 GameObject:
@@ -48100,7 +48266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &749529985
 GameObject:
@@ -48183,7 +48349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &751916108
 GameObject:
@@ -48628,7 +48794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &759268475
 GameObject:
@@ -48993,7 +49159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1610746372}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &767200589
 GameObject:
@@ -49798,7 +49964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &778834741
 GameObject:
@@ -49882,7 +50048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1475648568}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &780832357
 GameObject:
@@ -49925,7 +50091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &781146326
 GameObject:
@@ -50008,63 +50174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
---- !u!1 &782564167
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 782564168}
-  - 114: {fileID: 782564169}
-  - 114: {fileID: 782564170}
-  m_Layer: 0
-  m_Name: Player1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &782564168
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 782564167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2014562625}
-  - {fileID: 1542277245}
-  m_Father: {fileID: 992541472}
-  m_RootOrder: 0
---- !u!114 &782564169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 782564167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b906889a09806b41864f16605623df6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AxisSource: 2
-  Radius: 6
-  Speed: 60
-  Controller: 0
---- !u!114 &782564170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 782564167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9292eb977df354641bac01d5620fa517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &785104624
 GameObject:
   m_ObjectHideFlags: 0
@@ -50145,7 +50254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
---- !u!4 &786515680
+--- !u!4 &786515680 stripped
 Transform:
   m_PrefabParentObject: {fileID: 481502, guid: 5d131e9203f5fec4791e86f719c0d4bd, type: 2}
   m_PrefabInternal: {fileID: 542468833}
@@ -50270,7 +50379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1760501456}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &788735062
 GameObject:
@@ -50353,7 +50462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &791028825
 GameObject:
@@ -50384,7 +50493,7 @@ Transform:
   - {fileID: 786515680}
   - {fileID: 1449504352}
   m_Father: {fileID: 992541472}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!1 &792273873
 GameObject:
   m_ObjectHideFlags: 0
@@ -51267,7 +51376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &806278769
 GameObject:
@@ -52290,7 +52399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1211489857}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &818687097
 GameObject:
@@ -52373,7 +52482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 283054392}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &819438899
 GameObject:
@@ -52416,7 +52525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &819668691
 GameObject:
@@ -52539,7 +52648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &823720626
 GameObject:
@@ -52742,7 +52851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &827069832
 GameObject:
@@ -52825,6 +52934,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: a2936b00eb4f1fb4184650b5729cb3d4, type: 3}
   Volume: .200000003
+--- !u!4 &828570506 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
+  m_PrefabInternal: {fileID: 352748814}
 --- !u!1 &830638701
 GameObject:
   m_ObjectHideFlags: 0
@@ -52986,7 +53099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 369482081}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &832864163
 GameObject:
@@ -53029,7 +53142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1070275515}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &833178824
 GameObject:
@@ -53192,7 +53305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &834147949
 GameObject:
@@ -53479,7 +53592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 264023187}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &834875994
 GameObject:
@@ -53847,7 +53960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &838147141
 GameObject:
@@ -54088,7 +54201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &839665015
 GameObject:
@@ -54603,7 +54716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &845618471
 GameObject:
@@ -54728,7 +54841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &848219721
 GameObject:
@@ -54971,7 +55084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &850460117
 GameObject:
@@ -55094,7 +55207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1408400788}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &853041280
 GameObject:
@@ -55299,7 +55412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &860313224
 GameObject:
@@ -55659,7 +55772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &862688931
 GameObject:
@@ -55943,7 +56056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1797349486}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &869695291
 GameObject:
@@ -55986,7 +56099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &870003507
 GameObject:
@@ -57160,7 +57273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 283054392}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &879947079
 GameObject:
@@ -57363,7 +57476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &881228448
 GameObject:
@@ -57647,7 +57760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &886150509
 GameObject:
@@ -58084,7 +58197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 567854652}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &891595491
 GameObject:
@@ -58405,7 +58518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1797349486}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &898363054
 GameObject:
@@ -58448,7 +58561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &899785323
 GameObject:
@@ -58740,7 +58853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &909428606
 GameObject:
@@ -59371,7 +59484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &919530307
 GameObject:
@@ -59854,7 +59967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &923692111
 GameObject:
@@ -59978,7 +60091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &925401592
 GameObject:
@@ -60463,7 +60576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &930232404
 GameObject:
@@ -60678,7 +60791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1610746372}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &930862074
 GameObject:
@@ -60761,7 +60874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &934707424
 GameObject:
@@ -61044,7 +61157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &941740303
 GameObject:
@@ -61570,7 +61683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1211489857}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &954355560
 GameObject:
@@ -61613,7 +61726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &954399707
 GameObject:
@@ -61656,7 +61769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1570354431}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &955123724
 GameObject:
@@ -61822,7 +61935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &958169278
 GameObject:
@@ -62214,7 +62327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1473618696}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &962875781
 GameObject:
@@ -62457,7 +62570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &964557853
 GameObject:
@@ -62769,7 +62882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &966973108
 GameObject:
@@ -62893,7 +63006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &968626765
 GameObject:
@@ -63017,7 +63130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &972681803
 GameObject:
@@ -63337,7 +63450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &975739871
 GameObject:
@@ -63609,7 +63722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &977447663
 GameObject:
@@ -63932,7 +64045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &982784612
 GameObject:
@@ -64135,7 +64248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &989078622
 GameObject:
@@ -64259,7 +64372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &990874742
 GameObject:
@@ -64488,11 +64601,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: .0078125}
   m_Children:
-  - {fileID: 782564168}
-  - {fileID: 1073287276}
   - {fileID: 1118899599}
   - {fileID: 1945268476}
   - {fileID: 791028826}
+  - {fileID: 1574941010}
+  - {fileID: 7924990}
+  - {fileID: 561473961}
   m_Father: {fileID: 4556619}
   m_RootOrder: 0
 --- !u!114 &992541473
@@ -65091,7 +65205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &996672492
 GameObject:
@@ -65215,7 +65329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &999543089
 GameObject:
@@ -65660,7 +65774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1003999191
 GameObject:
@@ -66450,8 +66564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Traveller: {fileID: 992541473}
-  Player1: {fileID: 782564170}
-  Player2: {fileID: 1073287278}
+  Player1: {fileID: 1574941011}
+  Player2: {fileID: 7924991}
   Stage: {fileID: 4556619}
 --- !u!4 &1012735841
 Transform:
@@ -66626,7 +66740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1017913952
 GameObject:
@@ -66870,7 +66984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1019926413
 GameObject:
@@ -67478,52 +67592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
---- !u!1001 &1028427788
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1073287276}
-    m_Modifications:
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19860856, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: InitialModule.startColor.maxColor.rgba
-      value: 4294967040
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1030184240
 GameObject:
   m_ObjectHideFlags: 0
@@ -67645,7 +67713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1031266103
 GameObject:
@@ -68171,7 +68239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1038985361
 GameObject:
@@ -68532,7 +68600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1040715214
 GameObject:
@@ -68615,7 +68683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1041696785
 GameObject:
@@ -69525,7 +69593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1392250369}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &1051531981
 GameObject:
@@ -69568,7 +69636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1052359336
 GameObject:
@@ -70888,7 +70956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1069220077
 GameObject:
@@ -71132,7 +71200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1072994887
 GameObject:
@@ -71174,63 +71242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
---- !u!1 &1073287275
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1073287276}
-  - 114: {fileID: 1073287277}
-  - 114: {fileID: 1073287278}
-  m_Layer: 0
-  m_Name: Player2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1073287276
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073287275}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1473190099}
-  - {fileID: 20523142}
-  m_Father: {fileID: 992541472}
-  m_RootOrder: 1
---- !u!114 &1073287277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073287275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b906889a09806b41864f16605623df6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AxisSource: 2
-  Radius: 6
-  Speed: 60
-  Controller: 1
---- !u!114 &1073287278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073287275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9292eb977df354641bac01d5620fa517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1074461717
 GameObject:
   m_ObjectHideFlags: 0
@@ -71272,7 +71283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 180071572}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1074467239
 GameObject:
@@ -71801,7 +71812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1084354799
 GameObject:
@@ -71884,7 +71895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1084832491
 GameObject:
@@ -72008,7 +72019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 264023187}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1085816071
 GameObject:
@@ -72291,7 +72302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1089465739
 GameObject:
@@ -72374,7 +72385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1610746372}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1089983143
 GameObject:
@@ -72779,7 +72790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1096330609
 GameObject:
@@ -73357,7 +73368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1108942298
 GameObject:
@@ -73440,7 +73451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1150849428}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1110079945
 GameObject:
@@ -73764,7 +73775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1116092133
 GameObject:
@@ -73914,7 +73925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 992541472}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!1 &1119432279
 GameObject:
   m_ObjectHideFlags: 0
@@ -74320,7 +74331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 180071572}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1126729725
 GameObject:
@@ -75199,7 +75210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1132965634
 GameObject:
@@ -75442,7 +75453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1135630852
 GameObject:
@@ -75526,7 +75537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1137188672
 GameObject:
@@ -75689,7 +75700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1138593988
 GameObject:
@@ -76145,7 +76156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1141332256
 GameObject:
@@ -76228,7 +76239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1141770741
 GameObject:
@@ -76966,7 +76977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1148613731
 GameObject:
@@ -77009,7 +77020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1149305132
 GameObject:
@@ -77174,7 +77185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1153276370
 GameObject:
@@ -77258,7 +77269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1227750609}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1154208842
 GameObject:
@@ -77504,7 +77515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 567854652}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1161078892
 GameObject:
@@ -77788,7 +77799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1166845551
 GameObject:
@@ -78662,7 +78673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1183552527
 GameObject:
@@ -78825,7 +78836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1211489857}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1184480968
 GameObject:
@@ -78988,7 +78999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1187153668
 GameObject:
@@ -79031,7 +79042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1610746372}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1188614521
 GameObject:
@@ -79490,7 +79501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 283054392}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1193666343
 GameObject:
@@ -80153,7 +80164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1202530364
 GameObject:
@@ -80237,7 +80248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1203366136
 GameObject:
@@ -80599,7 +80610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1208683596
 GameObject:
@@ -80924,7 +80935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1214667216
 GameObject:
@@ -81290,7 +81301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1392250369}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1220042302
 GameObject:
@@ -81666,7 +81677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1224623129
 GameObject:
@@ -82435,7 +82446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1319698441}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1232108721
 GameObject:
@@ -82478,7 +82489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1610746372}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1232335800
 GameObject:
@@ -82863,7 +82874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1237357366
 GameObject:
@@ -83147,7 +83158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1241283663
 GameObject:
@@ -83378,7 +83389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1242370699
 GameObject:
@@ -83461,7 +83472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1243227869
 GameObject:
@@ -83988,7 +83999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1254849113
 GameObject:
@@ -84593,7 +84604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 452599349}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1269904917
 GameObject:
@@ -84836,7 +84847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1330863181}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1273596120
 GameObject:
@@ -85039,7 +85050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1276026860
 GameObject:
@@ -85566,7 +85577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1211489857}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1285337586
 GameObject:
@@ -86437,7 +86448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1475648568}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1301468426
 GameObject:
@@ -86480,7 +86491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 2002995248}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1301929061
 GameObject:
@@ -86921,7 +86932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1306394338
 GameObject:
@@ -87298,7 +87309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1307207946
 GameObject:
@@ -88578,7 +88589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1318702070
 GameObject:
@@ -88743,7 +88754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1321027874
 GameObject:
@@ -89444,7 +89455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1327981408
 GameObject:
@@ -89487,7 +89498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1328362427
 GameObject:
@@ -89943,7 +89954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1332792144
 GameObject:
@@ -90026,7 +90037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1334001762
 GameObject:
@@ -90230,7 +90241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1337020810
 GameObject:
@@ -90353,7 +90364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1812451396}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1338217346
 GameObject:
@@ -90637,7 +90648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1343017237
 GameObject:
@@ -90881,7 +90892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1344830515
 GameObject:
@@ -91245,7 +91256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1351114625
 GameObject:
@@ -91288,7 +91299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1351757349
 GameObject:
@@ -92184,7 +92195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1358796280
 GameObject:
@@ -92227,7 +92238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 827440535}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1358969204
 GameObject:
@@ -92270,7 +92281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1359097219
 GameObject:
@@ -92313,7 +92324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1330863181}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1359137863
 GameObject:
@@ -92598,7 +92609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1367971094
 GameObject:
@@ -92721,7 +92732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1150849428}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1369319518
 GameObject:
@@ -92764,7 +92775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1371985607
 GameObject:
@@ -94269,7 +94280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1408400788}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1381583995
 GameObject:
@@ -94474,7 +94485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1385955939
 GameObject:
@@ -94598,7 +94609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1388051409
 GameObject:
@@ -94721,7 +94732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1388921191
 GameObject:
@@ -96367,7 +96378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1411366623
 GameObject:
@@ -96490,7 +96501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1412560902
 GameObject:
@@ -97147,7 +97158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1420564535
 GameObject:
@@ -97190,7 +97201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1420699657
 GameObject:
@@ -97233,7 +97244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1421344710
 GameObject:
@@ -97455,7 +97466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 888143051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1428097507
 GameObject:
@@ -97498,7 +97509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1428283121
 GameObject:
@@ -97541,7 +97552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1570354431}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1429227285
 GameObject:
@@ -97665,7 +97676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1430584472
 GameObject:
@@ -97828,7 +97839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1436962814
 GameObject:
@@ -97991,7 +98002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1440693958
 GameObject:
@@ -98732,7 +98743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1448621411
 GameObject:
@@ -100375,7 +100386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1460299366
 GameObject:
@@ -100992,7 +101003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1471618519
 GameObject:
@@ -101074,10 +101085,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
---- !u!4 &1473190099
-Transform:
-  m_PrefabParentObject: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-  m_PrefabInternal: {fileID: 1028427788}
 --- !u!1 &1473381945
 GameObject:
   m_ObjectHideFlags: 0
@@ -101686,7 +101693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1482647093
 GameObject:
@@ -101810,7 +101817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1812451396}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1484199169
 GameObject:
@@ -101853,7 +101860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1484695523
 GameObject:
@@ -101976,7 +101983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 827440535}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1487087705
 GameObject:
@@ -102273,7 +102280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1490076140
 GameObject:
@@ -102640,7 +102647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1494809700
 GameObject:
@@ -103365,7 +103372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 369482081}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 4
 --- !u!1 &1503236063
 GameObject:
@@ -103448,7 +103455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1853728946}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1504853231
 GameObject:
@@ -103491,7 +103498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1505514022
 GameObject:
@@ -104332,7 +104339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1515637522
 GameObject:
@@ -104869,7 +104876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1521413259
 GameObject:
@@ -105677,7 +105684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1537700379
 GameObject:
@@ -106002,7 +106009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1541214652
 GameObject:
@@ -106084,121 +106091,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
---- !u!1 &1542277244
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1542277245}
-  - 33: {fileID: 1542277248}
-  - 135: {fileID: 1542277247}
-  - 23: {fileID: 1542277246}
-  - 114: {fileID: 1542277249}
-  m_Layer: 0
-  m_Name: Model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1542277245
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542277244}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children: []
-  m_Father: {fileID: 782564168}
-  m_RootOrder: 1
---- !u!23 &1542277246
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542277244}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 84b9e1d19d11078d11005b9844295342, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!135 &1542277247
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542277244}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1542277248
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542277244}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1542277249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1542277244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342b6466460824b44860a1ae7de7e0ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Animation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: .25
-      value: .75
-      inSlope: 3.82802511e-07
-      outSlope: 3.82802511e-07
-      tangentMode: 0
-    - time: .5
-      value: .899999976
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: .75
-      value: .75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &1542310615
 GameObject:
   m_ObjectHideFlags: 0
@@ -106281,7 +106173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1543551893
 GameObject:
@@ -106755,7 +106647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1547098899
 GameObject:
@@ -106918,7 +106810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 792885747}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1547553084
 GameObject:
@@ -107041,54 +106933,127 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
---- !u!1001 &1548628319
-Prefab:
+--- !u!1 &1549205568
+GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 107618, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1549205569}
+  - 33: {fileID: 1549205573}
+  - 135: {fileID: 1549205572}
+  - 23: {fileID: 1549205571}
+  - 114: {fileID: 1549205570}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1549205569
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 483002, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549205568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 7924990}
+  m_RootOrder: 0
+--- !u!114 &1549205570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11411200, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549205568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342b6466460824b44860a1ae7de7e0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animation:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .25
+      value: .75
+      inSlope: 3.82802511e-07
+      outSlope: 3.82802511e-07
+      tangentMode: 0
+    - time: .5
+      value: .899999976
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .75
+      value: .75
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!23 &1549205571
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2352980, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549205568}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 1a881e839dee45349ad1a004dcddd187, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &1549205572
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13513336, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549205568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 782564168}
-    m_Modifications:
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19860856, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-      propertyPath: InitialModule.startColor.maxColor.rgba
-      value: 4294902015
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-  m_IsPrefabParent: 0
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1549205573
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3358056, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549205568}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1549673326
 GameObject:
   m_ObjectHideFlags: 0
@@ -107130,7 +107095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1549848983
 GameObject:
@@ -107454,7 +107419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1553765068
 GameObject:
@@ -107759,7 +107724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1559514251
 GameObject:
@@ -107922,7 +107887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1760501456}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1560946081
 GameObject:
@@ -108379,7 +108344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1566839405
 GameObject:
@@ -108422,7 +108387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1567331951
 GameObject:
@@ -108465,7 +108430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1568169625
 GameObject:
@@ -108789,8 +108754,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 827440535}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
+--- !u!1 &1574941009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 130738, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1574941010}
+  - 114: {fileID: 1574941012}
+  - 114: {fileID: 1574941011}
+  m_Layer: 0
+  m_Name: Player1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1574941010
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 485236, guid: 4894adbe5d71a44dfb1f8091fd813e3e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574941009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 275587712}
+  - {fileID: 2060392177}
+  m_Father: {fileID: 992541472}
+  m_RootOrder: 3
+--- !u!114 &1574941011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11407338, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574941009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9292eb977df354641bac01d5620fa517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1574941012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11423348, guid: 4894adbe5d71a44dfb1f8091fd813e3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574941009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b906889a09806b41864f16605623df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AxisSource: 2
+  Radius: 6
+  Speed: 60
+  Controller: 0
 --- !u!1 &1575131891
 GameObject:
   m_ObjectHideFlags: 0
@@ -108891,7 +108915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1576211416
 GameObject:
@@ -108934,7 +108958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 408698690}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1576464960
 GameObject:
@@ -108977,7 +109001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1577171257
 GameObject:
@@ -109020,7 +109044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1577516779
 GameObject:
@@ -110061,7 +110085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1227750609}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1591260435
 GameObject:
@@ -110288,7 +110312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1592855446
 GameObject:
@@ -110430,7 +110454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1595761859
 GameObject:
@@ -110473,7 +110497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1597887465
 GameObject:
@@ -110833,7 +110857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1602796736
 GameObject:
@@ -110916,7 +110940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1603815041
 GameObject:
@@ -111523,7 +111547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1613351353
 GameObject:
@@ -111566,7 +111590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1614713465
 GameObject:
@@ -111689,7 +111713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 408698690}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1617933399
 GameObject:
@@ -112012,7 +112036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1622131860
 GameObject:
@@ -112055,7 +112079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1623979301
 GameObject:
@@ -112550,7 +112574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1629827621
 GameObject:
@@ -112833,7 +112857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1633194724
 GameObject:
@@ -112996,7 +113020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1638338897
 GameObject:
@@ -113120,7 +113144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 283054392}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1641123153
 GameObject:
@@ -113283,7 +113307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 54524868}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1642208615
 GameObject:
@@ -114089,7 +114113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1651009166
 GameObject:
@@ -114292,7 +114316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1653509091
 GameObject:
@@ -114416,7 +114440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1655085833
 GameObject:
@@ -114727,7 +114751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1659035046
 GameObject:
@@ -115214,7 +115238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1666633517
 GameObject:
@@ -115297,7 +115321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1922594260}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1667717649
 GameObject:
@@ -115381,7 +115405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 1797349486}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1668160065
 GameObject:
@@ -115464,7 +115488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1669050925
 GameObject:
@@ -115950,7 +115974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1676748548
 GameObject:
@@ -116233,7 +116257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1683126714
 GameObject:
@@ -116316,7 +116340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1684034828
 GameObject:
@@ -116682,7 +116706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1693376227
 GameObject:
@@ -117277,7 +117301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1700699419
 GameObject:
@@ -117601,7 +117625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1703956313
 GameObject:
@@ -117888,7 +117912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1706172874
 GameObject:
@@ -117931,7 +117955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1707284144
 GameObject:
@@ -118054,7 +118078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1708453672
 GameObject:
@@ -118097,7 +118121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1709035168
 GameObject:
@@ -118181,7 +118205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1710787129
 GameObject:
@@ -119076,7 +119100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1815251534}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1721959081
 GameObject:
@@ -119199,7 +119223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1722748177
 GameObject:
@@ -119444,7 +119468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1728413251
 GameObject:
@@ -119607,7 +119631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1729437089
 GameObject:
@@ -119770,7 +119794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1733158476
 GameObject:
@@ -119813,7 +119837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1733514062
 GameObject:
@@ -119896,7 +119920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1734717638
 GameObject:
@@ -119939,7 +119963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1473618696}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1735161228
 GameObject:
@@ -119982,7 +120006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1735238185
 GameObject:
@@ -120145,7 +120169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1740364245
 GameObject:
@@ -120589,7 +120613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1319698441}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1749734176
 GameObject:
@@ -120673,7 +120697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1751897455
 GameObject:
@@ -120916,7 +120940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1756582418
 GameObject:
@@ -121762,7 +121786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1767818218
 GameObject:
@@ -121805,7 +121829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1768444119
 GameObject:
@@ -121848,7 +121872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 264023187}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1768456679
 GameObject:
@@ -121973,7 +121997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1772884949
 GameObject:
@@ -122016,7 +122040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1772998700
 GameObject:
@@ -122221,7 +122245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1777810718
 GameObject:
@@ -122264,7 +122288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1779416004
 GameObject:
@@ -122307,7 +122331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 91077353}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1780371619
 GameObject:
@@ -122958,7 +122982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1495213339}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1789818957
 GameObject:
@@ -123525,7 +123549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 80696478}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1793126199
 GameObject:
@@ -123730,7 +123754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 452599349}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1796486289
 GameObject:
@@ -124703,7 +124727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1815251532
 GameObject:
@@ -125155,7 +125179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1824109098
 GameObject:
@@ -125441,7 +125465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1833796753
 GameObject:
@@ -125965,7 +125989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 180071572}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1841394696
 GameObject:
@@ -126169,7 +126193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1843406047
 GameObject:
@@ -126510,7 +126534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 853701716}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1849156887
 GameObject:
@@ -126753,7 +126777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1815251534}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1853728944
 GameObject:
@@ -127037,7 +127061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1860768450
 GameObject:
@@ -127080,7 +127104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1861148007
 GameObject:
@@ -127123,7 +127147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1812451396}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1861166277
 GameObject:
@@ -127539,7 +127563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 792885747}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1865742604
 GameObject:
@@ -127663,7 +127687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1871678613
 GameObject:
@@ -127706,7 +127730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1872083109
 GameObject:
@@ -127829,7 +127853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1211489857}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1876555142
 GameObject:
@@ -128556,7 +128580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 888143051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1885766570
 GameObject:
@@ -129043,7 +129067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1408400788}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1891872497
 GameObject:
@@ -129167,7 +129191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1894759542
 GameObject:
@@ -129847,7 +129871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1902855786
 GameObject:
@@ -129890,7 +129914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1902874360
 GameObject:
@@ -129933,7 +129957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 827440535}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1902913227
 GameObject:
@@ -130075,7 +130099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1904022702
 GameObject:
@@ -130401,7 +130425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 702255819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1909092055
 GameObject:
@@ -130685,7 +130709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1915340880
 GameObject:
@@ -130728,7 +130752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1495213339}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1916846338
 GameObject:
@@ -131012,7 +131036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1920509149
 GameObject:
@@ -131297,7 +131321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1925541290
 GameObject:
@@ -131421,7 +131445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1927302840
 GameObject:
@@ -131504,7 +131528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 567854652}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1929368580
 GameObject:
@@ -131547,7 +131571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1929835460
 GameObject:
@@ -132227,7 +132251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 408698690}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1944492794
 GameObject:
@@ -132482,7 +132506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1944693051
 GameObject:
@@ -132633,7 +132657,7 @@ Transform:
   m_Children:
   - {fileID: 1844315154}
   m_Father: {fileID: 992541472}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &1945268477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132817,7 +132841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1978900668}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1946775955
 GameObject:
@@ -132860,7 +132884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 80696478}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1948132583
 GameObject:
@@ -132983,8 +133007,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
+--- !u!1001 &1952775073
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1574941010}
+    m_Modifications:
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1953288377
 GameObject:
   m_ObjectHideFlags: 0
@@ -133106,7 +133172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1956013417
 GameObject:
@@ -133149,7 +133215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1709035170}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1957971973
 GameObject:
@@ -133313,7 +133379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1211489857}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1959502654
 GameObject:
@@ -133356,7 +133422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 702255819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1959596089
 GameObject:
@@ -133399,7 +133465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 827440535}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1961623037
 GameObject:
@@ -133710,7 +133776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1330863181}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1963545803
 GameObject:
@@ -134247,7 +134313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1972291417
 GameObject:
@@ -134290,7 +134356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1973580884
 GameObject:
@@ -134373,7 +134439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1974212780
 GameObject:
@@ -134496,7 +134562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1473618696}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1975736072
 GameObject:
@@ -134660,7 +134726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1977878680
 GameObject:
@@ -134703,7 +134769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 556969819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1978900666
 GameObject:
@@ -135395,7 +135461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 556969819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1985108955
 GameObject:
@@ -135519,7 +135585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1922594260}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1986552380
 GameObject:
@@ -135683,7 +135749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1154590899}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1991648693
 GameObject:
@@ -136196,7 +136262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1473618696}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &1996857544
 GameObject:
@@ -136279,7 +136345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 702255819}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &1999244735
 GameObject:
@@ -136661,7 +136727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2002995246
 GameObject:
@@ -136986,7 +137052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2009074310
 GameObject:
@@ -137111,7 +137177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2010072482
 GameObject:
@@ -138149,10 +138215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
---- !u!4 &2014562625
-Transform:
-  m_PrefabParentObject: {fileID: 489374, guid: 72cb52a0ba23ba649862fc889055e514, type: 2}
-  m_PrefabInternal: {fileID: 1548628319}
 --- !u!1 &2015036375
 GameObject:
   m_ObjectHideFlags: 0
@@ -138275,7 +138337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2017477495
 GameObject:
@@ -138640,7 +138702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2022475208
 GameObject:
@@ -138885,7 +138947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2025677612
 GameObject:
@@ -138928,7 +138990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2026886735
 GameObject:
@@ -139295,7 +139357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2032451105
 GameObject:
@@ -139338,7 +139400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2032508425
 GameObject:
@@ -139778,7 +139840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2036474495
 GameObject:
@@ -139861,7 +139923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2039570645
 GameObject:
@@ -139904,7 +139966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1475648568}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2039688403
 GameObject:
@@ -140028,7 +140090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 7
   SoundBite: {fileID: 1200642408}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2040573204
 GameObject:
@@ -140071,7 +140133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2041040438
 GameObject:
@@ -140155,7 +140217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1812451396}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2041878364
 GameObject:
@@ -140198,7 +140260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2042309300
 GameObject:
@@ -140323,7 +140385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1319698441}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2042857933
 GameObject:
@@ -140731,7 +140793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2046856941
 GameObject:
@@ -140855,7 +140917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 2022475210}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2048593585
 GameObject:
@@ -141338,7 +141400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 596146734}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2060063454
 GameObject:
@@ -141380,6 +141442,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 5
+--- !u!4 &2060392177 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
+  m_PrefabInternal: {fileID: 1952775073}
 --- !u!1 &2060783497
 GameObject:
   m_ObjectHideFlags: 0
@@ -141421,7 +141487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 662131693}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2061249600
 GameObject:
@@ -141624,7 +141690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1758221666}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2066430172
 GameObject:
@@ -141788,7 +141854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2068442943
 GameObject:
@@ -141872,7 +141938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1330863181}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2069197930
 GameObject:
@@ -141955,7 +142021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1922594260}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2070711681
 GameObject:
@@ -141998,7 +142064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 653464361}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2071321568
 GameObject:
@@ -142081,7 +142147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1862656585}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2071947843
 GameObject:
@@ -142377,7 +142443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2073920170
 GameObject:
@@ -142500,7 +142566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2075636572
 GameObject:
@@ -142866,7 +142932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 0
   SoundBite: {fileID: 1218018098}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2080995383
 GameObject:
@@ -143312,7 +143378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2093426149
 GameObject:
@@ -143435,7 +143501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1758221666}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2096197429
 GameObject:
@@ -143721,7 +143787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2099002534
 GameObject:
@@ -143804,7 +143870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2099410743
 GameObject:
@@ -144007,7 +144073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1758221666}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2104779643
 GameObject:
@@ -144411,7 +144477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 4
   SoundBite: {fileID: 1726417096}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2116451806
 GameObject:
@@ -144454,7 +144520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 1516017051}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2118589597
 GameObject:
@@ -144580,7 +144646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2122603851
 GameObject:
@@ -144888,7 +144954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 2
   SoundBite: {fileID: 367636205}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2125265231
 GameObject:
@@ -145092,7 +145158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2129255293
 GameObject:
@@ -145332,7 +145398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 5
   SoundBite: {fileID: 1441563077}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2134670518
 GameObject:
@@ -145375,7 +145441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 1
   SoundBite: {fileID: 533552685}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2134783298
 GameObject:
@@ -146012,7 +146078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 6
   SoundBite: {fileID: 1382552117}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 3
 --- !u!1 &2143324744
 GameObject:
@@ -146137,7 +146203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Index: 3
   SoundBite: {fileID: 283054392}
-  LocalRadius: 1.25
+  LocalRadius: 1.5
   Kind: 2
 --- !u!1 &2144393520
 GameObject:

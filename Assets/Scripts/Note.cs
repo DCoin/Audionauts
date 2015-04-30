@@ -67,9 +67,18 @@ namespace Assets.Scripts {
 
         }
 
-//        public void Update() {
-//            if (playing != null) Debug.Log ("Shouldhaplayed: " + (MusicManager.Instance.BeatsPlayed - SongPosition) + " HasPlayed: " + playing.time);
-//        }
+        public void Update() {
+            //if (playing != null) Debug.Log ("Shouldhaplayed: " + (MusicManager.Instance.BeatsPlayed - SongPosition) + " HasPlayed: " + playing.time);
+
+
+            var pos = transform.position;
+            var a = pos;
+            var b = pos;
+            a.x -= GlobalRadius;
+            b.x += GlobalRadius;
+
+            Debug.DrawLine(a,b,Color.white);
+        }
 
         public Color CurrentColor {
             get {
