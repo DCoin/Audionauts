@@ -57,7 +57,13 @@ namespace Assets.Scripts
                 }
             }
 
-            transform.Translate(axis.Vector * Speed 
+            var flip = ControllerManager.Controllers.GetAxisFlip(Controller);
+
+            var v = axis.Vector;
+            v.x *= flip.x;
+            v.y *= flip.y;
+            
+            transform.Translate(v * Speed 
                 * Time.deltaTime
                 , Space.World);
 

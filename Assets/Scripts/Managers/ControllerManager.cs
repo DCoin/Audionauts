@@ -27,6 +27,17 @@ namespace Assets.Scripts.Managers
             if (Controllers == null)
             {
                 Controllers = this;
+
+                axisFlips = new int[2, 2];
+
+                for (int i = 0; i < 2; i++) {
+                    for (int j = 0; j < 2; j++) {
+                        var key = PrefKey(i, j);
+                        var val = PlayerPrefs.GetInt(key);
+                        axisFlips[i, j] = val == 0 ? 1 : val;
+                    }
+                }
+
             }
             else
             {
@@ -105,8 +116,37 @@ namespace Assets.Scripts.Managers
 
         }
 
-        public void FlipAxis(int player, int axis) {
+        private string PrefKey(int player, int axis) {
+
+            return "Player" + player + "Axis" + axis;
+
+        }
+
+        private int[,] axisFlips;
+
+        public void DoAxisFlip(int player, int axis) {
+    
+            var val = PlayerPrefs.GetInt(PrefKey(player,axis));
+
+            if(val == 1) {
+                val = -1;
+            } else {
+                val = 1;
+            }
+
+            axisFlips[player, axis] = val;
+
+            PlayerPrefs.SetInt(PrefKey(player,axis), val);
             
+        }
+
+        public Vector2 GetAxisFlip(int player) {
+
+            var flipX = axisFlips[player, 0];
+            var flipY = axisFlips[player, 1];
+
+            return new Vector2(flipX,flipY);
+
         }
 
         

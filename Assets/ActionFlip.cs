@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts.Managers;
 
 public class ActionFlip : MenuAction {
 
@@ -13,28 +14,13 @@ public class ActionFlip : MenuAction {
 
     public float Length = 1;
 
-    private string PrefKey
-    {
-        get { return "axis" + Axis + "Player" + Player; }
-    }
-
     public override void Execute() {
 
         if(!idle)
             return;
 
-        var axis = PlayerPrefs.GetInt(PrefKey);
-
-        Debug.Log(PrefKey + " = " + axis);
-
-        if (axis == 1) {
-            axis = -1;
-        } else {
-            axis = 1;
-        }
-
-        PlayerPrefs.SetInt(PrefKey, axis);
-
+        ControllerManager.Controllers.DoAxisFlip(Player, Axis);
+        
         StartAnimation();
     }
 

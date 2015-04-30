@@ -2,11 +2,18 @@
 using UnityEngine;
 using Assets.Scripts.Managers;
 using System.Linq;
+using Assets.Scripts;
+using JetBrains.Annotations;
+using UnityEngine.SocialPlatforms.GameCenter;
 
 public class MenuHandler : MonoBehaviour {
 
     private Transform player1;
     private Transform player2;
+    private Vector3 player1Center;
+    private Vector3 player2Center;
+    private Vector3 player1From;
+    private Vector3 player2From;
 
     public Transform ActiveMenu;
     public Transform NextMenu = null;
@@ -24,6 +31,8 @@ public class MenuHandler : MonoBehaviour {
 
 	    player1 = StageManager.Instance.Player1.transform;
 	    player2 = StageManager.Instance.Player2.transform;
+	    player1Center = player1.localPosition;
+	    player2Center = player2.localPosition;
 
 	}
 
@@ -43,9 +52,42 @@ public class MenuHandler : MonoBehaviour {
 
 
     private bool transitioning;
-	
+
+    private bool centering;
+
+    public float centeringDuration;
+
+    private float centeringProgress;
+
+    private bool Center(Transform player, Vector3 from, Vector3 to) {
+
+        centeringProgress += Time.deltaTime;
+
+        if (centeringProgress < centeringDuration) {
+            player.localPosition = Vector3.Lerp(from, to, centeringProgress/centeringDuration);
+            return false;
+        } else {
+            player.localPosition = to;
+            return true;
+        }
+
+    }
+
+
+
 	// Update is called once per frame
 	void Update () {
+
+	    if (centering) {
+	        var b1 = Center(player1, player1From, player1Center);
+            var b2 = Center(player2, player2From, player2Center);
+
+	        if (b1 && b2) {
+	            centering = false;
+                player1.GetComponent<MovementController>().enabled = true;
+                player2.GetComponent<MovementController>().enabled = true;
+	        }
+	    }
 
 	    if (transitioning) {
 
@@ -82,6 +124,14 @@ public class MenuHandler : MonoBehaviour {
 
                 if(hits(player1, option) || hits(player2, option)) {
 
+                    centering = true;
+
+                    player1.GetComponent<MovementController>().enabled = false;
+                    player2.GetComponent<MovementController>().enabled = false;
+
+                    player1From = player1.localPosition;
+                    player2From = player2.localPosition;
+                    centeringProgress = 0f;
 
                     option.ExecuteActions();
 
@@ -91,6 +141,8 @@ public class MenuHandler : MonoBehaviour {
 
 
 	    }
+
+        
 
 
 	    
