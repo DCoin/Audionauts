@@ -11,12 +11,13 @@ namespace Assets.Scripts.Managers
 		public float Decay = 0.999f;
 		public float MissScale = .5f;
 		public float Smoothing = .1f;
+		public float MaxGroove = 40;
 
 		private float groove = 0;
 		private float smoothGroove = 0;
 
 		public float PercentGroove {
-			get { return smoothGroove / 40; } // TODO Fix this conversion
+			get { return smoothGroove / MaxGroove; }
 		}
 
 		void Start () {
