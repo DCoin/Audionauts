@@ -24,7 +24,13 @@ namespace Assets.Scripts
 		public bool UseFidelity = false;
 		public AnimationCurve Fidelity;
 
+		public bool UseAutoAim = false;
+		public AnimationCurve ErrorCorrection;
+
 		private Vector2 velocity = Vector2.zero;
+
+		private readonly float ringDistanceRad = Mathf.PI / 4f;
+		private readonly float halfRingDistanceRad = Mathf.PI / 8f;
 
         private static TwoAxisInputControl GetAxis(InputDevice device, AxisSource source)
         {
@@ -46,6 +52,9 @@ namespace Assets.Scripts
             }
         }
 
+		private static Vector2 AngleToVector (float angle) {
+			return new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+		}
 
         private void Update()
         {
@@ -77,7 +86,24 @@ namespace Assets.Scripts
 			if (UseFidelity) v = v.normalized * Fidelity.Evaluate(v.magnitude);
 
 			if (UseTarget) {
-				var target = v.normalized * Radius;
+				var target = v.normalized;
+				if (UseAutoAim) {
+					var rad = Mathf.Atan2(target.y, target.x); // TODO only uses 180 deg?
+					var fractionized = rad % ringDistanceRad;
+					var ringDistanceOffset = Mathf.Floor(rad / ringDistanceRad);
+					float error;
+					float dir;
+					if (fractionized < halfRingDistanceRad) {
+						error = fractionized;
+						dir = -1;
+					} else {
+						error = ringDistanceRad - fractionized;
+						dir = 1;
+					}
+					float percentOff = error / halfRingDistanceRad;
+					target = AngleToVector(fractionized + dir * error * ErrorCorrection.Evaluate(percentOff) + ringDistanceRad * ringDistanceOffset);
+				}
+				target = target * Radius;
 				var direction = target - (Vector2)transform.localPosition;
 				v = direction.normalized * v.magnitude * ClosenessDeceleration.Evaluate(direction.magnitude);
 			}
