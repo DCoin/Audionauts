@@ -18,17 +18,11 @@ public class ParticleSpeedScaler : MonoBehaviour {
 	private float currentGrooveScale {
 		get { return MinSpeedScale + (MaxSpeedScale - MinSpeedScale) * GrooveManager.Instance.PercentGroove; }
 	}
-//	private float startSpeed;
-//	private float minSpeed;
-//	private float speedScale;
 
 	void Start () {
 		particleSystem = GetComponent<ParticleSystem>();
 		particles = new ParticleSystem.Particle[particleSystem.maxParticles];
 		particleSystemRenderer = GetComponent<ParticleSystemRenderer>();
-//		startSpeed = particleSystem.startSpeed;
-//		minSpeed = particleSystem.startSpeed * MinSpeedScale;
-//		speedScale = particleSystem.startSpeed * (MaxSpeedScale - MinSpeedScale);
 	}
 
 	void LateUpdate() {

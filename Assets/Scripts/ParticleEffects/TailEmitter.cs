@@ -10,7 +10,6 @@ public class TailEmitter : MonoBehaviour {
 	//public bool interpolate;
 
 	ParticleSystem _particleSystem;
-	ParticleSystem.Particle[] particles;
 	Vector3 lastPosition;
 
 	Vector3 localPlayerPosition {
@@ -19,7 +18,6 @@ public class TailEmitter : MonoBehaviour {
 
 	void Start () {
 		_particleSystem = GetComponent<ParticleSystem>();
-		particles = new ParticleSystem.Particle[_particleSystem.maxParticles];
 		lastPosition = Player.position;
 	}
 
