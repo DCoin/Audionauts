@@ -4,7 +4,7 @@ using Assets.Scripts.Managers;
 
 public class SpeedScaler : MonoBehaviour {
 
-	public float Scale = 100;
+	public float MaxScale = 200;
 	public float MinScale = 100;
 
 	void Start () {
@@ -12,6 +12,6 @@ public class SpeedScaler : MonoBehaviour {
 	}
 
 	void Update () {
-		transform.localScale = new Vector3(1, 1, MinScale + Scale * GrooveManager.Instance.PercentGroove);
+		transform.localScale = new Vector3(1, 1, MinScale + (MaxScale - MinScale) * GrooveManager.Instance.PercentGroove);
 	}
 }
