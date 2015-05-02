@@ -51,14 +51,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
+      value: .300253063
+      inSlope: .699746966
+      outSlope: .699746966
       tangentMode: 10
     - time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
+      inSlope: .699746966
+      outSlope: .699746966
       tangentMode: 10
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -291,16 +291,11 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startRotation:
-      scalar: 0
+      scalar: .0174532924
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - time: 1
           value: 1
           inSlope: 0
           outSlope: 0
@@ -315,14 +310,9 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: 1
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-      minMaxState: 0
+      minMaxState: 3
     gravityModifier: 0
     inheritVelocity: 0
     maxNumParticles: 10000
