@@ -3,6 +3,8 @@ using UnityEngine;
 
     public class StageEnd : MonoBehaviour {
 
+        private AsyncOperation aop;
+
         private void LateUpdate() {
             var traveller = StageManager.Instance.Traveller;
 
@@ -12,13 +14,20 @@ using UnityEngine;
 
             var zb = traveller.CurrentPosition.z;
 
-            var diff = zb - za;
+            if ((!(za < z)) || (!(z < zb))) return;
 
-            if((za < z) && (z < zb)) {
+            aop = Application.LoadLevelAsync("Menu");
 
-                FadeManager.Instance.EndScene("Menu");
+            aop.allowSceneActivation = false;
 
-            }
+            FadeManager.Instance.EndScene(LoadMenu);
+        }
+
+
+        private void LoadMenu() {
+
+            aop.allowSceneActivation = true;
+
         }
 
     }

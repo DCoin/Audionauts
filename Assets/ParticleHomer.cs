@@ -14,7 +14,7 @@ public class ParticleHomer : MonoBehaviour {
 
     public float Duration = 5f;
 
-    private ParticleSystem particleSystem;
+    private ParticleSystem system;
     
     private ParticleSystem.Particle[] particles;
     
@@ -23,8 +23,8 @@ public class ParticleHomer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-	    particleSystem = GetComponent<ParticleSystem>();
-        particles = new ParticleSystem.Particle[particleSystem.maxParticles];
+	    system = GetComponent<ParticleSystem>();
+        particles = new ParticleSystem.Particle[system.maxParticles];
 	    time = 0f;
 
 
@@ -35,7 +35,7 @@ public class ParticleHomer : MonoBehaviour {
 
 	    time += Time.deltaTime;
 
-	    int particleCount = particleSystem.GetParticles(particles);
+	    int particleCount = system.GetParticles(particles);
 
         var to = Target.position;
 	    var sqDist = Distance*Distance;
@@ -63,7 +63,7 @@ public class ParticleHomer : MonoBehaviour {
 
 	    }
 
-        particleSystem.SetParticles(particles, particleCount);
+        system.SetParticles(particles, particleCount);
 
 
 

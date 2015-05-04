@@ -3,11 +3,11 @@
 namespace Assets.Scripts.Managers {
     public class FadeManager : MonoBehaviour {
 
+        public delegate void OnFadeOut();
+
         public static FadeManager Instance { get; private set; }
 
-        public string levelName;
-
-        
+        private OnFadeOut action;
 
         public float FadeSpeed = 0.8f;
 
@@ -20,9 +20,6 @@ namespace Assets.Scripts.Managers {
         private int fadeDirection = -1;
 
         public Texture2D FadeTexture;
-
-        public KeyCode Key;
-
    
 
         private void Start() {
@@ -35,21 +32,6 @@ namespace Assets.Scripts.Managers {
 
         void Update() {
 
-            if (aop != null) {
-                
-
-
-                aop.allowSceneActivation = isReady();
-
-                if(!aop.isDone)
-                    alpha = aop.progress / 0.9f;
-            }
-
-            if(Input.GetKeyDown(Key)) {
-                EndScene();
-            }
-
-
             alpha += fadeDirection * FadeSpeed * Time.deltaTime;
 
             if(alpha < 0f) {
@@ -61,7 +43,10 @@ namespace Assets.Scripts.Managers {
             if(alpha > 1f) {
                 alpha = 1f;
                 fadeDirection = 0;
-                Application.LoadLevel(levelName);
+                if (action != null) {
+                    action();
+                    action = null;
+                }
             }
 
 
@@ -75,32 +60,14 @@ namespace Assets.Scripts.Managers {
 
         }
 
-        public void EndScene() {
+        public void EndScene(OnFadeOut act) {
 
-            fadeDirection = 1;
-
-        }
-
-        private AsyncOperation aop = null;
-
-        private bool isReady() {
-
-            return aop != null && aop.progress >= .9f;
-
-        }
-
-        public void EndScene(string level) {
-
-
-            if(aop != null)
+            if (action != null) 
                 return;
 
-            aop = Application.LoadLevelAsync(level);
+            action = act;
 
-            aop.allowSceneActivation = false;
-
-
-            fadeDirection = 0;
+            fadeDirection = 1;
 
         }
 
