@@ -4,6 +4,7 @@ using System.Collections;
 public class AnglePlacer : MonoBehaviour {
 
     public float Radius = 10f;
+    [Range(0f,360f)]
     public float Angle;
 
     void OnValidate() {

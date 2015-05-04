@@ -42,8 +42,6 @@ public class CircleRenderer : MonoBehaviour
             lineRenderer.SetPosition(i, pos);
         }
 
-        
-
 	}
 
 }
