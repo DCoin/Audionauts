@@ -4,6 +4,7 @@ using Assets.Scripts.Managers;
 using System.Linq;
 using Assets.Scripts;
 using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine.SocialPlatforms.GameCenter;
 
 public class MenuHandler : MonoBehaviour {
@@ -122,7 +123,16 @@ public class MenuHandler : MonoBehaviour {
 
             foreach(var option in options) {
 
-                if(hits(player1, option) || hits(player2, option)) {
+                bool p1 = hits(player1, option);
+                bool p2 = hits(player2, option);
+                MenuKind kind = option.MenuKind;
+
+                bool a = (p1 || p2) && kind == MenuKind.Any;
+                bool b = p1 && kind == MenuKind.First;
+                bool c = p2 && kind == MenuKind.Second;
+                bool d = p1 && p2 && kind == MenuKind.Both;
+
+                if(a || b || c || d) {
 
                     centering = true;
 

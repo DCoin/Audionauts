@@ -160,6 +160,18 @@ namespace Assets.Scripts.Managers
 
         }
 
+        public void ResetAxisFlips() {
+
+            for (int i = 0; i < 2; ++i) {
+                for (int j = 0; j < 2; j++) {
+                    axisFlips[i, j] = 1;
+
+                    PlayerPrefs.SetInt(PrefKey(i, j), 1);
+                }
+            }
+
+        }
+
         
     }
 }

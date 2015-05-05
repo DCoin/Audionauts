@@ -6,6 +6,8 @@ public class MenuOption : MonoBehaviour {
 
     public float Size;
 
+    public MenuKind MenuKind;
+
     public MenuAction[] Actions;
 
     public void ExecuteActions() {
