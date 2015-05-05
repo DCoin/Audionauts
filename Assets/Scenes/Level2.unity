@@ -556,17 +556,37 @@ MonoBehaviour:
   Speed: 60
   Controller: 1
   UseAcceleration: 1
-  acc: 12
-  UseTarget: 0
+  acc: 32
+  UseTarget: 1
   ClosenessDeceleration:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-  UseFidelity: 0
+  UseFidelity: 1
   Fidelity:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
   UseAutoAim: 0
@@ -114825,17 +114845,37 @@ MonoBehaviour:
   Speed: 60
   Controller: 0
   UseAcceleration: 1
-  acc: 12
-  UseTarget: 0
+  acc: 32
+  UseTarget: 1
   ClosenessDeceleration:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-  UseFidelity: 0
+  UseFidelity: 1
   Fidelity:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
   UseAutoAim: 0
@@ -134658,7 +134698,7 @@ GameObject:
   - 4: {fileID: 1869240981}
   - 114: {fileID: 1869240982}
   m_Layer: 0
-  m_Name: SW
+  m_Name: S
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134671,7 +134711,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1869240980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.53553343, y: -3.53553486, z: 0}
+  m_LocalPosition: {x: -4.37113897e-07, y: -5, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 739200540}
@@ -134687,7 +134727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fccf0ed6d3e1b2498554d9f24f819c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 5
+  Index: 4
   SoundBite: {fileID: 596146734}
   LocalRadius: 1.5
   Kind: 3
@@ -152318,10 +152358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933b269953bf3654ea9bb7396d904718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Menu
   FadeSpeed: .800000012
   FadeTexture: {fileID: 2800000, guid: dca112a0db5cea94c8780d1464a8e95f, type: 3}
-  Key: 32
 --- !u!1 &2118642510
 GameObject:
   m_ObjectHideFlags: 0

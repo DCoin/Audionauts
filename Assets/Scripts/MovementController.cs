@@ -103,9 +103,10 @@ namespace Assets.Scripts
 					float percentOff = error / halfRingDistanceRad;
 					target = AngleToVector(fractionized + dir * error * ErrorCorrection.Evaluate(percentOff) + ringDistanceRad * ringDistanceOffset);
 				}
-				target = target * Radius;
+				target = target * Radius * 1.1f;
 				var direction = target - (Vector2)transform.localPosition;
-				v = direction.normalized * v.magnitude * ClosenessDeceleration.Evaluate(direction.magnitude);
+                if(Controller == 0)
+				v = direction.normalized * v.magnitude * ClosenessDeceleration.Evaluate(direction.magnitude / 4f);
 			}
 
 			if (UseAcceleration) velocity = Vector2.Lerp(velocity, v*Speed, acc * Time.deltaTime);

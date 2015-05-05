@@ -35,7 +35,7 @@ public class Rotater : MonoBehaviour {
                 break;
         }
 
-        Vector3 rot = rotateSpeed * Vector3.forward;
+        Vector3 rot = rotateSpeed * Time.deltaTime * 60f * Vector3.forward;
 
         transform.Rotate(rot, relativeTo);
 

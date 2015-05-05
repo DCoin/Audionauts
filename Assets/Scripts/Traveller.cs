@@ -8,11 +8,13 @@ namespace Assets.Scripts
 		// The distance the traveller moves per beat
 		public const float BeatScaling = .25f;
 
+		/*
         void OnGUI() {
 
             GUI.Label(new Rect(32, 32, 128, 128), transform.localPosition.z.ToString());
 
         }
+		*/
 
         public Vector3 LastPosition { get; private set; }
 
