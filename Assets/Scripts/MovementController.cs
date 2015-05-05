@@ -69,10 +69,10 @@ namespace Assets.Scripts
                 switch (Controller)
                 {
                     case 0:
-                        axis = GetAxis(device, AxisSource.StickLeft);
+                        axis = GetAxis(device, AxisSource.StickRight);
                         break;
                     case 1:
-                        axis = GetAxis(device, AxisSource.StickRight);
+                        axis = GetAxis(device, AxisSource.StickLeft);
                         break;
                 }
             }
