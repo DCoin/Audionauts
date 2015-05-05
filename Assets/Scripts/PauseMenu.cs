@@ -32,4 +32,16 @@ public class PauseMenu : MonoBehaviour {
 	public bool IsPaused {
 		get { return Time.timeScale == 0; }
 	}
+
+	public void Restart() {
+		Application.LoadLevel(Application.loadedLevel);
+	}
+
+	public void Quit() {
+		Application.LoadLevel("Menu");
+	}
+
+	public void Volume () {
+		// WHAT
+	}
 }
