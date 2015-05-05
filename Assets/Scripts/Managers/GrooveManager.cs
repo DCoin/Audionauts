@@ -8,7 +8,7 @@ namespace Assets.Scripts.Managers
 		
 		public static GrooveManager Instance { get; private set; }
 
-		public float Decay = 0.999f;
+		public float Decay = 0.001f;
 		public float MissScale = .5f;
 		public float Smoothing = .1f;
 		public float MaxGroove = 40;
@@ -33,8 +33,8 @@ namespace Assets.Scripts.Managers
 		}
 
 		void Update () {
-			groove *= Decay;
-			smoothGroove += (groove - smoothGroove) * Smoothing;
+			groove -= groove * Decay * Time.deltaTime * 60;
+			smoothGroove += (groove - smoothGroove) * Smoothing * 60 * Time.deltaTime;
 		}
 
 		public void Hit(bool hit) {
@@ -44,8 +44,8 @@ namespace Assets.Scripts.Managers
 #if UNITY_EDITOR
 		void OnGUI() {
 			
-			GUI.Label(new Rect(32, 50, 128, 128), "Groove: " + smoothGroove);
-			GUI.Label(new Rect(32, 62, 128, 128), "Groove%: " + PercentGroove);
+			GUI.Label(new Rect(32, 50, 200, 128), "Groove: " + smoothGroove);
+			GUI.Label(new Rect(32, 62, 200, 128), "Groove%: " + PercentGroove);
 			
 		}
 #endif
