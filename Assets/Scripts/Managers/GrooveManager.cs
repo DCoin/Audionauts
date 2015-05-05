@@ -12,12 +12,13 @@ namespace Assets.Scripts.Managers
 		public float MissScale = .5f;
 		public float Smoothing = .1f;
 		public float MaxGroove = 40;
+		public AnimationCurve Progression;
 
 		private float groove = 0;
 		private float smoothGroove = 0;
 
 		public float PercentGroove {
-			get { return smoothGroove / MaxGroove; }
+			get { return Progression.Evaluate(smoothGroove / MaxGroove); }
 		}
 
 		void Start () {
@@ -43,8 +44,8 @@ namespace Assets.Scripts.Managers
 #if UNITY_EDITOR
 		void OnGUI() {
 			
-			GUI.Label(new Rect(32, 50, 128, 128), groove.ToString());
-			GUI.Label(new Rect(32, 62, 128, 128), smoothGroove.ToString());
+			GUI.Label(new Rect(32, 50, 128, 128), "Groove: " + smoothGroove);
+			GUI.Label(new Rect(32, 62, 128, 128), "Groove%: " + PercentGroove);
 			
 		}
 #endif
