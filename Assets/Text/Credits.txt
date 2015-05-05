@@ -1,83 +1,81 @@
-STAFF
+credits
 
 #
 
-STORY
+lead game designer
 
-SAKURAZAKI
-
-#
-
-SCREENPLAY
-
-SAKURAZAKI
-FAW
+sara tarby
 
 #
 
-IMAGE ILLUST
+project management and music
 
-RUNMARU
-
-#
-
-ART WORKS
-
-RUNMARU
-PARCO
-UMA
+rune weise kofoed
 
 #
 
-ART WORKS
+ux design
 
-NAGA
-WILD TAGOU
-NIWAKAMARU
+sofie grønlund
 
 #
 
-PROGRAM WORKS
+tools programmer
 
-MADOKA SOUTHERNAMI
-MASITA
-
-#
-
-ASSISTANT
-
-NOSUKE
-
-#
-NES TRANSLATOR
-
-KEVIN & DANIEL
+oliver phillip roer
 
 #
 
-SOUND DESIGN
+lead programmer
 
-MORE YAMASAN
-B.B
-HAKASA
+søren lillethorup vange
 
 #
 
-DIRECTOR
+art director
 
-SAKURAZAKI
-
-#
-
-AUDIO VISUAL
-COPYRIGHT MCMLXXXIX
-TECMO LTD.
-ALL RIGHTS RESERVED.
+sophus kruhøffer
 
 #
 
-THE END
+special thanks to 
 
-THANK YOU FOR PLAYING
-~ TECMO ~
+#
+
+our project supervisor
+
+vinicius pinton
+
+#
+
+play-testers
+
+cédric gilbert elisabeth
+christian grønlund
+
+#
+
+danny hyld
+kristian elkjær
+michael berg
+
+#
+
+mikkel schultz
+rune svendsgaard
+thom kiraly
+
+#
+
+all the lovely people 
+from 
+the alpha playdate
+
+#
+
+the end
+
+thank you for playing
+
+
 

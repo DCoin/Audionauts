@@ -23,7 +23,7 @@ public class CreditsRoller : MonoBehaviour {
             }
         }
 
-        var credits = CreditsText.text.Split('#');
+        var credits = CreditsText.text.ToUpper().Split('#');
 
         Texts = new TextMesh[credits.Length];
 
