@@ -10,9 +10,11 @@ namespace Assets.Scripts.Managers
 
         public float DeadZone;
 
+        public bool DoNotDestroyOnLoad;
+
         public static ControllerManager Controllers { get; private set; }
 
-        private readonly InputDevice[] _controllers = new InputDevice[2];
+        private static readonly InputDevice[] _controllers = new InputDevice[2];
 
         public InputDevice this[int i]
         {
@@ -22,7 +24,14 @@ namespace Assets.Scripts.Managers
             }
         }
 
+        void Awake() {
+            if(DoNotDestroyOnLoad)
+                DontDestroyOnLoad(gameObject);
+        }
+
+
         private void Start() {
+
 
             Cursor.visible = false;
 
