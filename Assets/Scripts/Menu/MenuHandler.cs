@@ -3,9 +3,6 @@ using UnityEngine;
 using Assets.Scripts.Managers;
 using System.Linq;
 using Assets.Scripts;
-using JetBrains.Annotations;
-using UnityEditor;
-using UnityEngine.SocialPlatforms.GameCenter;
 
 public class MenuHandler : MonoBehaviour {
 

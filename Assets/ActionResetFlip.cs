@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using Assets.Scripts.Managers;
+﻿using Assets.Scripts.Managers;
 
 public class ActionResetFlip : MenuAction {
 
