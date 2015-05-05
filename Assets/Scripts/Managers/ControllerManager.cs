@@ -22,8 +22,10 @@ namespace Assets.Scripts.Managers
             }
         }
 
-        private void Start()
-        {
+        private void Start() {
+
+            Cursor.visible = false;
+
             if (Controllers == null)
             {
                 Controllers = this;

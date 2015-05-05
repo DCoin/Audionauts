@@ -8,10 +8,10 @@ public class TailSpin : MonoBehaviour {
 	public float minLength = 0.2f;
 	private Vector2 lastPosition;
 	private float moveMeter;
-	private new ParticleSystem particleSystem;
+	private ParticleSystem system;
 
 	void Start () {
-		particleSystem = GetComponent<ParticleSystem>();
+		system = GetComponent<ParticleSystem>();
 	}
 
 	void FixedUpdate () {
@@ -19,6 +19,6 @@ public class TailSpin : MonoBehaviour {
 		moveMeter += (lastPosition - pos).sqrMagnitude;
 		lastPosition = pos;
 		moveMeter *= Decay;
-		particleSystem.startLifetime = minLength + moveMeter * tailModifier;
+		system.startLifetime = minLength + moveMeter * tailModifier;
 	}
 }

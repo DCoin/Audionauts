@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using Assets.Scripts.Managers;
 
 public class EmissionScaler : MonoBehaviour {
@@ -7,13 +6,13 @@ public class EmissionScaler : MonoBehaviour {
 	public float MinEmissionRate = 0;
 	public float MaxEmissionRate = 60;
 
-	private new ParticleSystem particleSystem;
+	private ParticleSystem system;
 
 	void Start () {
-		particleSystem = GetComponent<ParticleSystem>();
+		system = GetComponent<ParticleSystem>();
 	}
 
 	void Update () {
-		particleSystem.emissionRate = MinEmissionRate + (MaxEmissionRate - MinEmissionRate) * GrooveManager.Instance.PercentGroove;
+		system.emissionRate = MinEmissionRate + (MaxEmissionRate - MinEmissionRate) * GrooveManager.Instance.PercentGroove;
 	}
 }

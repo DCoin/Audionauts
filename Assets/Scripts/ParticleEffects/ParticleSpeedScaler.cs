@@ -12,7 +12,7 @@ public class ParticleSpeedScaler : MonoBehaviour {
 	public float MaxLength = 5;
 	public AnimationCurve LengthByGroove;
 	
-	private new ParticleSystem particleSystem;
+	private ParticleSystem system;
 	private ParticleSystemRenderer particleSystemRenderer;
 	private ParticleSystem.Particle[] particles;
 	private float currentGrooveScale {
@@ -20,13 +20,13 @@ public class ParticleSpeedScaler : MonoBehaviour {
 	}
 
 	void Start () {
-		particleSystem = GetComponent<ParticleSystem>();
-		particles = new ParticleSystem.Particle[particleSystem.maxParticles];
+		system = GetComponent<ParticleSystem>();
+		particles = new ParticleSystem.Particle[system.maxParticles];
 		particleSystemRenderer = GetComponent<ParticleSystemRenderer>();
 	}
 
 	void LateUpdate() {
-		var alive = particleSystem.GetParticles(particles);
+		var alive = system.GetParticles(particles);
 		var speedRange = SpeedRangeMax - SpeedRangeMin;
 		var grooveScale = currentGrooveScale;
 
@@ -39,6 +39,6 @@ public class ParticleSpeedScaler : MonoBehaviour {
 			// TODO Remove particles when groove is going down??
 		}
 
-		particleSystem.SetParticles(particles, alive);
+		system.SetParticles(particles, alive);
 	}
 }
