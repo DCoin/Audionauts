@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AxisSource: 2
-  Radius: 6
+  Radius: 10
   Speed: 60
   Controller: 1
   UseAcceleration: 1
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AxisSource: 2
-  Radius: 6
+  Radius: 10
   Speed: 60
   Controller: 0
   UseAcceleration: 1
