@@ -745,7 +745,7 @@ Transform:
   - {fileID: 878266886}
   - {fileID: 2031912528}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &132899341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,7 +2604,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 434691995}
-  m_Text: "ART DIRECTOR\r\n\r\nSOPHUS KRUH\xD8FFER"
+  m_Text: "art director\r\n\r\nsophus kruh\xF8ffer"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -2614,7 +2614,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -2681,7 +2681,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -3038,10 +3038,10 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 517354309}
-  m_Text: 'THANK YOU FOR PLAYING
+  m_Text: 'thank you for playing
 
 
-    ~ AUDIONAUTS ~'
+    ~ audionauts ~'
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -3051,7 +3051,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -3118,7 +3118,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -3784,7 +3784,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 586783043}
-  m_Text: "DANNY HYLD\r\nKRISTIAN ELKJ\xC6R\r\nMICHAEL BERG"
+  m_Text: "danny hyld\r\nkristian elkj\xE6r\r\nmichael berg"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -3794,7 +3794,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -3861,7 +3861,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -8476,7 +8476,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1130181678}
-  m_Text: CREDITS
+  m_Text: credits
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -8486,7 +8486,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -8553,7 +8553,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -9373,6 +9373,7 @@ MonoBehaviour:
   - {fileID: 2078340254}
   - {fileID: 1283705056}
   - {fileID: 517354310}
+  font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
 --- !u!1 &1262061263
 GameObject:
   m_ObjectHideFlags: 0
@@ -9398,7 +9399,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262061263}
-  m_Text: "OUR PROJECT SUPERVISOR\r\n\r\nVINICIUS PINTON"
+  m_Text: "our project supervisor\r\n\r\nvinicius pinton"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -9408,7 +9409,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -9475,7 +9476,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -9608,7 +9609,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1283705055}
-  m_Text: "ALL THE LOVELY PEOPLE \r\nFROM \r\nTHE ALPHA PLAYDATE"
+  m_Text: "all the lovely people \r\nfrom \r\nthe alpha playdate"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -9618,7 +9619,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -9685,7 +9686,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -10112,7 +10113,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1362510731}
-  m_Text: "PLAY-TESTERS\r\n\r\nC\xC9DRIC GILBERT ELISABETH\r\nCHRISTIAN GR\xD8NLUND"
+  m_Text: "play-testers\r\n\r\nc\xE9dric gilbert elisabeth\r\nchristian gr\xF8nlund"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -10122,7 +10123,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -10189,7 +10190,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -10387,7 +10388,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400024649}
-  m_Text: "PROJECT MANAGEMENT AND MUSIC\r\n\r\nRUNE WEISE KOFOED"
+  m_Text: "project management and music\r\n\r\nrune weise kofoed"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -10397,7 +10398,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -10464,7 +10465,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -10503,7 +10504,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411933557}
-  m_Text: "TOOLS PROGRAMMER\r\n\r\nOLIVER PHILLIP ROER"
+  m_Text: "tools programmer\r\n\r\noliver phillip roer"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -10513,7 +10514,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -10580,7 +10581,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -11799,7 +11800,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1622292748}
-  m_Text: SPECIAL THANKS TO
+  m_Text: special thanks to
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -11809,7 +11810,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -11876,7 +11877,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -12392,7 +12393,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1683672346}
-  m_Text: "LEAD GAME DESIGNER\r\n\r\nSARA TARBY"
+  m_Text: "lead game designer\r\n\r\nsara tarby"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -12402,7 +12403,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -12469,7 +12470,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -13353,7 +13354,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1774381763}
-  m_Text: "UX DESIGN\r\n\r\nSOFIE GR\xD8NLUND"
+  m_Text: "ux design\r\n\r\nsofie gr\xF8nlund"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -13363,7 +13364,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -13430,7 +13431,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -14431,7 +14432,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1894817096}
-  m_Text: "LEAD PROGRAMMER\r\n\r\nS\xD8REN LILLETHORUP VANGE"
+  m_Text: "lead programmer\r\n\r\ns\xF8ren lillethorup vange"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -14441,7 +14442,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -14508,7 +14509,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -15689,7 +15690,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2078340253}
-  m_Text: "MIKKEL SCHULTZ\r\nRUNE SVENDSGAARD\r\nTHOM KIRALY"
+  m_Text: "mikkel schultz\r\nrune svendsgaard\r\nthom kiraly"
   m_OffsetZ: 0
   m_CharacterSize: .100000001
   m_LineSpacing: 1
@@ -15699,7 +15700,7 @@ TextMesh:
   m_FontSize: 128
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -15766,7 +15767,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: d2fe8792350e24e6aaa7abbc56b5d98e, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

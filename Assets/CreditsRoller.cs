@@ -4,6 +4,8 @@ using UnityEngine;
 public class CreditsRoller : MonoBehaviour {
 
     [ContextMenuItem("Load", "LoadText")]
+    [ContextMenuItem("Fix", "FixText")]
+
     public TextAsset CreditsText;
 
     public GameObject CreditTextPrefab;
@@ -13,7 +15,24 @@ public class CreditsRoller : MonoBehaviour {
 
     public TextMesh[] Texts;
 
+    public Font font;
+
     private int active = 0;
+
+    private void FixText() {
+
+        var txts = GetComponentsInChildren<TextMesh>();
+
+        foreach (var txt in txts) {
+
+            txt.text = txt.text.ToLower();
+
+            txt.font = this.font;
+
+        }
+
+
+    }
 
     void LoadText() {
 
