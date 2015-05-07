@@ -29008,14 +29008,29 @@ MonoBehaviour:
     m_Curve:
     - time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 10
+      inSlope: 4.13117838
+      outSlope: 4.13117838
+      tangentMode: 0
+    - time: .0965021625
+      value: .201760173
+      inSlope: .639720142
+      outSlope: .639720142
+      tangentMode: 0
+    - time: .839949608
+      value: .672135592
+      inSlope: 1.41834724
+      outSlope: 1.41834724
+      tangentMode: 0
+    - time: .94839406
+      value: .951864898
+      inSlope: 2.23517418
+      outSlope: 2.23517418
+      tangentMode: 0
     - time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 10
+      inSlope: .955263972
+      outSlope: .955263972
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
 --- !u!1 &509055066
@@ -112844,7 +112859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeatsPerLoop: 384
-  StartAtSection: {fileID: 1749202697}
+  StartAtSection: {fileID: 0}
 --- !u!82 &1939912147
 AudioSource:
   m_ObjectHideFlags: 0
