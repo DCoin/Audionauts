@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MinEmissionRate: 0
-  MaxEmissionRate: 60
+  MaxEmissionRate: 400
 --- !u!198 &19875004
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -129,10 +129,10 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 2852061439
         key1:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 2281750527
         key2:
           serializedVersion: 2
           rgba: 0
@@ -172,10 +172,10 @@ ParticleSystem:
       minGradient:
         key0:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 3053453056
         key1:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 2281766747
         key2:
           serializedVersion: 2
           rgba: 0
@@ -218,7 +218,7 @@ ParticleSystem:
       maxColor:
         serializedVersion: 2
         rgba: 4294967040
-      minMaxState: 2
+      minMaxState: 3
     startSize:
       scalar: .699999988
       maxCurve:
@@ -287,7 +287,7 @@ ParticleSystem:
       minMaxState: 0
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 3000
+    maxNumParticles: 8000
   ShapeModule:
     serializedVersion: 2
     enabled: 1

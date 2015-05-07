@@ -62,20 +62,25 @@ MonoBehaviour:
       tangentMode: 10
     m_PreInfinity: 2
     m_PostInfinity: 2
-  MaxLength: 5
+  MaxLength: 10
   LengthByGroove:
     serializedVersion: 2
     m_Curve:
-    - time: -3.03803536e-05
-      value: .30006507
-      inSlope: .699913681
-      outSlope: .699913681
-      tangentMode: 10
+    - time: 0
+      value: 0
+      inSlope: .120951861
+      outSlope: .120951861
+      tangentMode: 0
+    - time: .703983366
+      value: .303186238
+      inSlope: .856369734
+      outSlope: .856369734
+      tangentMode: 0
     - time: 1
       value: 1
-      inSlope: .699913681
-      outSlope: .699913681
-      tangentMode: 10
+      inSlope: 3.7414515
+      outSlope: 3.7414515
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
 --- !u!114 &11442868
@@ -90,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MinEmissionRate: 0
-  MaxEmissionRate: 60
+  MaxEmissionRate: 300
 --- !u!198 &19805098
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -315,7 +320,7 @@ ParticleSystem:
       minMaxState: 3
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 10000
+    maxNumParticles: 12000
   ShapeModule:
     serializedVersion: 2
     enabled: 1
