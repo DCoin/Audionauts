@@ -74,7 +74,7 @@ public class KeyboardProfile : UnityInputDeviceProfile
 				{
 					Handle = "Menu",
 					Target = InputControlType.Menu,
-					Source = KeyCodeButton( KeyCode.Space, KeyCode.Escape )
+					Source = KeyCodeButton( KeyCode.Space, KeyCode.Escape, KeyCode.P )
 				}
 			};
 
