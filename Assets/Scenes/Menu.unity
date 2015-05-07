@@ -126,12 +126,12 @@ TextMesh:
   m_GameObject: {fileID: 39094940}
   m_Text: Back
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .119999997
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -202,12 +202,12 @@ TextMesh:
   m_GameObject: {fileID: 70158833}
   m_Text: X
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -477,12 +477,12 @@ TextMesh:
   m_GameObject: {fileID: 254587818}
   m_Text: X
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -806,12 +806,12 @@ TextMesh:
   m_GameObject: {fileID: 303323431}
   m_Text: Play
   m_OffsetZ: 0
-  m_CharacterSize: .649999976
+  m_CharacterSize: .100000001
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 65
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -1184,12 +1184,12 @@ TextMesh:
   m_GameObject: {fileID: 366419036}
   m_Text: No
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -1438,12 +1438,12 @@ TextMesh:
   m_GameObject: {fileID: 480616567}
   m_Text: Yes
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -2758,12 +2758,12 @@ TextMesh:
   m_GameObject: {fileID: 753561338}
   m_Text: Yes
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -5507,12 +5507,12 @@ TextMesh:
   m_GameObject: {fileID: 1105299655}
   m_Text: Reset
   m_OffsetZ: 0
-  m_CharacterSize: .449999988
+  m_CharacterSize: .100000001
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -6650,12 +6650,12 @@ TextMesh:
   m_GameObject: {fileID: 1325094251}
   m_Text: Y
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -6726,12 +6726,12 @@ TextMesh:
   m_GameObject: {fileID: 1357386231}
   m_Text: Y
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -7247,12 +7247,12 @@ TextMesh:
   m_GameObject: {fileID: 1501482578}
   m_Text: Neptune
   m_OffsetZ: 0
-  m_CharacterSize: .400000006
+  m_CharacterSize: .0799999982
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -7453,12 +7453,12 @@ TextMesh:
   m_GameObject: {fileID: 1515768104}
   m_Text: Credits
   m_OffsetZ: 0
-  m_CharacterSize: .400000006
+  m_CharacterSize: .119999997
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -7529,12 +7529,12 @@ TextMesh:
   m_GameObject: {fileID: 1542804633}
   m_Text: Back
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .119999997
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -8232,12 +8232,12 @@ TextMesh:
   m_GameObject: {fileID: 1891172487}
   m_Text: Exit
   m_OffsetZ: 0
-  m_CharacterSize: .600000024
+  m_CharacterSize: .200000003
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -8349,12 +8349,12 @@ TextMesh:
   m_GameObject: {fileID: 1925687701}
   m_Text: Jupiter
   m_OffsetZ: 0
-  m_CharacterSize: .449999988
+  m_CharacterSize: .100000001
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -8707,12 +8707,12 @@ TextMesh:
   m_GameObject: {fileID: 1969003063}
   m_Text: No
   m_OffsetZ: 0
-  m_CharacterSize: .550000012
+  m_CharacterSize: .150000006
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 55
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -9134,12 +9134,12 @@ TextMesh:
   m_GameObject: {fileID: 2054577739}
   m_Text: Options
   m_OffsetZ: 0
-  m_CharacterSize: .400000006
+  m_CharacterSize: .119999997
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
