@@ -9,6 +9,8 @@ namespace Assets.Scripts.Managers
 
         public Section StartAtSection;
 
+		private const float defaultVolume = .5f;
+
         private AudioSource _audioSource;
 
         private int _timesPlayed;
@@ -79,7 +81,10 @@ namespace Assets.Scripts.Managers
             else
             {
                 Debug.LogError("A scene should only have one MusicManager");
+				return;
             }
+
+			AudioListener.volume = PlayerPrefs.GetFloat("Volume", defaultVolume);
 
             _audioSource = GetComponent<AudioSource>();
             initialVolume = _audioSource.volume;
@@ -94,7 +99,7 @@ namespace Assets.Scripts.Managers
             _audioSource.Play();
 
 
-
+#if UNITY_EDITOR
             if (StartAtSection != null) {
                 float startBeat = StartAtSection.transform.localPosition.z / Traveller.BeatScaling;
 
@@ -111,7 +116,7 @@ namespace Assets.Scripts.Managers
                 _audioSource.timeSamples = (int) (prog*_audioSource.clip.samples);
 
             }
-
+#endif
 
             // The value of this should lie between 0 and 10000 and only matters for the first XFRAMES frames
             var sampleGuess = 1000;

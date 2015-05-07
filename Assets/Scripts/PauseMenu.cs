@@ -14,9 +14,7 @@ public class PauseMenu : MonoBehaviour {
 	private float defaultTimeScale;
 
 	void Start () {
-		var volume = PlayerPrefs.GetFloat("Volume", 1);
-		AudioListener.volume = volume;
-		slider.value = volume;
+		slider.value = AudioListener.volume;
 		defaultTimeScale = Time.timeScale;
 	}
 
