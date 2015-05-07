@@ -112830,7 +112830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeatsPerLoop: 384
-  StartAtSection: {fileID: 0}
+  StartAtSection: {fileID: 1749202697}
 --- !u!82 &1939912147
 AudioSource:
   m_ObjectHideFlags: 0
