@@ -1,27 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
 
 [RequireComponent(typeof(ParticleSystem))]
 public class ParticleColorController : MonoBehaviour {
 
-    private ParticleSystem ps;
-
-    public Color color;
-
 	// Use this for initialization
 	void Start () {
 
-        ps = GetComponent<ParticleSystem>();
+        var ps = GetComponent<ParticleSystem>();
 
-        ps.startColor = color;
+	    var nt = GetComponentInParent<Note>();
+
+	    ps.startColor = nt.CurrentColor;
 
 	}
 
-    void OnValidate() {
-
-        ps = GetComponent<ParticleSystem>();
-
-        ps.startColor = color;
-        
-    }
 }

@@ -26171,7 +26171,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98ba26bda406d4f29a75ee6a587e0a0e, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &459904486
+--- !u!4 &459904486 stripped
 Transform:
   m_PrefabParentObject: {fileID: 426010, guid: 98ba26bda406d4f29a75ee6a587e0a0e, type: 2}
   m_PrefabInternal: {fileID: 459904485}
@@ -28264,7 +28264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
---- !u!4 &502899508
+--- !u!4 &502899508 stripped
 Transform:
   m_PrefabParentObject: {fileID: 421000, guid: eeb65c86a50cb4ee19e5e0056182cc5c, type: 2}
   m_PrefabInternal: {fileID: 969691379}
@@ -39717,7 +39717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 6
---- !u!4 &686162250
+--- !u!4 &686162250 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482748, guid: f11cdacdaabb5be4fbc3765f1ca202cd, type: 2}
   m_PrefabInternal: {fileID: 1164437115}
@@ -49639,7 +49639,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &844047638
+--- !u!4 &844047638 stripped
 Transform:
   m_PrefabParentObject: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
   m_PrefabInternal: {fileID: 844047637}
@@ -81504,7 +81504,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56fea503b40a50740a44732466487dbc, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1402059632
+--- !u!4 &1402059632 stripped
 Transform:
   m_PrefabParentObject: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
   m_PrefabInternal: {fileID: 1402059631}
@@ -101020,7 +101020,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de6816788d00e4c37a30b004254ff550, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1751422162
+--- !u!4 &1751422162 stripped
 Transform:
   m_PrefabParentObject: {fileID: 488280, guid: de6816788d00e4c37a30b004254ff550, type: 2}
   m_PrefabInternal: {fileID: 1751422161}
