@@ -354,11 +354,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &89087862 stripped
+--- !u!4 &89087862
 Transform:
   m_PrefabParentObject: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
   m_PrefabInternal: {fileID: 89087861}
---- !u!114 &89087863 stripped
+--- !u!114 &89087863
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11467508, guid: cbcfa6a2bff86da46b18f3e0f525287c,
     type: 2}
@@ -3178,11 +3178,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56fea503b40a50740a44732466487dbc, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &520074574 stripped
+--- !u!4 &520074574
 Transform:
   m_PrefabParentObject: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
   m_PrefabInternal: {fileID: 520074573}
---- !u!114 &520074575 stripped
+--- !u!114 &520074575
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11410426, guid: 56fea503b40a50740a44732466487dbc,
     type: 2}
@@ -6822,7 +6822,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d559c468fb11646449f43dcac71f653b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5a30a953149004f5985acb28249dec1f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
