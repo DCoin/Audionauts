@@ -6811,7 +6811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49bc0bb206a33fe4db3046e0864cae0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeatsPerLoop: 384
+  BeatsPerLoop: 256
   StartAtSection: {fileID: 0}
 --- !u!82 &988853644
 AudioSource:
