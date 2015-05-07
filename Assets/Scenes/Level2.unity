@@ -34711,7 +34711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4ee9648d78405b8e94742cc47491f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Decay: .999000013
+  Decay: .00100000005
   MissScale: .5
   Smoothing: .100000001
   MaxGroove: 40
