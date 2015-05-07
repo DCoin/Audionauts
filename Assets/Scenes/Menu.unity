@@ -2435,7 +2435,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 704129185}
-  m_Text: invert Axes
+  m_Text: invert axes
   m_OffsetZ: 0
   m_CharacterSize: .5
   m_LineSpacing: 1
@@ -8920,7 +8920,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1964191696}
-  m_Text: invert Axes
+  m_Text: invert axes
   m_OffsetZ: 0
   m_CharacterSize: .5
   m_LineSpacing: 1
