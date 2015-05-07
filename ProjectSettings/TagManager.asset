@@ -9,6 +9,7 @@ TagManager:
   - Bar
   - SoundBite
   - Explosion
+  - CreditText
   layers:
   - Default
   - TransparentFX
