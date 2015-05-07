@@ -45,6 +45,30 @@ MonoBehaviour:
   EmissionRate: 1000
   Radius: .100000001
   Speed: 40
+  Rotation: 0
+  NoteAcceleration:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 12.66502
+      outSlope: 12.66502
+      tangentMode: 0
+    - time: .121083468
+      value: .964734554
+      inSlope: .534464002
+      outSlope: .534464002
+      tangentMode: 0
+    - time: 1.00091076
+      value: -.000197364949
+      inSlope: .0272764713
+      outSlope: .0272764713
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  AccelerationTime: .5
+  MinAcceleration: 0
+  MaxAcceleration: 2
 --- !u!198 &19849722
 ParticleSystem:
   m_ObjectHideFlags: 1
