@@ -72,6 +72,24 @@ namespace Assets.Scripts {
 
             if (!pre) GrooveManager.Instance.Hit (success);
 
+			if (!pre && success) {
+				switch (Kind) {
+				case NoteKind.Any:
+				case NoteKind.Both:
+					StageManager.Instance.Tail1.Hit();
+					StageManager.Instance.Tail2.Hit();
+					break;
+				case NoteKind.First:
+					StageManager.Instance.Tail1.Hit();
+					break;
+				case NoteKind.Second:
+					StageManager.Instance.Tail2.Hit();
+					break;
+				default:
+				break;
+				}
+			}
+
             base.OnCollision(pre, success);
         }
 

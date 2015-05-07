@@ -358,6 +358,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 465388, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
   m_PrefabInternal: {fileID: 89087861}
+--- !u!114 &89087863 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11467508, guid: cbcfa6a2bff86da46b18f3e0f525287c,
+    type: 2}
+  m_PrefabInternal: {fileID: 89087861}
+  m_Script: {fileID: 11500000, guid: 4f91ccda4c02b4105bfafcca8bf7cb69, type: 3}
 --- !u!1 &97237803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,6 +3182,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 452086, guid: 56fea503b40a50740a44732466487dbc, type: 2}
   m_PrefabInternal: {fileID: 520074573}
+--- !u!114 &520074575 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11410426, guid: 56fea503b40a50740a44732466487dbc,
+    type: 2}
+  m_PrefabInternal: {fileID: 520074573}
+  m_Script: {fileID: 11500000, guid: 4f91ccda4c02b4105bfafcca8bf7cb69, type: 3}
 --- !u!1 &524050034
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,6 +6982,8 @@ MonoBehaviour:
   Traveller: {fileID: 990496011}
   Player1: {fileID: 610105576}
   Player2: {fileID: 107997588}
+  Tail1: {fileID: 89087863}
+  Tail2: {fileID: 520074575}
   Stage: {fileID: 283939525}
 --- !u!4 &991290192
 Transform:

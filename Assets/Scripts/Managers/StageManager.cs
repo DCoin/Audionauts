@@ -8,6 +8,8 @@ namespace Assets.Scripts.Managers
         public Traveller Traveller;
         public CollisionHandler Player1;
         public CollisionHandler Player2;
+		public TailEmitter Tail1;
+		public TailEmitter Tail2;
         public Transform Stage;
 
         public static StageManager Instance { get; private set; }
