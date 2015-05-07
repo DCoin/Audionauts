@@ -568,7 +568,7 @@ MonoBehaviour:
   MenuKind: 3
   Actions:
   - {fileID: 113258815}
-  - {fileID: 0}
+  - {fileID: 1569778311}
   - {fileID: 259172943}
 --- !u!1 &126140558
 GameObject:
@@ -1937,7 +1937,7 @@ MonoBehaviour:
   MenuKind: 1
   Actions:
   - {fileID: 307162896}
-  - {fileID: 0}
+  - {fileID: 1943478544}
   - {fileID: 259172943}
 --- !u!114 &307162896
 MonoBehaviour:
@@ -2314,8 +2314,8 @@ MonoBehaviour:
   MenuKind: 1
   Actions:
   - {fileID: 561723538}
-  - {fileID: 0}
-  - {fileID: 259172943}
+  - {fileID: 1615483864}
+  - {fileID: 1157740239}
 --- !u!1 &395799910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,8 +2810,8 @@ MonoBehaviour:
   MenuKind: 0
   Actions:
   - {fileID: 1129479805}
-  - {fileID: 0}
   - {fileID: 1255732986}
+  - {fileID: 126140560}
 --- !u!1 &448938098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,7 +3563,7 @@ MonoBehaviour:
   MenuKind: 3
   Actions:
   - {fileID: 1714444004}
-  - {fileID: 0}
+  - {fileID: 861635084}
   - {fileID: 1017006416}
   - {fileID: 259172943}
 --- !u!114 &663678432
@@ -4030,8 +4030,8 @@ MonoBehaviour:
   MenuKind: 0
   Actions:
   - {fileID: 561723538}
-  - {fileID: 0}
-  - {fileID: 259172943}
+  - {fileID: 1615483864}
+  - {fileID: 958666491}
 --- !u!1 &731900591
 GameObject:
   m_ObjectHideFlags: 0
@@ -6609,7 +6609,7 @@ MonoBehaviour:
   MenuKind: 2
   Actions:
   - {fileID: 1901966015}
-  - {fileID: 0}
+  - {fileID: 955560672}
   - {fileID: 259172943}
 --- !u!114 &984998072
 MonoBehaviour:
@@ -7204,7 +7204,7 @@ MonoBehaviour:
   MenuKind: 3
   Actions:
   - {fileID: 299035725}
-  - {fileID: 0}
+  - {fileID: 433936700}
   - {fileID: 259172943}
 --- !u!114 &1053624277
 MonoBehaviour:
@@ -8004,7 +8004,7 @@ MonoBehaviour:
   MenuKind: 3
   Actions:
   - {fileID: 561723538}
-  - {fileID: 0}
+  - {fileID: 2053106481}
   - {fileID: 259172943}
 --- !u!1 &1176629732
 GameObject:
@@ -8760,7 +8760,7 @@ MonoBehaviour:
   MenuKind: 3
   Actions:
   - {fileID: 354851147}
-  - {fileID: 0}
+  - {fileID: 1853666158}
   - {fileID: 259172943}
 --- !u!114 &1310222789
 MonoBehaviour:
@@ -10224,7 +10224,7 @@ MonoBehaviour:
   MenuKind: 2
   Actions:
   - {fileID: 1259951431}
-  - {fileID: 0}
+  - {fileID: 100592948}
   - {fileID: 259172943}
 --- !u!114 &1597659370
 MonoBehaviour:
@@ -10239,6 +10239,119 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Radius: 10
   Angle: 240
+--- !u!1 &1615483862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1615483863}
+  - 82: {fileID: 1615483865}
+  - 114: {fileID: 1615483864}
+  m_Layer: 0
+  m_Name: ActionPlayNo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1615483863
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615483862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2063231128}
+  m_RootOrder: 14
+--- !u!114 &1615483864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615483862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b27fcb670257f44fb3547398b2a03c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - {fileID: 8300000, guid: 3682bc5843894446da7615de0ad04dd6, type: 3}
+  - {fileID: 8300000, guid: fd4ce4d627ce64f2398c66b3836b9bcb, type: 3}
+  - {fileID: 8300000, guid: 40c94199a4c034cfa9de2bfab5f8cf4f, type: 3}
+--- !u!82 &1615483865
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615483862}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: .5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1616237885
 GameObject:
   m_ObjectHideFlags: 0
@@ -10409,7 +10522,7 @@ MonoBehaviour:
   MenuKind: 0
   Actions:
   - {fileID: 1635594491}
-  - {fileID: 0}
+  - {fileID: 1333956969}
   - {fileID: 259172943}
 --- !u!114 &1635594491
 MonoBehaviour:
@@ -10830,7 +10943,7 @@ MonoBehaviour:
   MenuKind: 3
   Actions:
   - {fileID: 664445690}
-  - {fileID: 0}
+  - {fileID: 1649365630}
   - {fileID: 1017006416}
   - {fileID: 259172943}
 --- !u!4 &1678169655
@@ -11457,7 +11570,7 @@ MonoBehaviour:
   MenuKind: 1
   Actions:
   - {fileID: 1763949989}
-  - {fileID: 0}
+  - {fileID: 427732835}
   - {fileID: 259172943}
 --- !u!114 &1763949989
 MonoBehaviour:
@@ -11660,7 +11773,7 @@ MonoBehaviour:
   MenuKind: 2
   Actions:
   - {fileID: 561723538}
-  - {fileID: 0}
+  - {fileID: 2077025921}
   - {fileID: 259172943}
 --- !u!1 &1818271780
 GameObject:
@@ -12358,7 +12471,7 @@ MonoBehaviour:
   MenuKind: 0
   Actions:
   - {fileID: 1930406152}
-  - {fileID: 0}
+  - {fileID: 464367112}
   - {fileID: 259172943}
 --- !u!114 &1930406152
 MonoBehaviour:
@@ -12813,8 +12926,8 @@ MonoBehaviour:
   MenuKind: 1
   Actions:
   - {fileID: 658282047}
-  - {fileID: 0}
   - {fileID: 1255732986}
+  - {fileID: 995080028}
 --- !u!1 &1969003063
 GameObject:
   m_ObjectHideFlags: 0
@@ -13301,6 +13414,7 @@ Transform:
   - {fileID: 1129479804}
   - {fileID: 259172942}
   - {fileID: 1255732985}
+  - {fileID: 1615483863}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1 &2077025919
