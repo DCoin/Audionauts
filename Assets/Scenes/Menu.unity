@@ -2330,14 +2330,6 @@ Prefab:
       propertyPath: ColorModule.gradient.maxGradient.m_NumColorKeys
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 11410426, guid: 56fea503b40a50740a44732466487dbc, type: 2}
-      propertyPath: EmissionRate
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 11410426, guid: 56fea503b40a50740a44732466487dbc, type: 2}
-      propertyPath: Rotation
-      value: -1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56fea503b40a50740a44732466487dbc, type: 2}
   m_IsPrefabParent: 0
@@ -7266,10 +7258,6 @@ Prefab:
       propertyPath: ColorModule.gradient.maxGradient.m_NumColorKeys
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 11467508, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
-      propertyPath: EmissionRate
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 19849722, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
       propertyPath: RotationModule.curve.scalar
       value: .785398126
@@ -7277,10 +7265,6 @@ Prefab:
     - target: {fileID: 19849722, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
       propertyPath: RotationBySpeedModule.curve.scalar
       value: .785398126
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467508, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}
-      propertyPath: Rotation
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbcfa6a2bff86da46b18f3e0f525287c, type: 2}

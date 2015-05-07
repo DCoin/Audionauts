@@ -42,10 +42,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  EmissionRate: 1000
+  EmissionRate: 50
   Radius: .100000001
   Speed: 40
-  Rotation: 0
+  Rotation: 1
   NoteAcceleration:
     serializedVersion: 2
     m_Curve:
@@ -236,7 +236,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 4
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -372,18 +372,18 @@ ParticleSystem:
         m_Curve:
         - time: 0
           value: 1
-          inSlope: -.0360942781
-          outSlope: -.0360942781
+          inSlope: 1.68299448
+          outSlope: 1.68299448
           tangentMode: 0
-        - time: .099999994
+        - time: .0639889836
           value: 1
-          inSlope: -1.63942575
-          outSlope: -1.63942575
+          inSlope: -1.67250633
+          outSlope: -1.67250633
           tangentMode: 0
         - time: 1
           value: 0
-          inSlope: 0
-          outSlope: 0
+          inSlope: -.293403566
+          outSlope: -.293403566
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -406,7 +406,7 @@ ParticleSystem:
   RotationModule:
     enabled: 0
     curve:
-      scalar: .785398185
+      scalar: .785398126
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -444,46 +444,46 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 117489663
+          rgba: 1014988799
         key1:
           serializedVersion: 2
-          rgba: 1073676543
+          rgba: 1677754367
         key2:
           serializedVersion: 2
-          rgba: 0
+          rgba: 1014956287
         key3:
           serializedVersion: 2
-          rgba: 0
+          rgba: 16711935
         key4:
           serializedVersion: 2
-          rgba: 0
+          rgba: 16383744
         key5:
           serializedVersion: 2
-          rgba: 0
+          rgba: 65280
         key6:
           serializedVersion: 2
-          rgba: 0
+          rgba: 16777215
         key7:
           serializedVersion: 2
           rgba: 0
         ctime0: 0
-        ctime1: 32768
-        ctime2: 0
-        ctime3: 0
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
+        ctime1: 3277
+        ctime2: 16384
+        ctime3: 25250
+        ctime4: 43562
+        ctime5: 45875
+        ctime6: 65535
         ctime7: 0
-        atime0: 32768
-        atime1: 65535
-        atime2: 20971
-        atime3: 0
+        atime0: 7325
+        atime1: 14649
+        atime2: 39321
+        atime3: 65535
         atime4: 0
         atime5: 0
         atime6: 0
         atime7: 0
-        m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
+        m_NumColorKeys: 6
+        m_NumAlphaKeys: 4
       minGradient:
         key0:
           serializedVersion: 2
@@ -959,7 +959,7 @@ ParticleSystem:
   RotationBySpeedModule:
     enabled: 0
     curve:
-      scalar: .785398185
+      scalar: .785398126
       maxCurve:
         serializedVersion: 2
         m_Curve:
