@@ -68,7 +68,7 @@ MonoBehaviour:
     m_PostInfinity: 2
   AccelerationTime: .5
   MinAcceleration: 0
-  MaxAcceleration: 2
+  MaxAcceleration: 4
 --- !u!198 &19819112
 ParticleSystem:
   m_ObjectHideFlags: 1
