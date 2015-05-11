@@ -17,6 +17,8 @@ namespace Assets.Scripts.Managers
 		private float groove = 0;
 		private float smoothGroove = 0;
 
+	    public bool ShowDebugInfo;
+
 		public float PercentGroove {
 			get { return Progression.Evaluate(smoothGroove / MaxGroove); }
 		}
@@ -43,7 +45,10 @@ namespace Assets.Scripts.Managers
 
 #if UNITY_EDITOR
 		void OnGUI() {
-			
+
+		    if (!ShowDebugInfo)
+		        return;
+
 			GUI.Label(new Rect(32, 50, 200, 128), "Groove: " + smoothGroove);
 			GUI.Label(new Rect(32, 62, 200, 128), "Groove%: " + PercentGroove);
 			
